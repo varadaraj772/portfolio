@@ -9,6 +9,7 @@ import GreenButton from "./components/GreenButton";
 import { FaFigma } from "react-icons/fa";
 import { BsArrowReturnRight } from "react-icons/bs";
 import Banner from "./components/Banner";
+import Toolbox from "./components/Toolbox";
 
 function page() {
   return (
@@ -160,46 +161,7 @@ function page() {
               </div>
             </div>
           </div>
-          <div className="bg-gray-200 flex flex-row h-[100vh]">
-            <div className=" w-1/2 p-[1vw]">
-              <h2 className=" text-[8vw]">My Creative Toolbox</h2>
-            </div>
-            <div className=" w-1/2 flex flex-col justify-around items-center p-[1vw]">
-              <div className=" bg-white h-1/4 w-1/2 rounded-[1vw] flex flex-row justify-center items-center gap-[2vw]">
-                <img src="/react.png" alt="React" className=" h-1/2" />
-                <div>
-                  <h2 className="w-full text-center text-[3vw] font-bold">
-                    React.Js
-                  </h2>
-                  <h3 className="w-full text-center text-[1.5vw] opacity-50">
-                    Javascript Library
-                  </h3>
-                </div>
-              </div>
-              <div className=" bg-white h-1/4 w-1/2 rounded-[1vw] flex flex-row justify-center items-center gap-[2vw]">
-                <img src="/react.png" alt="React" className=" h-1/2" />
-                <div>
-                  <h2 className="w-full text-center text-[3vw] font-bold">
-                    React.Js
-                  </h2>
-                  <h3 className="w-full text-center text-[1.5vw] opacity-50">
-                    Javascript Library
-                  </h3>
-                </div>
-              </div>
-              <div className=" bg-white h-1/4 w-1/2 rounded-[1vw] flex flex-row justify-center items-center gap-[2vw]">
-                <img src="/react.png" alt="React" className=" h-1/2" />
-                <div>
-                  <h2 className="w-full text-center text-[3vw] font-bold">
-                    React.Js
-                  </h2>
-                  <h3 className="w-full text-center text-[1.5vw] opacity-50">
-                    Javascript Library
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Toolbox />
           <Banner />
           <div className=" bg-black h-[100vh]">
             <div className="head">
@@ -329,7 +291,7 @@ function page() {
                   </div>
                   <div className=" w-full flex items-center justify-end px-[2vw]">
                     <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
-                      <FaFigma />
+                      <FaFigma className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
                     </div>
                   </div>
                 </div>
@@ -339,7 +301,7 @@ function page() {
                   </div>
                   <div className=" w-full flex items-center justify-end px-[2vw]">
                     <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
-                      <FiInstagram />
+                      <FiInstagram className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
                     </div>
                   </div>
                 </div>
@@ -349,7 +311,7 @@ function page() {
                   </div>
                   <div className=" w-full flex items-center justify-end px-[2vw]">
                     <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
-                      <FaXTwitter />
+                      <FaXTwitter className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
                     </div>
                   </div>
                 </div>
@@ -359,17 +321,19 @@ function page() {
                   </div>
                   <div className=" w-full flex items-center justify-end px-[2vw]">
                     <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
-                      <FaLinkedin />
+                      <FaLinkedin className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
                     </div>
                   </div>
                 </div>
-                <div className=" rounded-[0.9vw] bg-[#8CFF2E] text-[3vw] h-[15vw] shadow-md cursor-pointer">
+                <div className=" rounded-[0.9vw] bg-[#8CFF2E] text-[3vw] h-[15vw] shadow-md cursor-pointer hover:px-[1vw] transition-all duration-500">
                   <div className=" w-full  p-[2vw]">
                     <p className="">Get in touch</p>
                   </div>
                   <div className=" w-full  flex items-center justify-end px-[3vw]">
                     <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
-                      <BsArrowReturnRight />
+                      <a href="mailto:sanith.s74@gmail.com">
+                        <BsArrowReturnRight />
+                      </a>
                     </div>
                   </div>
                 </div>
