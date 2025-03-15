@@ -49,7 +49,7 @@ function page() {
           <span className="w-full mt-[-3vw] flex items-center gap-[2vw]">
             from{" "}
             <span className=" bg-transparent py-[0.1vw] px-[2vw] rounded-[4vw] text-[#2F2F2F] border-[#2F2F2F] border text-[4vw]">
-              Bedra
+              Mangalore
             </span>
           </span>
           <span className="w-full  mt-[-4vw]">turning Your</span>
@@ -193,6 +193,21 @@ function page() {
                 <h3 className="w-full text-center text-[1.5vw] opacity-50">Javascript Library</h3>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="banner bg-[#1C1C1C] h-[10vh] w-full flex flex-row justify-between items-center text-[3vw] px-[2vw]">
+            <div className="flex flex-row gap-[1vw]">
+              {" "}
+              <span className=" text-[#8CFF2E]">8+</span>
+              <span className="text-white">years of experience</span>
+            </div>
+            <span className=" text-[#8CFF2E]">
+              <PiAsterisk />
+            </span>
+            <div className="flex flex-row text-[3vw] gap-[1vw]">
+              {" "}
+              <span className=" text-[#8CFF2E]">{">95%"}</span>
+              <span className="text-white">Client retention rate</span>
             </div>
           </div>
         </section>
