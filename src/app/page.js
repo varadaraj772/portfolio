@@ -15,23 +15,27 @@ function page() {
     <>
       <Navbar />
       <main className=" h-[90vh] w-screen flex flex-row justify-center items-center bg-gray-200">
-        <section className="h-full w-[30%] flex justify-center items-start mx-[2vw]">
-          <div className=" w-full flex flex-row justify-around mt-[2vw]">
-            <div className=" h-[10%] flex flex-row justify-center items-center">
-              <Image
-                src="/react.png"
-                alt="Image of the developer"
-                width={50}
-                height={50}
-              />
-            </div>
-            <div className=" h-[10%] flex flex-col justify-center items-center text-[1vw] font-bold">
-              <span>Sanith Suvarna</span>
-              <span>UX/UI Designer</span>
-              <div className=" flex flex-row items-center justify-around w-full mt-[1vw] text-[2vw]">
-                <FaXTwitter />
-                <FiInstagram />
-                <FaLinkedin />
+        <section className="h-full w-[30%] flex justify-center items-start ">
+          <div className=" text-black h-[40%] flex items-end p-[2vw]  w-full">
+            <div className="w-full flex flex-row justify-around mt-[2vw]">
+              <div className="flex justify-center items-center  h-[14vh]">
+                <Image
+                  src="/react.png"
+                  alt="Image of the developer"
+                  width={50}
+                  height={50}
+                />
+              </div>
+              <div className=" h-[10%] flex flex-col items-start text-[1vw] font-bold">
+                <h1 className="text-[2vw]">Sanith Suvarna</h1>
+                <h2 className="opacity-50 text-[1vw] text-left">
+                  UX/UI Designer
+                </h2>
+                <div className=" flex flex-row mt-[1vw] text-[1.5vw] gap-[1vw] opacity-50">
+                  <FaXTwitter className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                  <FiInstagram className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                  <FaLinkedin className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                </div>
               </div>
             </div>
           </div>
@@ -373,6 +377,65 @@ function page() {
             </div>
           </div>
           <Banner />
+          <div className=" h-[100vh] bg-black flex flex-row">
+            <div className=" h-full w-1/2 justify-center items-center flex flex-col px-[2vw]">
+              <h1 className=" text-[5vw] text-white font-semibold">
+                Let's create something extraordinary together.
+              </h1>
+              <h2 className=" text-[2vw] text-white opacity-50 w-full">
+                Let’s make an impact
+              </h2>
+            </div>
+            <div className="h-full w-1/2 flex flex-col">
+              <div className=" text-white h-[40%] flex items-end p-[2vw]">
+                <div className="w-1/2 flex flex-row justify-around mt-[2vw]">
+                  <div className=" h-[10%] flex flex-row justify-center items-center">
+                    <Image
+                      src="/react.png"
+                      alt="Image of the developer"
+                      width={50}
+                      height={50}
+                    />
+                  </div>
+                  <div className=" h-[10%] flex flex-col items-start text-[1vw] font-bold">
+                    <h1 className="text-[2vw]">Sanith Suvarna</h1>
+                    <h2 className="opacity-50 text-[1vw] text-left">
+                      UX/UI Designer
+                    </h2>
+                    <div className=" flex flex-row mt-[1vw] text-[1.5vw] gap-[1vw] opacity-50">
+                      <FaXTwitter className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                      <FiInstagram className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                      <FaLinkedin className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className=" h-1/2">
+                <h2 className="opacity-50 text-[2vw] text-left font-semibold p-[1vw]">
+                  Contact me
+                </h2>
+                <h2 className=" text-[3vw] text-left font-semibold p-[1vw] text-white">
+                  sanith.s74<span className=" text-[#8CFF2E]">@</span>gmail.com
+                </h2>
+                <p className="text-[2vw] text-white text-left font-semibold p-[1vw]">
+                  <span className="opacity-50">
+                    Hit me up if you’re looking for a{" "}
+                  </span>
+                  <span className="text-white opacity-100">
+                    fast, reliable web-designer
+                  </span>
+                  <span className="opacity-50">
+                    {" "}
+                    who can bring your vision to life.
+                  </span>
+                </p>
+                <GreenButton text="Book a call" />
+              </div>
+            </div>
+          </div>
+          <footer className=" w-full h-[10vh] flex items-center justify-center text-[1vw] text-white opacity-50">
+            Copyright © sanith suvarna, 2024
+          </footer>
         </section>
       </main>
     </>
