@@ -6,7 +6,7 @@ import { FiInstagram } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
 import { PiAsterisk } from "react-icons/pi";
 import GreenButton from "./components/GreenButton";
-import { FaFigma } from "react-icons/fa";
+import { FaBehance } from "react-icons/fa";
 import { BsArrowReturnRight } from "react-icons/bs";
 import Banner from "./components/Banner";
 import Toolbox from "./components/Toolbox";
@@ -293,43 +293,23 @@ function page() {
             <div className=" p-[2vw]">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-[2vw]">
                 {/* Figma Box */}
-                <div className=" rounded-[0.9vw] bg-white text-[3vw] h-[15vw] shadow-md cursor-pointer">
+                <div className=" rounded-[0.9vw] bg-white text-[3vw] h-[15vw] shadow-md cursor-pointer group">
                   <div className=" w-full p-[2vw]">
-                    <p className="">Figma</p>
+                    <p className="">behance</p>
                   </div>
                   <div className=" w-full flex items-center justify-end px-[2vw]">
                     <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
-                      <FaFigma className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                      <FaBehance className="group-hover:rotate-360 cursor-pointer transition-transform duration-700" />
                     </div>
                   </div>
                 </div>
-                <div className=" rounded-[0.9vw] bg-white text-[3vw] h-[15vw] shadow-md cursor-pointer">
-                  <div className=" w-full p-[2vw]">
-                    <p className="">Instagram</p>
-                  </div>
-                  <div className=" w-full flex items-center justify-end px-[2vw]">
-                    <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
-                      <FiInstagram className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
-                    </div>
-                  </div>
-                </div>
-                <div className=" rounded-[0.9vw] bg-white text-[3vw] h-[15vw] shadow-md cursor-pointer">
-                  <div className=" w-full p-[2vw]">
-                    <p className="">Twitter</p>
-                  </div>
-                  <div className=" w-full flex items-center justify-end px-[2vw]">
-                    <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
-                      <FaXTwitter className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
-                    </div>
-                  </div>
-                </div>
-                <div className=" rounded-[0.9vw] bg-white text-[3vw] h-[15vw] shadow-md cursor-pointer">
+                <div className=" rounded-[0.9vw] bg-white text-[3vw] h-[15vw] shadow-md cursor-pointer group">
                   <div className=" w-full p-[2vw]">
                     <p className="">Linkedin</p>
                   </div>
                   <div className=" w-full flex items-center justify-end px-[2vw]">
                     <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
-                      <FaLinkedin className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                      <FaLinkedin className="group-hover:rotate-360 cursor-pointer transition-transform duration-700" />
                     </div>
                   </div>
                 </div>
