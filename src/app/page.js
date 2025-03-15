@@ -15,58 +15,58 @@ function page() {
   return (
     <>
       <Navbar />
-      <main className=" h-[90vh] w-screen flex flex-row justify-center items-center bg-gray-200">
-        <section className="h-full w-[30%] flex justify-center items-start ">
-          <div className=" text-black h-[40%] flex items-end p-[2vw]  w-full">
-            <div className="w-full flex flex-row justify-around mt-[2vw]">
-              <div className="flex justify-center items-center  h-[14vh]">
-                <Image
-                  src="/react.png"
-                  alt="Image of the developer"
-                  width={50}
-                  height={50}
-                />
-              </div>
-              <div className=" h-[10%] flex flex-col items-start text-[1vw] font-bold">
-                <h1 className="text-[2vw]">Sanith Suvarna</h1>
-                <h2 className="opacity-50 text-[1vw] text-left">
-                  UX/UI Designer
-                </h2>
-                <div className=" flex flex-row mt-[1vw] text-[1.5vw] gap-[1vw] opacity-50">
-                  <FaXTwitter className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
-                  <FiInstagram className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
-                  <FaLinkedin className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
+      <main className="w-screen flex flex-col justify-center items-center bg-[url(/background.png)] relative top-[-10vh]">
+        <div className="flex flex-row w-full justify-center items-center">
+          <section className="h-full w-[30%] flex justify-center items-start relative top-[10vh]">
+            <div className=" text-black h-[40%] flex items-end p-[2vw]  w-full">
+              <div className="w-full flex flex-row justify-around mt-[2vw]">
+                <div className="flex justify-center items-center  h-[14vh]">
+                  <Image
+                    src="/react.png"
+                    alt="Image of the developer"
+                    width={50}
+                    height={50}
+                  />
+                </div>
+                <div className=" h-[10%] flex flex-col items-start text-[1vw] font-bold">
+                  <h1 className="text-[2vw]">Sanith Suvarna</h1>
+                  <h2 className="opacity-50 text-[1vw] text-left">
+                    UX/UI Designer
+                  </h2>
+                  <div className=" flex flex-row mt-[1vw] text-[1.5vw] gap-[1vw] opacity-50">
+                    <FaXTwitter className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                    <FiInstagram className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                    <FaLinkedin className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section className=" h-full w-[70%] flex flex-col items-start justify-around text-[7.5vw] mt-[-2vw]">
-          <span className="w-full flex items-center gap-[2vw]">
-            Hi! I'm{" "}
-            <span className=" bg-white py-[0.5vw] px-[0.8vw] rounded-[4vw] text-[4vw]">
-              Sanith Suvarna
+          </section>
+          <section className=" h-full w-[70%] flex flex-col items-start justify-around text-[7.5vw] mt-[-2vw] relative top-[10vh]">
+            <span className="w-full flex items-center gap-[2vw]">
+              Hi! I'm{" "}
+              <span className=" bg-white py-[0.5vw] px-[0.8vw] rounded-[4vw] text-[4vw]">
+                Sanith Suvarna
+              </span>
             </span>
-          </span>
-          <span className="w-full mt-[-4.5vw] gap-[2vw]">
-            a{" "}
-            <span className=" bg-[#2F2F2F] py-[0.5vw] px-[0.8vw] rounded-[4vw] text-white text-[4vw]">
-              UX/UI Designer
+            <span className="w-full mt-[-4.5vw] gap-[2vw]">
+              a{" "}
+              <span className=" bg-[#2F2F2F] py-[0.5vw] px-[0.8vw] rounded-[4vw] text-white text-[4vw]">
+                UX/UI Designer
+              </span>
             </span>
-          </span>
-          <span className="w-full mt-[-3vw] flex items-center gap-[2vw]">
-            from{" "}
-            <span className=" bg-transparent py-[0.1vw] px-[2vw] rounded-[4vw] text-[#2F2F2F] border-[#2F2F2F] border text-[4vw]">
-              Mangalore
+            <span className="w-full mt-[-3vw] flex items-center gap-[2vw]">
+              from{" "}
+              <span className=" bg-transparent py-[0.1vw] px-[2vw] rounded-[4vw] text-[#2F2F2F] border-[#2F2F2F] border text-[4vw]">
+                Mangalore
+              </span>
             </span>
-          </span>
-          <span className="w-full  mt-[-4vw]">turning Your</span>
-          <span className="w-full  mt-[-4vw]">Ideas into pixel-</span>
-          <span className="w-full  mt-[-4vw]">perfect realities</span>
-        </section>
-      </main>
-      <main className="w-screen flex flex-col justify-center items-center bg-gray-200">
-        <section className="h-[25%] w-full flex flex-row justify-between mt-[4vw]">
+            <span className="w-full  mt-[-4vw]">turning Your</span>
+            <span className="w-full  mt-[-4vw]">Ideas into pixel-</span>
+            <span className="w-full  mt-[-4vw]">perfect realities</span>
+          </section>
+        </div>
+        <section className="h-[25%] w-full flex flex-row justify-between mt-[10vw] py-[2vw]">
           <span className="text-[2vw] w-[30%] px-[2vw]">(2018 - PRESENT)</span>
           <div className="text-[2vw] text-gray-700 w-[70%] px-[2vw] flex flex-col">
             <span className="mb-[2vw]">
@@ -77,7 +77,10 @@ function page() {
             <GreenButton text="Download Resume" />
           </div>
         </section>
-        <section className="bg-black w-full mt-[2vw]">
+      </main>
+      <main className="w-screen flex flex-col justify-center items-center relative top-[-10vh] bg-black">
+        <div></div>
+        <section className="bg-[url(/svg.svg)] w-full">
           <Banner />
           <div className="">
             <div className="">
@@ -90,8 +93,11 @@ function page() {
             </div>
           </div>
           <div className="flex flex-col py-[2vw]">
-            <div className="flex flex-row h-[30vw]">
-              <div className="w-1/2 flex flex-col text-white">
+            <div
+              className="flex flex-row h-[30vw]"
+              style={{ borderTop: "0.5px solid rgba(255, 255, 255, 0.5)" }}
+            >
+              <div className="w-1/2 flex flex-col text-white bg-red-70 p-[2vw]">
                 <span className="text-[2.5vw]">
                   Project Heading - 02/02/2024
                 </span>
@@ -99,10 +105,10 @@ function page() {
                 <img
                   src="/nexus.jpg"
                   alt="Project Image: Nexus"
-                  className="h-[80%] w-1/2 object-cover rounded-[2vw]"
+                  className="h-[70%] object-cover rounded-[2vw] w-full"
                 />
               </div>
-              <div className="w-1/2 flex flex-col text-white">
+              <div className="w-1/2 flex flex-col text-white bg-red-70 p-[2vw]">
                 <span className="text-[2.5vw]">
                   Project Heading - 02/02/2024
                 </span>
@@ -110,23 +116,12 @@ function page() {
                 <img
                   src="/nexus.jpg"
                   alt="Project Image: Nexus"
-                  className="h-[80%] w-1/2 object-cover rounded-[2vw]"
-                />
-              </div>
-              <div className="w-1/2 flex flex-col text-white">
-                <span className="text-[2.5vw]">
-                  Project Heading - 02/02/2024
-                </span>
-                <span className="opacity-50 text-[2vw]">Field</span>{" "}
-                <img
-                  src="/nexus.jpg"
-                  alt="Project Image: Nexus"
-                  className="h-[80%] w-1/2 object-cover rounded-[2vw]"
+                  className="h-[70%] object-cover rounded-[2vw] w-full"
                 />
               </div>
             </div>
-            <div className="flex flex-row h-[30vw] mt-[3vw]">
-              <div className="w-1/2 flex flex-col text-white">
+            <div className="flex flex-row h-[30vw]">
+              <div className="w-1/2 flex flex-col text-white bg-red-70 p-[2vw]">
                 <span className="text-[2.5vw]">
                   Project Heading - 02/02/2024
                 </span>
@@ -134,10 +129,10 @@ function page() {
                 <img
                   src="/nexus.jpg"
                   alt="Project Image: Nexus"
-                  className="h-[80%] w-1/2 object-cover rounded-[2vw]"
+                  className="h-[70%] object-cover rounded-[2vw] w-full"
                 />
               </div>
-              <div className="w-1/2 flex flex-col text-white">
+              <div className="w-1/2 flex flex-col text-white bg-red-70 p-[2vw]">
                 <span className="text-[2.5vw]">
                   Project Heading - 02/02/2024
                 </span>
@@ -145,10 +140,12 @@ function page() {
                 <img
                   src="/nexus.jpg"
                   alt="Project Image: Nexus"
-                  className="h-[80%] w-1/2 object-cover rounded-[2vw]"
+                  className="h-[70%] object-cover rounded-[2vw] w-full"
                 />
               </div>
-              <div className="w-1/2 flex flex-col text-white">
+            </div>
+            <div className="flex flex-row h-[30vw]">
+              <div className="w-1/2 flex flex-col text-white bg-red-70 p-[2vw]">
                 <span className="text-[2.5vw]">
                   Project Heading - 02/02/2024
                 </span>
@@ -156,7 +153,18 @@ function page() {
                 <img
                   src="/nexus.jpg"
                   alt="Project Image: Nexus"
-                  className="h-[80%] w-1/2 object-cover rounded-[2vw]"
+                  className="h-[70%] object-cover rounded-[2vw] w-full"
+                />
+              </div>
+              <div className="w-1/2 flex flex-col text-white bg-red-70 p-[2vw]">
+                <span className="text-[2.5vw]">
+                  Project Heading - 02/02/2024
+                </span>
+                <span className="opacity-50 text-[2vw]">Field</span>{" "}
+                <img
+                  src="/nexus.jpg"
+                  alt="Project Image: Nexus"
+                  className="h-[70%] object-cover rounded-[2vw] w-full"
                 />
               </div>
             </div>
@@ -274,7 +282,7 @@ function page() {
               <div className="days text-[#2F2F2F]">01/02 Weeks</div>
             </div>
           </div>
-          <div className=" bg-gray-200">
+          <div className=" bg-[#F8F8F8]">
             <div className=" w-full h-[4vw] text-black opacity-50 p-[1vw] font-semibold text-[1.5vw]">
               {" "}
               {"{06}"} — Contact me
@@ -341,7 +349,7 @@ function page() {
             </div>
           </div>
           <Banner />
-          <div className=" h-[100vh] bg-black flex flex-row">
+          <div className=" h-[100vh] bg-[url(/footervector.svg)] flex flex-row">
             <div className=" h-full w-1/2 justify-center items-center flex flex-col px-[2vw]">
               <h1 className=" text-[5vw] text-white font-semibold">
                 Let's create something extraordinary together.
