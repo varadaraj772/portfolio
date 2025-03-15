@@ -1,7 +1,5 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import Image from "next/image";
-import { FaXTwitter } from "react-icons/fa6";
 import { FiInstagram } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
 import { PiAsterisk } from "react-icons/pi";
@@ -19,23 +17,21 @@ function page() {
         <div className="flex flex-row w-full justify-center items-center">
           <section className="h-full w-[30%] flex justify-center items-start relative top-[10vh]">
             <div className=" text-black h-[40%] flex items-end p-[2vw]  w-full">
-              <div className="w-full flex flex-row justify-around mt-[2vw]">
-                <div className="flex justify-center items-center  h-[14vh]">
-                  <Image
-                    src="/react.png"
+              <div className="w-full flex flex-row justify-around mt-[2vw] ">
+                <div className="flex justify-center items-center  h-[10vw] rounded-full w-[10vw]">
+                  <img
+                    src="/sanith.jpeg"
                     alt="Image of the developer"
-                    width={50}
-                    height={50}
+                    className="w-full h-full object-cover rounded-full"
                   />
                 </div>
-                <div className=" h-[10%] flex flex-col items-start text-[1vw] font-bold">
+                <div className=" h-[10vw] flex flex-col items-start justify-center text-[1vw] font-bold">
                   <h1 className="text-[2vw]">Sanith Suvarna</h1>
                   <h2 className="opacity-50 text-[1vw] text-left">
                     UX/UI Designer
                   </h2>
                   <div className=" flex flex-row mt-[1vw] text-[1.5vw] gap-[1vw] opacity-50">
-                    <FaXTwitter className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
-                    <FiInstagram className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                    <FaBehance className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
                     <FaLinkedin className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
                   </div>
                 </div>
@@ -105,7 +101,7 @@ function page() {
                 <img
                   src="/nexus.jpg"
                   alt="Project Image: Nexus"
-                  className="h-[70%] object-cover rounded-[2vw] w-full"
+                  className="h-[70%] object-cover rounded-[2vw] w-3/4"
                 />
               </div>
               <div className="w-1/2 flex flex-col text-white bg-red-70 p-[2vw]">
@@ -116,31 +112,7 @@ function page() {
                 <img
                   src="/nexus.jpg"
                   alt="Project Image: Nexus"
-                  className="h-[70%] object-cover rounded-[2vw] w-full"
-                />
-              </div>
-            </div>
-            <div className="flex flex-row h-[30vw]">
-              <div className="w-1/2 flex flex-col text-white bg-red-70 p-[2vw]">
-                <span className="text-[2.5vw]">
-                  Project Heading - 02/02/2024
-                </span>
-                <span className="opacity-50 text-[2vw]">Field</span>{" "}
-                <img
-                  src="/nexus.jpg"
-                  alt="Project Image: Nexus"
-                  className="h-[70%] object-cover rounded-[2vw] w-full"
-                />
-              </div>
-              <div className="w-1/2 flex flex-col text-white bg-red-70 p-[2vw]">
-                <span className="text-[2.5vw]">
-                  Project Heading - 02/02/2024
-                </span>
-                <span className="opacity-50 text-[2vw]">Field</span>{" "}
-                <img
-                  src="/nexus.jpg"
-                  alt="Project Image: Nexus"
-                  className="h-[70%] object-cover rounded-[2vw] w-full"
+                  className="h-[70%] object-cover rounded-[2vw] w-3/4"
                 />
               </div>
             </div>
@@ -153,7 +125,7 @@ function page() {
                 <img
                   src="/nexus.jpg"
                   alt="Project Image: Nexus"
-                  className="h-[70%] object-cover rounded-[2vw] w-full"
+                  className="h-[70%] object-cover rounded-[2vw] w-3/4"
                 />
               </div>
               <div className="w-1/2 flex flex-col text-white bg-red-70 p-[2vw]">
@@ -164,7 +136,31 @@ function page() {
                 <img
                   src="/nexus.jpg"
                   alt="Project Image: Nexus"
-                  className="h-[70%] object-cover rounded-[2vw] w-full"
+                  className="h-[70%] object-cover rounded-[2vw] w-3/4"
+                />
+              </div>
+            </div>
+            <div className="flex flex-row h-[30vw]">
+              <div className="w-1/2 flex flex-col text-white bg-red-70 p-[2vw]">
+                <span className="text-[2.5vw]">
+                  Project Heading - 02/02/2024
+                </span>
+                <span className="opacity-50 text-[2vw]">Field</span>{" "}
+                <img
+                  src="/nexus.jpg"
+                  alt="Project Image: Nexus"
+                  className="h-[70%] object-cover rounded-[2vw] w-3/4"
+                />
+              </div>
+              <div className="w-1/2 flex flex-col text-white bg-red-70 p-[2vw]">
+                <span className="text-[2.5vw]">
+                  Project Heading - 02/02/2024
+                </span>
+                <span className="opacity-50 text-[2vw]">Field</span>{" "}
+                <img
+                  src="/nexus.jpg"
+                  alt="Project Image: Nexus"
+                  className="h-[70%] object-cover rounded-[2vw] w-3/4"
                 />
               </div>
             </div>
@@ -339,14 +335,13 @@ function page() {
               </h2>
             </div>
             <div className="h-full w-1/2 flex flex-col">
-              <div className=" text-white h-[40%] flex items-end p-[2vw]">
-                <div className="w-1/2 flex flex-row justify-around mt-[2vw]">
-                  <div className=" h-[10%] flex flex-row justify-center items-center">
-                    <Image
-                      src="/react.png"
+              <div className=" text-white h-[40%] flex items-end p-[2vw] ">
+                <div className="w-3/4 flex flex-row justify-around mt-[2vw]">
+                  <div className="flex justify-center items-center  h-[10vw] rounded-full w-[10vw]">
+                    <img
+                      src="/sanith.jpeg"
                       alt="Image of the developer"
-                      width={50}
-                      height={50}
+                      className="w-full h-full object-cover rounded-full"
                     />
                   </div>
                   <div className=" h-[10%] flex flex-col items-start text-[1vw] font-bold">
@@ -355,8 +350,8 @@ function page() {
                       UX/UI Designer
                     </h2>
                     <div className=" flex flex-row mt-[1vw] text-[1.5vw] gap-[1vw] opacity-50">
-                      <FaXTwitter className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
-                      <FiInstagram className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                      <FaBehance className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
+
                       <FaLinkedin className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
                     </div>
                   </div>
