@@ -38,28 +38,28 @@ function page() {
               </div>
             </div>
           </section>
-          <section className=" h-full w-[70%] flex flex-col items-start justify-around text-[7.5vw] mt-[-2vw] relative top-[10vh]">
+          <section className=" h-full w-[70%] flex flex-col items-start justify-between text-[7vw] mt-[-2vw] py-[2vw] relative top-[10vh]">
             <span className="w-full flex items-center gap-[2vw]">
               Hi! I'm{" "}
               <span className=" bg-white py-[0.5vw] px-[0.8vw] rounded-[4vw] text-[4vw]">
                 Sanith Suvarna
               </span>
             </span>
-            <span className="w-full mt-[-4.5vw] gap-[2vw]">
+            <span className="w-full mt-[-4vw] gap-[2vw]">
               a{" "}
               <span className=" bg-[#2F2F2F] py-[0.5vw] px-[0.8vw] rounded-[4vw] text-white text-[4vw]">
                 UX/UI Designer
               </span>
             </span>
-            <span className="w-full mt-[-3vw] flex items-center gap-[2vw]">
+            <span className="w-full mt-[-2vw] flex items-center gap-[2vw]">
               from{" "}
               <span className=" bg-transparent py-[0.1vw] px-[2vw] rounded-[4vw] text-[#2F2F2F] border-[#2F2F2F] border text-[4vw]">
                 Mangalore
               </span>
             </span>
-            <span className="w-full  mt-[-4vw]">turning Your</span>
-            <span className="w-full  mt-[-4vw]">Ideas into pixel-</span>
-            <span className="w-full  mt-[-4vw]">perfect realities</span>
+            <span className="w-full  mt-[-3vw]">turning Your</span>
+            <span className="w-full  mt-[-3vw]">Ideas into pixel-</span>
+            <span className="w-full  mt-[-3vw]">perfect realities</span>
           </section>
         </div>
         <section className="h-[25%] w-full flex flex-row justify-between mt-[10vw] py-[2vw]">
@@ -80,18 +80,21 @@ function page() {
           <Banner />
           <div className="">
             <div className="">
-              <h1 className=" text-white text-[9vw] p-[1vw]">
+              <h1 className=" text-white text-[9vw] px-[2vw]">
                 I blend creativity with technical expertise
               </h1>
             </div>
-            <div className="bg-black">
+            <div className="bg-black px-[2vw]">
               <GreenButton text="Become a client" />
             </div>
           </div>
           <div className="flex flex-col py-[2vw]">
             <div
               className="flex flex-row h-[30vw]"
-              style={{ borderTop: "0.5px solid rgba(255, 255, 255, 0.5)" }}
+              style={{
+                borderTop: "0.5px solid rgba(255, 255, 255, 0.5)",
+                borderBottom: "0.5px solid rgba(255, 255, 255, 0.5)",
+              }}
             >
               <div className="w-1/2 flex flex-col text-white bg-red-70 p-[2vw]">
                 <span className="text-[2.5vw]">
@@ -116,7 +119,13 @@ function page() {
                 />
               </div>
             </div>
-            <div className="flex flex-row h-[30vw]">
+            <div
+              className="flex flex-row h-[30vw]"
+              style={{
+                borderTop: "0.5px solid rgba(255, 255, 255, 0.5)",
+                borderBottom: "0.5px solid rgba(255, 255, 255, 0.5)",
+              }}
+            >
               <div className="w-1/2 flex flex-col text-white bg-red-70 p-[2vw]">
                 <span className="text-[2.5vw]">
                   Project Heading - 02/02/2024
@@ -140,7 +149,12 @@ function page() {
                 />
               </div>
             </div>
-            <div className="flex flex-row h-[30vw]">
+            <div
+              className="flex flex-row h-[30vw]"
+              style={{
+                borderTop: "0.5px solid rgba(255, 255, 255, 0.5)",
+              }}
+            >
               <div className="w-1/2 flex flex-col text-white bg-red-70 p-[2vw]">
                 <span className="text-[2.5vw]">
                   Project Heading - 02/02/2024
@@ -169,7 +183,7 @@ function page() {
           <Banner />
           <div className=" bg-black h-[100vh]">
             <div className="head">
-              <h1 className=" text-[5vw] text-white p-[1vw]"> How it works</h1>
+              <h1 className=" text-[5vw] text-white px-[2vw]"> How it works</h1>
             </div>
             <div className="content flex flex-row justify-around p-[1vw]">
               <div className="tag">
@@ -281,9 +295,9 @@ function page() {
           <div className=" bg-[#F8F8F8]">
             <div className=" w-full h-[4vw] text-black opacity-50 p-[1vw] font-semibold text-[1.5vw]">
               {" "}
-              {"{06}"} — Contact me
+              {"{00}"} — Contact me
             </div>
-            <div className=" text-[7vw] p-[1vw]">
+            <div className=" text-[7vw] px-[2vw]">
               <h1>I’m all over the internet</h1>
             </div>
             <div className=" p-[2vw]">

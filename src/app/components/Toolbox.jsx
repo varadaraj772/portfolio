@@ -40,7 +40,7 @@ function Toolbox() {
 
   return (
     <div ref={containerRef} className="bg-[#F8F8F8] flex flex-row h-[100vh] overflow-y-hidden relative">
-      <div className=" w-1/2 p-[1vw]">
+      <div className=" w-1/2 px-[2vw]">
         <h2 className=" text-[8vw]">My Creative Toolbox</h2>
       </div>
       <div className=" w-1/2 flex flex-col justify-around items-center p-[1vw]">
