@@ -6,6 +6,9 @@ import { FiInstagram } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
 import { PiAsterisk } from "react-icons/pi";
 import GreenButton from "./components/GreenButton";
+import { FaFigma } from "react-icons/fa";
+import { BsArrowReturnRight } from "react-icons/bs";
+import Banner from "./components/Banner";
 
 function page() {
   return (
@@ -70,21 +73,7 @@ function page() {
           </div>
         </section>
         <section className="bg-black w-full mt-[2vw]">
-          <div className="banner bg-[#1C1C1C] h-[10vh] w-full flex flex-row justify-between items-center text-[3vw] px-[2vw]">
-            <div className="flex flex-row gap-[1vw]">
-              {" "}
-              <span className=" text-[#8CFF2E]">8+</span>
-              <span className="text-white">years of experience</span>
-            </div>
-            <span className=" text-[#8CFF2E]">
-              <PiAsterisk />
-            </span>
-            <div className="flex flex-row text-[3vw] gap-[1vw]">
-              {" "}
-              <span className=" text-[#8CFF2E]">{">95%"}</span>
-              <span className="text-white">Client retention rate</span>
-            </div>
-          </div>
+          <Banner />
           <div className="">
             <div className="">
               <h1 className=" text-white text-[9vw] p-[1vw]">
@@ -175,41 +164,215 @@ function page() {
               <div className=" bg-white h-1/4 w-1/2 rounded-[1vw] flex flex-row justify-center items-center gap-[2vw]">
                 <img src="/react.png" alt="React" className=" h-1/2" />
                 <div>
-                <h2 className="w-full text-center text-[3vw] font-bold">React.Js</h2>
-                <h3 className="w-full text-center text-[1.5vw] opacity-50">Javascript Library</h3>
+                  <h2 className="w-full text-center text-[3vw] font-bold">
+                    React.Js
+                  </h2>
+                  <h3 className="w-full text-center text-[1.5vw] opacity-50">
+                    Javascript Library
+                  </h3>
                 </div>
               </div>
               <div className=" bg-white h-1/4 w-1/2 rounded-[1vw] flex flex-row justify-center items-center gap-[2vw]">
                 <img src="/react.png" alt="React" className=" h-1/2" />
                 <div>
-                <h2 className="w-full text-center text-[3vw] font-bold">React.Js</h2>
-                <h3 className="w-full text-center text-[1.5vw] opacity-50">Javascript Library</h3>
+                  <h2 className="w-full text-center text-[3vw] font-bold">
+                    React.Js
+                  </h2>
+                  <h3 className="w-full text-center text-[1.5vw] opacity-50">
+                    Javascript Library
+                  </h3>
                 </div>
               </div>
               <div className=" bg-white h-1/4 w-1/2 rounded-[1vw] flex flex-row justify-center items-center gap-[2vw]">
                 <img src="/react.png" alt="React" className=" h-1/2" />
                 <div>
-                <h2 className="w-full text-center text-[3vw] font-bold">React.Js</h2>
-                <h3 className="w-full text-center text-[1.5vw] opacity-50">Javascript Library</h3>
+                  <h2 className="w-full text-center text-[3vw] font-bold">
+                    React.Js
+                  </h2>
+                  <h3 className="w-full text-center text-[1.5vw] opacity-50">
+                    Javascript Library
+                  </h3>
                 </div>
               </div>
             </div>
           </div>
-          <div className="banner bg-[#1C1C1C] h-[10vh] w-full flex flex-row justify-between items-center text-[3vw] px-[2vw]">
-            <div className="flex flex-row gap-[1vw]">
-              {" "}
-              <span className=" text-[#8CFF2E]">8+</span>
-              <span className="text-white">years of experience</span>
+          <Banner />
+          <div className=" bg-black h-[100vh]">
+            <div className="head">
+              <h1 className=" text-[5vw] text-white p-[1vw]"> How it works</h1>
             </div>
-            <span className=" text-[#8CFF2E]">
-              <PiAsterisk />
-            </span>
-            <div className="flex flex-row text-[3vw] gap-[1vw]">
-              {" "}
-              <span className=" text-[#8CFF2E]">{">95%"}</span>
-              <span className="text-white">Client retention rate</span>
+            <div className="content flex flex-row justify-around p-[1vw]">
+              <div className="tag">
+                <span className=" bg-transparent py-[0.1vw] px-[1vw] rounded-[4vw] border-[#2F2F2F] border text-[1.5vw] text-white">
+                  Discovery
+                </span>
+              </div>
+              <div className="number text-[1.5vw]">
+                <span className=" text-[#8CFF2E]">/</span>
+                <span className=" text-white">01</span>
+              </div>
+              <div className="body flex flex-col text-white">
+                <h2>We'll dive deep into your goals and vision</h2>
+                <ul className="list-none space-y-2">
+                  <li className=" flex flex-row">
+                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                    Initial Consultation: Understand the client’s vision, goals,
+                    and target audience.
+                  </li>
+                  <li className=" flex flex-row">
+                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                    Research: Analyze competitors and industry trends to gather
+                    insights.
+                  </li>
+                  <li className=" flex flex-row">
+                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                    Define Scope: Set the project’s objectives, deliverables,
+                    and timelines.
+                  </li>
+                </ul>
+              </div>
+              <div className="days text-[#2F2F2F]">03/05 Days</div>
+            </div>
+            <div className="content flex flex-row justify-around p-[1vw]">
+              <div className="tag">
+                <span className=" bg-transparent py-[0.1vw] px-[1vw] rounded-[4vw] border-[#2F2F2F] border text-[1.5vw] text-white">
+                  Design
+                </span>
+              </div>
+              <div className="number text-[1.5vw]">
+                <span className=" text-[#8CFF2E]">/</span>
+                <span className=" text-white">02</span>
+              </div>
+              <div className="body flex flex-col text-white">
+                <h2>I'll create mockups that bring your brand to life</h2>
+                <ul className="list-none space-y-2">
+                  <li className=" flex flex-row">
+                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                    Wireframing: Create low-fidelity wireframes to map out the
+                    site’s structure.
+                  </li>
+                  <li className=" flex flex-row">
+                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                    Style Guide Creation: Develop a design language including
+                    colors, fonts, and UI e
+                  </li>
+                  <li className=" flex flex-row">
+                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                    Prototype Development: Build clickable prototypes for client
+                    feedback.
+                  </li>
+                  <li className=" flex flex-row">
+                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                    Finalize Design: Approve the final design with detailed
+                    mockups for all pages.
+                  </li>
+                </ul>
+              </div>
+              <div className="days text-[#2F2F2F]">01/02 Weeks</div>
+            </div>
+            <div className="content flex flex-row justify-around p-[1vw]">
+              <div className="tag">
+                <span className=" bg-transparent py-[0.1vw] px-[1vw] rounded-[4vw] border-[#2F2F2F] border text-[1.5vw] text-white">
+                  Design
+                </span>
+              </div>
+              <div className="number text-[1.5vw]">
+                <span className=" text-[#8CFF2E]">/</span>
+                <span className=" text-white">03</span>
+              </div>
+              <div className="body flex flex-col text-white">
+                <h2>I'll create mockups that bring your brand to life</h2>
+                <ul className="list-none space-y-2">
+                  <li className=" flex flex-row">
+                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                    Wireframing: Create low-fidelity wireframes to map out the
+                    site’s structure.
+                  </li>
+                  <li className=" flex flex-row">
+                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                    Style Guide Creation: Develop a design language including
+                    colors, fonts, and UI e
+                  </li>
+                  <li className=" flex flex-row">
+                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                    Prototype Development: Build clickable prototypes for client
+                    feedback.
+                  </li>
+                  <li className=" flex flex-row">
+                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                    Finalize Design: Approve the final design with detailed
+                    mockups for all pages.
+                  </li>
+                </ul>
+              </div>
+              <div className="days text-[#2F2F2F]">01/02 Weeks</div>
             </div>
           </div>
+          <div className=" bg-gray-200">
+            <div className=" w-full h-[4vw] text-black opacity-50 p-[1vw] font-semibold text-[1.5vw]">
+              {" "}
+              {"{06}"} — Contact me
+            </div>
+            <div className=" text-[7vw] p-[1vw]">
+              <h1>I’m all over the internet</h1>
+            </div>
+            <div className=" p-[2vw]">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-[2vw]">
+                {/* Figma Box */}
+                <div className=" rounded-[0.9vw] bg-white text-[3vw] h-[15vw] shadow-md cursor-pointer">
+                  <div className=" w-full p-[2vw]">
+                    <p className="">Figma</p>
+                  </div>
+                  <div className=" w-full flex items-center justify-end px-[2vw]">
+                    <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
+                      <FaFigma />
+                    </div>
+                  </div>
+                </div>
+                <div className=" rounded-[0.9vw] bg-white text-[3vw] h-[15vw] shadow-md cursor-pointer">
+                  <div className=" w-full p-[2vw]">
+                    <p className="">Instagram</p>
+                  </div>
+                  <div className=" w-full flex items-center justify-end px-[2vw]">
+                    <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
+                      <FiInstagram />
+                    </div>
+                  </div>
+                </div>
+                <div className=" rounded-[0.9vw] bg-white text-[3vw] h-[15vw] shadow-md cursor-pointer">
+                  <div className=" w-full p-[2vw]">
+                    <p className="">Twitter</p>
+                  </div>
+                  <div className=" w-full flex items-center justify-end px-[2vw]">
+                    <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
+                      <FaXTwitter />
+                    </div>
+                  </div>
+                </div>
+                <div className=" rounded-[0.9vw] bg-white text-[3vw] h-[15vw] shadow-md cursor-pointer">
+                  <div className=" w-full p-[2vw]">
+                    <p className="">Linkedin</p>
+                  </div>
+                  <div className=" w-full flex items-center justify-end px-[2vw]">
+                    <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
+                      <FaLinkedin />
+                    </div>
+                  </div>
+                </div>
+                <div className=" rounded-[0.9vw] bg-[#8CFF2E] text-[3vw] h-[15vw] shadow-md cursor-pointer">
+                  <div className=" w-full  p-[2vw]">
+                    <p className="">Get in touch</p>
+                  </div>
+                  <div className=" w-full  flex items-center justify-end px-[3vw]">
+                    <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
+                      <BsArrowReturnRight />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <Banner />
         </section>
       </main>
     </>
