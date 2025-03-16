@@ -15,7 +15,7 @@ function page() {
       <Navbar />
       <main className="w-screen flex flex-col justify-center items-center bg-[url(/background.png)] relative top-[-10vh]">
         <div className="flex flex-row w-full justify-center items-center">
-          <section className="h-full w-[30%] flex justify-center items-start relative top-[10vh]">
+          <section className="h-full w-[40%] flex justify-center items-start relative top-[10vh]">
             <div className=" text-black h-[40%] flex items-end p-[2vw]  w-full">
               <div className="w-full flex flex-row justify-around mt-[2vw] ">
                 <div className="flex justify-center items-center  h-[10vw] rounded-full w-[10vw]">
@@ -38,22 +38,22 @@ function page() {
               </div>
             </div>
           </section>
-          <section className=" h-full w-[70%] flex flex-col items-start justify-between text-[7vw] mt-[-2vw] py-[2vw] relative top-[10vh]">
+          <section className=" h-full w-[70%] flex flex-col items-start justify-between text-[6.5vw] mt-[-2vw] py-[2vw] relative top-[10vh]">
             <span className="w-full flex items-center gap-[2vw]">
               Hi! I'm{" "}
-              <span className=" bg-white py-[0.5vw] px-[0.8vw] rounded-[4vw] text-[4vw]">
+              <span className=" bg-white py-[0.5vw] px-[0.8vw] rounded-[4vw] text-[3vw]">
                 Sanith Suvarna
               </span>
             </span>
             <span className="w-full mt-[-4vw] gap-[2vw]">
               a{" "}
-              <span className=" bg-[#2F2F2F] py-[0.5vw] px-[0.8vw] rounded-[4vw] text-white text-[4vw]">
+              <span className=" bg-[#2F2F2F] py-[0.5vw] px-[0.8vw] rounded-[4vw] text-white text-[3vw]">
                 UX/UI Designer
               </span>
             </span>
             <span className="w-full mt-[-2vw] flex items-center gap-[2vw]">
               from{" "}
-              <span className=" bg-transparent py-[0.1vw] px-[2vw] rounded-[4vw] text-[#2F2F2F] border-[#2F2F2F] border text-[4vw]">
+              <span className=" bg-transparent py-[0.1vw] px-[2vw] rounded-[4vw] text-[#2F2F2F] border-[#2F2F2F] border text-[3vw]">
                 Mangalore
               </span>
             </span>
@@ -180,8 +180,11 @@ function page() {
             </div>
           </div>
           <Toolbox />
-          <Banner />
-          <div className=" bg-black h-[100vh]">
+          <div className="relative top-[-50vh]">
+            <Banner />
+          </div>
+
+          <div className=" bg-black relative top-[-50vh]">
             <div className="head">
               <h1 className=" text-[5vw] text-white px-[2vw]"> How it works</h1>
             </div>
@@ -290,6 +293,36 @@ function page() {
                 </ul>
               </div>
               <div className="days text-[#2F2F2F]">01/02 Weeks</div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 mt-[5vw] justify-items-center font-semibold">
+              {/* Figma Box */}
+              <div className=" rounded-[0.9vw] bg-[#8CFF2E] text-black h-[19.5vw] shadow-md cursor-pointer group w-[25vw]">
+                <div className=" w-full p-[2vw]">
+                  <p className=" text-[5.4vw] ">95+</p>
+                </div>
+                <div className=" w-full flex flex-col items-end justify-end px-[2vw]">
+                  <span className=" text-[1.2vw]">Percent</span>
+                  <span className=" text-[1.7vw] opacity-50">Customer Satisfaction</span>
+                </div>
+              </div>
+              <div className=" rounded-[0.9vw] bg-[#242424] text-white h-[19.5vw] shadow-md cursor-pointer group w-[25vw]">
+                <div className=" w-full p-[2vw]">
+                  <p className=" text-[5.4vw]">95+</p>
+                </div>
+                <div className=" w-full flex flex-col items-end justify-end px-[2vw]">
+                  <span className=" text-[1.2vw]">Percent</span>
+                  <span className=" text-[1.7vw]">Customer Satisfaction</span>
+                </div>
+              </div>
+              <div className=" rounded-[0.9vw] bg-white h-[19.5vw] shadow-md cursor-pointer group w-[25vw]">
+                <div className=" w-full p-[2vw]">
+                  <p className=" text-[5.4vw]">95+</p>
+                </div>
+                <div className=" w-full flex flex-col items-end justify-end px-[2vw]">
+                  <span className=" text-[1.2vw]">Percent</span>
+                  <span className=" text-[1.7vw]">Customer Satisfaction</span>
+                </div>
+              </div>
             </div>
           </div>
           <div className=" bg-[#F8F8F8]">
