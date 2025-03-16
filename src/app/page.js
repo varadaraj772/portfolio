@@ -33,25 +33,24 @@ function page() {
         </nav>
         <div className="flex flex-row w-full justify-between items-center px-[2vw]">
           <section className="h-full w-[40%] flex">
-              <div className="w-full flex flex-row gap-[3vw]">
-                <div className="flex justify-center items-center  h-[10vw] rounded-full w-[10vw]">
-                  <img
-                    src="/sanith.jpeg"
-                    alt="Image of the developer"
-                    className="w-full h-full object-cover rounded-full"
-                  />
+            <div className="w-full flex flex-row gap-[3vw]">
+              <div className="flex justify-center items-center  h-[10vw] rounded-full w-[10vw]">
+                <img
+                  src="/sanith.jpeg"
+                  alt="Image of the developer"
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </div>
+              <div className=" h-[10vw] flex flex-col items-start justify-center text-[1vw] font-bold">
+                <h1 className="text-[2vw]">Sanith Suvarna</h1>
+                <h2 className="opacity-50 text-[1vw] text-left">
+                  UX/UI Designer
+                </h2>
+                <div className=" flex flex-row mt-[1vw] text-[1.5vw] gap-[1vw] opacity-50">
+                  <FaBehance className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                  <FaLinkedin className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
                 </div>
-                <div className=" h-[10vw] flex flex-col items-start justify-center text-[1vw] font-bold">
-                  <h1 className="text-[2vw]">Sanith Suvarna</h1>
-                  <h2 className="opacity-50 text-[1vw] text-left">
-                    UX/UI Designer
-                  </h2>
-                  <div className=" flex flex-row mt-[1vw] text-[1.5vw] gap-[1vw] opacity-50">
-                    <FaBehance className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
-                    <FaLinkedin className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
-                  </div>
-                </div>
- 
+              </div>
             </div>
           </section>
           <section className=" h-full w-[50%] flex flex-col justify-between text-[6.5vw] mt-[6.5vw]">
@@ -109,19 +108,21 @@ function page() {
                 borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
               }}
             >
-              <div className="w-1/2 flex flex-col text-white px-[1.5vw]"
-              style={{
-                borderRight: "1px solid rgba(255, 255, 255, 0.1)",
-              }}>
-              <div className=" flex flex-col h-[30%] justify-center gap-[0.5vw]">
-              <span className="text-[1.2vw] text-[#8CFF2E]">
+              <div
+                className="w-1/2 flex flex-col text-white px-[1.5vw]"
+                style={{
+                  borderRight: "1px solid rgba(255, 255, 255, 0.1)",
+                }}
+              >
+                <div className=" flex flex-col h-[30%] justify-center gap-[0.5vw]">
+                  {/* <span className="text-[1.2vw] text-[#8CFF2E]">
                {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
-                </span>
-              <span className="text-[2vw]">
-                SilverLinex Technologies
-                </span>
-                <span className="opacity-50">Web design & Developement</span>{" "}
-              </div>
+                </span> */}
+                  <span className="text-[2vw]">SilverLinex Technologies</span>
+                  <span className="opacity-50">
+                    Web design & Developement
+                  </span>{" "}
+                </div>
                 <img
                   src="/img1.jpg"
                   alt="Project Image: Nexus"
@@ -129,15 +130,15 @@ function page() {
                 />
               </div>
               <div className="w-1/2 flex flex-col text-white px-[1.5vw] translate-x-[3.5vw] ">
-              <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
-              <span className="text-[1.2vw] text-[#8CFF2E]">
+                <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
+                  {/* <span className="text-[1.2vw] text-[#8CFF2E]">
                {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
-                </span>
-              <span className="text-[2vw]">
-                SilverLinex Technologies
-                </span>
-                <span className="opacity-50">Web design & Developement</span>{" "}
-              </div>
+                </span> */}
+                  <span className="text-[2vw]">SilverLinex Technologies</span>
+                  <span className="opacity-50">
+                    Web design & Developement
+                  </span>{" "}
+                </div>
                 <img
                   src="/img1.jpg"
                   alt="Project Image: Nexus"
@@ -152,19 +153,21 @@ function page() {
                 borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
               }}
             >
-              <div className="w-1/2 flex flex-col text-white px-[1.5vw] "
-              style={{
-                borderRight: "1px solid rgba(255, 255, 255, 0.1)",
-              }}>
-              <div className=" flex flex-col h-[30%] justify-center gap-[0.5vw]">
-              <span className="text-[1.2vw] text-[#8CFF2E]">
+              <div
+                className="w-1/2 flex flex-col text-white px-[1.5vw] "
+                style={{
+                  borderRight: "1px solid rgba(255, 255, 255, 0.1)",
+                }}
+              >
+                <div className=" flex flex-col h-[30%] justify-center gap-[0.5vw]">
+                  {/* <span className="text-[1.2vw] text-[#8CFF2E]">
                {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
-                </span>
-              <span className="text-[2vw]">
-                SilverLinex Technologies
-                </span>
-                <span className="opacity-50">Web design & Developement</span>{" "}
-              </div>
+                </span> */}
+                  <span className="text-[2vw]">SilverLinex Technologies</span>
+                  <span className="opacity-50">
+                    Web design & Developement
+                  </span>{" "}
+                </div>
                 <img
                   src="/img1.jpg"
                   alt="Project Image: Nexus"
@@ -172,15 +175,15 @@ function page() {
                 />
               </div>
               <div className="w-1/2 flex flex-col text-white px-[1.5vw] translate-x-[3.5vw] ">
-              <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
-              <span className="text-[1.2vw] text-[#8CFF2E]">
+                <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
+                  {/* <span className="text-[1.2vw] text-[#8CFF2E]">
                {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
-                </span>
-              <span className="text-[2vw]">
-                SilverLinex Technologies
-                </span>
-                <span className="opacity-50">Web design & Developement</span>{" "}
-              </div>
+                </span> */}
+                  <span className="text-[2vw]">SilverLinex Technologies</span>
+                  <span className="opacity-50">
+                    Web design & Developement
+                  </span>{" "}
+                </div>
                 <img
                   src="/img1.jpg"
                   alt="Project Image: Nexus"
@@ -194,19 +197,21 @@ function page() {
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
             >
-              <div className="w-1/2 flex flex-col text-white px-[1.5vw] "
-              style={{
-                borderRight: "1px solid rgba(255, 255, 255, 0.1)",
-              }}>
-              <div className=" flex flex-col h-[30%] justify-center gap-[0.5vw]">
-              <span className="text-[1.2vw] text-[#8CFF2E]">
+              <div
+                className="w-1/2 flex flex-col text-white px-[1.5vw] "
+                style={{
+                  borderRight: "1px solid rgba(255, 255, 255, 0.1)",
+                }}
+              >
+                <div className=" flex flex-col h-[30%] justify-center gap-[0.5vw]">
+                  {/* <span className="text-[1.2vw] text-[#8CFF2E]">
                {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
-                </span>
-              <span className="text-[2vw]">
-                SilverLinex Technologies
-                </span>
-                <span className="opacity-50">Web design & Developement</span>{" "}
-              </div>
+                </span> */}
+                  <span className="text-[2vw]">SilverLinex Technologies</span>
+                  <span className="opacity-50">
+                    Web design & Developement
+                  </span>{" "}
+                </div>
                 <img
                   src="/img1.jpg"
                   alt="Project Image: Nexus"
@@ -214,15 +219,15 @@ function page() {
                 />
               </div>
               <div className="w-1/2 flex flex-col text-white px-[1.5vw] translate-x-[3.5vw] ">
-              <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
-              <span className="text-[1.2vw] text-[#8CFF2E]">
+                <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
+                  {/* <span className="text-[1.2vw] text-[#8CFF2E]">
                {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
-                </span>
-              <span className="text-[2vw]">
-                SilverLinex Technologies
-                </span>
-                <span className="opacity-50">Web design & Developement</span>{" "}
-              </div>
+                </span> */}
+                  <span className="text-[2vw]">SilverLinex Technologies</span>
+                  <span className="opacity-50">
+                    Web design & Developement
+                  </span>{" "}
+                </div>
                 <img
                   src="/img1.jpg"
                   alt="Project Image: Nexus"
@@ -245,13 +250,13 @@ function page() {
             </div>
 
             <div
-              className="content flex flex-row px-[2.5vw] py-[3vw] w-full h-[22vw] justify-center items-center"
+              className="content flex flex-row px-[2.5vw] py-[3vw] w-full h-[33vw] justify-center items-center"
               style={{
                 borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
             >
-              <div className="tag h-full w-[15vw] p-[0.2vw]">
+              <div className="tag h-full w-[15vw] pt-[1vw]">
                 <span className=" bg-transparent py-[0.7vw] px-[1.4vw] rounded-[4vw] border-[#2F2F2F] border text-white">
                   Discovery
                 </span>
@@ -285,11 +290,29 @@ function page() {
                     Finalize Design: Approve the final design with detailed
                     mockups for all pages.
                   </li>
+                  <li className=" flex flex-row">
+                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                    Finalize Design: Approve the final design with detailed
+                    mockups for all pages.
+                  </li>
+                  <li className=" flex flex-row">
+                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                    Finalize Design: Approve the final design with detailed
+                    mockups for all pages.
+                  </li>
+                  <li className=" flex flex-row">
+                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                    Finalize Design: Approve the final design with detailed
+                    mockups for all pages.
+                  </li>
+                  <li className=" flex flex-row">
+                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                    Finalize Design: Approve the final design with detailed
+                    mockups for all pages.
+                  </li>
                 </ul>
               </div>
-              <div className="days text-[#2F2F2F] h-full w-[15vw]">
-                
-              </div>
+              <div className="days text-[#2F2F2F] h-full w-[15vw]"></div>
             </div>
             <div
               className="content flex flex-row px-[2.5vw] py-[3vw] w-full h-[22vw] justify-center items-center"
@@ -298,7 +321,7 @@ function page() {
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
             >
-              <div className="tag h-full w-[15vw]  p-[0.2vw]">
+              <div className="tag h-full w-[15vw]  pt-[1vw]">
                 <span className=" bg-transparent py-[0.7vw] px-[1.4vw] rounded-[4vw] border-[#2F2F2F] border text-white">
                   Design
                 </span>
@@ -334,18 +357,15 @@ function page() {
                   </li>
                 </ul>
               </div>
-              <div className="days text-[#2F2F2F] h-full w-[15vw]">
-                
-              </div>
+              <div className="days text-[#2F2F2F] h-full w-[15vw]"></div>
             </div>
             <div
-              className="content flex flex-row px-[2.5vw] py-[3vw] w-full h-[22vw] justify-center items-center"
+              className="content flex flex-row px-[2.5vw] py-[3vw] w-full h-[20vw] justify-center items-center"
               style={{
-              
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
             >
-              <div className="tag h-full w-[15vw]  p-[0.2vw]">
+              <div className="tag h-full w-[15vw]  pt-[1vw]">
                 <span className=" bg-transparent py-[0.7vw] px-[1.4vw] rounded-[4vw] border-[#2F2F2F] border text-white">
                   Build
                 </span>
@@ -374,24 +394,15 @@ function page() {
                     Prototype Development: Build clickable prototypes for client
                     feedback.
                   </li>
-                  <li className=" flex flex-row">
-                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Finalize Design: Approve the final design with detailed
-                    mockups for all pages.
-                  </li>
                 </ul>
               </div>
-              <div className="days text-[#2F2F2F] h-full w-[15vw]">
-                
-              </div>
+              <div className="days text-[#2F2F2F] h-full w-[15vw]"></div>
             </div>
-
-
-            <div className="grid grid-cols-1 md:grid-cols-3 mt-[5vw] justify-items-center font-semibold">
+            <div className="grid grid-cols-1 md:grid-cols-3 mt-[5vw] gap-[2vw] px-[2.5vw] font-semibold">
               {/* Figma Box */}
-              <div className=" rounded-[0.9vw] bg-[#8CFF2E] text-black h-[19.5vw] shadow-md cursor-pointer group w-[25vw]">
-                <div className=" w-full p-[2vw]">
-                  <p className=" text-[5.4vw] ">95+</p>
+              <div className=" rounded-[0.9vw] bg-[#8CFF2E] text-black h-[15vw] shadow-md cursor-pointer group hover:px-[1vw]  transition-all duration-500">
+                <div className=" w-full p-[1vw]">
+                  <p className=" text-[5vw] ">95+</p>
                 </div>
                 <div className=" w-full flex flex-col items-end justify-end px-[2vw]">
                   <span className=" text-[1.2vw]">Percent</span>
@@ -400,9 +411,9 @@ function page() {
                   </span>
                 </div>
               </div>
-              <div className=" rounded-[0.9vw] bg-[#242424] text-white h-[19.5vw] shadow-md cursor-pointer group w-[25vw]">
-                <div className=" w-full p-[2vw]">
-                  <p className=" text-[5.4vw]">95+</p>
+              <div className=" rounded-[0.9vw] bg-[#242424] text-white h-[15vw] shadow-md cursor-pointer group hover:px-[1vw]  transition-all duration-500">
+                <div className=" w-full p-[1vw]">
+                  <p className=" text-[5vw]">95+</p>
                 </div>
                 <div className=" w-full flex flex-col items-end justify-end px-[2vw]">
                   <span className=" text-[1.2vw]">Percent</span>
@@ -411,9 +422,9 @@ function page() {
                   </span>
                 </div>
               </div>
-              <div className=" rounded-[0.9vw] bg-white h-[19.5vw] shadow-md cursor-pointer group w-[25vw]">
-                <div className=" w-full p-[2vw]">
-                  <p className=" text-[5.4vw]">95+</p>
+              <div className=" rounded-[0.9vw] bg-white h-[15vw] shadow-md cursor-pointer group hover:px-[1vw]  transition-all duration-500">
+                <div className=" w-full p-[1vw]">
+                  <p className=" text-[5vw]">95+</p>
                 </div>
                 <div className=" w-full flex flex-col items-end justify-end px-[2vw]">
                   <span className=" text-[1.2vw]">Percent</span>
@@ -429,7 +440,7 @@ function page() {
               {" "}
               {"{00}"} — Contact me
             </div>
-            <div className=" text-[7vw]">
+            <div className=" text-[6.5vw]">
               <h1>I’m all over the internet</h1>
             </div>
             <div className=" py-[2vw]">
