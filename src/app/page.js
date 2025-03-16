@@ -184,56 +184,33 @@ function page() {
             <Banner />
           </div>
 
-          <div className=" bg-black relative top-[-50vh]">
+          <div className=" relative top-[-50vh]">
             <div className="head">
-              <h1 className=" text-[5vw] text-white px-[2vw]"> How it works</h1>
+              <h1 className=" text-[6.5vw] text-white px-[2vw]">
+                {" "}
+                How it works
+              </h1>
             </div>
-            <div className="content flex flex-row justify-around p-[1vw]">
-              <div className="tag">
+
+            <div
+              className="content flex flex-row px-[2vw] py-[1vw] w-full h-[17vw] justify-center items-center"
+              style={{ borderBottom: "0.5px solid rgba(255, 255, 255, 0.5)", borderTop: "0.5px solid rgba(255, 255, 255, 0.5)" }}
+            >
+              <div className="tag h-full w-[15vw]  p-[0.2vw]">
                 <span className=" bg-transparent py-[0.1vw] px-[1vw] rounded-[4vw] border-[#2F2F2F] border text-[1.5vw] text-white">
-                  Discovery
+                  Discover
                 </span>
               </div>
-              <div className="number text-[1.5vw]">
-                <span className=" text-[#8CFF2E]">/</span>
-                <span className=" text-white">01</span>
-              </div>
-              <div className="body flex flex-col text-white">
-                <h2>We'll dive deep into your goals and vision</h2>
-                <ul className="list-none space-y-2">
-                  <li className=" flex flex-row">
-                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Initial Consultation: Understand the client’s vision, goals,
-                    and target audience.
-                  </li>
-                  <li className=" flex flex-row">
-                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Research: Analyze competitors and industry trends to gather
-                    insights.
-                  </li>
-                  <li className=" flex flex-row">
-                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Define Scope: Set the project’s objectives, deliverables,
-                    and timelines.
-                  </li>
-                </ul>
-              </div>
-              <div className="days text-[#2F2F2F]">03/05 Days</div>
-            </div>
-            <div className="content flex flex-row justify-around p-[1vw]">
-              <div className="tag">
-                <span className=" bg-transparent py-[0.1vw] px-[1vw] rounded-[4vw] border-[#2F2F2F] border text-[1.5vw] text-white">
-                  Design
-                </span>
-              </div>
-              <div className="number text-[1.5vw]">
+              <div className="number text-[2.5vw] h-full w-[15vw]">
                 <span className=" text-[#8CFF2E]">/</span>
                 <span className=" text-white">02</span>
               </div>
-              <div className="body flex flex-col text-white">
-                <h2>I'll create mockups that bring your brand to life</h2>
-                <ul className="list-none space-y-2">
-                  <li className=" flex flex-row">
+              <div className="body flex flex-col text-white h-full w-[55vw] b">
+                <h2 className=" text-[1.8vw]">
+                  I'll create mockups that bring your brand to life
+                </h2>
+                <ul className="list-none mt-[1.8vw] space-y-[1vw]">
+                  <li className=" flex flex-row ">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
                     Wireframing: Create low-fidelity wireframes to map out the
                     site’s structure.
@@ -255,22 +232,29 @@ function page() {
                   </li>
                 </ul>
               </div>
-              <div className="days text-[#2F2F2F]">01/02 Weeks</div>
+              <div className="days text-[#2F2F2F] h-full w-[15vw]">
+                01/02 Weeks
+              </div>
             </div>
-            <div className="content flex flex-row justify-around p-[1vw]">
-              <div className="tag">
+            <div
+              className="content flex flex-row px-[2vw] py-[1vw] w-full h-[17vw] justify-center items-center"
+              style={{ borderBottom: "0.5px solid rgba(255, 255, 255, 0.5)", borderTop: "0.5px solid rgba(255, 255, 255, 0.5)" }}
+            >
+              <div className="tag h-full w-[15vw]  p-[0.2vw]">
                 <span className=" bg-transparent py-[0.1vw] px-[1vw] rounded-[4vw] border-[#2F2F2F] border text-[1.5vw] text-white">
                   Design
                 </span>
               </div>
-              <div className="number text-[1.5vw]">
+              <div className="number text-[2.5vw] h-full w-[15vw]">
                 <span className=" text-[#8CFF2E]">/</span>
-                <span className=" text-white">03</span>
+                <span className=" text-white">02</span>
               </div>
-              <div className="body flex flex-col text-white">
-                <h2>I'll create mockups that bring your brand to life</h2>
-                <ul className="list-none space-y-2">
-                  <li className=" flex flex-row">
+              <div className="body flex flex-col text-white h-full w-[55vw] b">
+                <h2 className=" text-[1.8vw]">
+                  I'll create mockups that bring your brand to life
+                </h2>
+                <ul className="list-none mt-[1.8vw] space-y-[1vw]">
+                  <li className=" flex flex-row ">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
                     Wireframing: Create low-fidelity wireframes to map out the
                     site’s structure.
@@ -292,8 +276,55 @@ function page() {
                   </li>
                 </ul>
               </div>
-              <div className="days text-[#2F2F2F]">01/02 Weeks</div>
+              <div className="days text-[#2F2F2F] h-full w-[15vw]">
+                01/02 Weeks
+              </div>
             </div>
+            <div
+              className="content flex flex-row px-[2vw] py-[1vw] w-full h-[17vw] justify-center items-center"
+              style={{ borderBottom: "0.5px solid rgba(255, 255, 255, 0.5)", borderTop: "0.5px solid rgba(255, 255, 255, 0.5)" }}
+            >
+              <div className="tag h-full w-[15vw]  p-[0.2vw]">
+                <span className=" bg-transparent py-[0.1vw] px-[1vw] rounded-[4vw] border-[#2F2F2F] border text-[1.5vw] text-white">
+                  Design
+                </span>
+              </div>
+              <div className="number text-[2.5vw] h-full w-[15vw]">
+                <span className=" text-[#8CFF2E]">/</span>
+                <span className=" text-white">02</span>
+              </div>
+              <div className="body flex flex-col text-white h-full w-[55vw] b">
+                <h2 className=" text-[1.8vw]">
+                  I'll create mockups that bring your brand to life
+                </h2>
+                <ul className="list-none mt-[1.8vw] space-y-[1vw]">
+                  <li className=" flex flex-row ">
+                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                    Wireframing: Create low-fidelity wireframes to map out the
+                    site’s structure.
+                  </li>
+                  <li className=" flex flex-row">
+                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                    Style Guide Creation: Develop a design language including
+                    colors, fonts, and UI e
+                  </li>
+                  <li className=" flex flex-row">
+                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                    Prototype Development: Build clickable prototypes for client
+                    feedback.
+                  </li>
+                  <li className=" flex flex-row">
+                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                    Finalize Design: Approve the final design with detailed
+                    mockups for all pages.
+                  </li>
+                </ul>
+              </div>
+              <div className="days text-[#2F2F2F] h-full w-[15vw]">
+                01/02 Weeks
+              </div>
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-3 mt-[5vw] justify-items-center font-semibold">
               {/* Figma Box */}
               <div className=" rounded-[0.9vw] bg-[#8CFF2E] text-black h-[19.5vw] shadow-md cursor-pointer group w-[25vw]">
@@ -302,7 +333,9 @@ function page() {
                 </div>
                 <div className=" w-full flex flex-col items-end justify-end px-[2vw]">
                   <span className=" text-[1.2vw]">Percent</span>
-                  <span className=" text-[1.7vw] opacity-50">Customer Satisfaction</span>
+                  <span className=" text-[1.7vw] opacity-50">
+                    Customer Satisfaction
+                  </span>
                 </div>
               </div>
               <div className=" rounded-[0.9vw] bg-[#242424] text-white h-[19.5vw] shadow-md cursor-pointer group w-[25vw]">
@@ -311,7 +344,9 @@ function page() {
                 </div>
                 <div className=" w-full flex flex-col items-end justify-end px-[2vw]">
                   <span className=" text-[1.2vw]">Percent</span>
-                  <span className=" text-[1.7vw]">Customer Satisfaction</span>
+                  <span className=" text-[1.7vw] opacity-50">
+                    Customer Satisfaction
+                  </span>
                 </div>
               </div>
               <div className=" rounded-[0.9vw] bg-white h-[19.5vw] shadow-md cursor-pointer group w-[25vw]">
@@ -320,7 +355,9 @@ function page() {
                 </div>
                 <div className=" w-full flex flex-col items-end justify-end px-[2vw]">
                   <span className=" text-[1.2vw]">Percent</span>
-                  <span className=" text-[1.7vw]">Customer Satisfaction</span>
+                  <span className=" text-[1.7vw] opacity-50">
+                    Customer Satisfaction
+                  </span>
                 </div>
               </div>
             </div>
