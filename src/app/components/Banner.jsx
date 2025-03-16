@@ -38,7 +38,7 @@ function Banner() {
   return (
     <div
       ref={containerRef}
-      className="banner bg-[#1C1C1C] h-[10vh] w-full flex items-center overflow-hidden relative"
+      className="banner bg-[#1C1C1C] h-[14vh] w-full flex items-center overflow-hidden relative"
     >
       <div
         ref={fadeLeftRef}
