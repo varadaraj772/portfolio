@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import { FiInstagram } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
 import { PiAsterisk } from "react-icons/pi";
 import GreenButton from "./components/GreenButton";
@@ -12,12 +10,30 @@ import Toolbox from "./components/Toolbox";
 function page() {
   return (
     <>
-      <Navbar />
-      <main className="w-screen flex flex-col justify-center items-center bg-[url(/background.png)] relative top-[-10vh]">
-        <div className="flex flex-row w-full justify-center items-center">
-          <section className="h-full w-[40%] flex justify-center items-start relative top-[10vh]">
-            <div className=" text-black h-[40%] flex items-end p-[2vw]  w-full">
-              <div className="w-full flex flex-row justify-around mt-[2vw] ">
+      <main className="w-screen flex flex-col justify-center items-center bg-[url(/background.png)]">
+        <nav
+          className=" w-full h-[13vh] flex flex-row justify-between items-center px-[7.1vw] bg-transparent z-50 relative font-semibold"
+          style={{
+            borderBottom: "1px solid rgba(0, 0, 0, 0.2)",
+          }}
+        >
+          <div className=" flex flex-row text-[1.3vw] p-[1vw] gap-[2vw]">
+            <h2>Projects</h2>
+            <h2>About & Contact</h2>
+          </div>
+          <div className="flex flex-row w-1/2 justify-end items-center p-[1vw] gap-[2vw]">
+            <div>
+              <span className=" opacity-50">Email :</span>
+              <span>sanith.s74@gmail.com</span>
+            </div>
+            <button className=" bg-[#8CFF2E] py-[1.1vw] px-[1.7vw] rounded-[2vw] text-black">
+              <a href="mailto:varadaraj277@gmail.com">Contact me</a>
+            </button>
+          </div>
+        </nav>
+        <div className="flex flex-row w-full justify-center items-center px-[2.5vw]">
+          <section className="h-full w-[40%] flex">
+              <div className="w-full flex flex-row gap-[3vw]">
                 <div className="flex justify-center items-center  h-[10vw] rounded-full w-[10vw]">
                   <img
                     src="/sanith.jpeg"
@@ -35,25 +51,25 @@ function page() {
                     <FaLinkedin className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
                   </div>
                 </div>
-              </div>
+ 
             </div>
           </section>
-          <section className=" h-full w-[70%] flex flex-col items-start justify-between text-[6.5vw] mt-[-2vw] py-[2vw] relative top-[10vh]">
+          <section className=" h-full w-[50%] flex flex-col justify-between text-[6.5vw] mt-[6.5vw]">
             <span className="w-full flex items-center gap-[2vw]">
               Hi! I'm{" "}
-              <span className=" bg-white py-[0.5vw] px-[0.8vw] rounded-[4vw] text-[3vw]">
+              <span className=" bg-white py-[1.4vw] px-[1.8vw] rounded-[4vw] text-[3vw] shadow-md">
                 Sanith Suvarna
               </span>
             </span>
-            <span className="w-full mt-[-4vw] gap-[2vw]">
+            <span className="w-full mt-[-3vw] gap-[2vw]">
               a{" "}
-              <span className=" bg-[#2F2F2F] py-[0.5vw] px-[0.8vw] rounded-[4vw] text-white text-[3vw]">
+              <span className=" bg-[#2F2F2F] py-[1.4vw] px-[1.8vw] rounded-[4vw] text-white text-[3vw] shadow-md">
                 UX/UI Designer
               </span>
             </span>
-            <span className="w-full mt-[-2vw] flex items-center gap-[2vw]">
+            <span className="w-full mt-[-0.5vw] flex items-center gap-[2vw]">
               from{" "}
-              <span className=" bg-transparent py-[0.1vw] px-[2vw] rounded-[4vw] text-[#2F2F2F] border-[#2F2F2F] border text-[3vw]">
+              <span className=" bg-transparent py-[1.4vw] px-[1.8vw] rounded-[4vw] text-[#2F2F2F] border-[#2F2F2F] border text-[3vw]">
                 Mangalore
               </span>
             </span>
@@ -62,9 +78,9 @@ function page() {
             <span className="w-full  mt-[-3vw]">perfect realities</span>
           </section>
         </div>
-        <section className="h-[25%] w-full flex flex-row justify-between mt-[10vw] py-[2vw]">
-          <span className="text-[2vw] w-[30%] px-[2vw]">(2018 - PRESENT)</span>
-          <div className="text-[2vw] text-gray-700 w-[70%] px-[2vw] flex flex-col">
+        <section className="h-[25%] w-full flex flex-row justify-between mt-[5vw] py-[2vw] mb-[6vw]">
+          <span className="text-[2vw] w-[45%] px-[2vw]">(2018 - PRESENT)</span>
+          <div className="text-[2vw] text-gray-700 w-[55%] flex flex-col  px-[1vw]">
             <span className="mb-[2vw]">
               I’m dedicated to crafting websites that bring your ideas to life,
               combining design and development to deliver fast, impactful
@@ -74,14 +90,13 @@ function page() {
           </div>
         </section>
       </main>
-      <main className="w-screen flex flex-col justify-center items-center relative top-[-10vh] bg-black">
-        <div></div>
+      <main className="w-screen flex flex-col justify-center items-center bg-black">
         <section className=" w-full">
           <Banner />
-          <div className="bg-[url(/svg.svg)] py-[7vw]">
-              <h1 className=" text-white text-[9vw] px-[2vw]">
-                I blend creativity with technical expertise
-              </h1>
+          <div className="bg-[url(/svg.svg)] pb-[7vw] pt-[3vw]">
+            <h1 className=" text-white text-[9vw] px-[2vw]">
+              I blend creativity with technical expertise
+            </h1>
             <div className="bg-black px-[2vw]">
               <GreenButton text="Become a client" />
             </div>
@@ -192,7 +207,10 @@ function page() {
 
             <div
               className="content flex flex-row px-[2vw] py-[1vw] w-full h-[17vw] justify-center items-center"
-              style={{ borderBottom: "0.5px solid rgba(255, 255, 255, 0.5)", borderTop: "0.5px solid rgba(255, 255, 255, 0.5)" }}
+              style={{
+                borderBottom: "0.5px solid rgba(255, 255, 255, 0.5)",
+                borderTop: "0.5px solid rgba(255, 255, 255, 0.5)",
+              }}
             >
               <div className="tag h-full w-[15vw]  p-[0.2vw]">
                 <span className=" bg-transparent py-[0.1vw] px-[1vw] rounded-[4vw] border-[#2F2F2F] border text-[1.5vw] text-white">
@@ -236,7 +254,10 @@ function page() {
             </div>
             <div
               className="content flex flex-row px-[2vw] py-[1vw] w-full h-[17vw] justify-center items-center"
-              style={{ borderBottom: "0.5px solid rgba(255, 255, 255, 0.5)", borderTop: "0.5px solid rgba(255, 255, 255, 0.5)" }}
+              style={{
+                borderBottom: "0.5px solid rgba(255, 255, 255, 0.5)",
+                borderTop: "0.5px solid rgba(255, 255, 255, 0.5)",
+              }}
             >
               <div className="tag h-full w-[15vw]  p-[0.2vw]">
                 <span className=" bg-transparent py-[0.1vw] px-[1vw] rounded-[4vw] border-[#2F2F2F] border text-[1.5vw] text-white">
@@ -280,7 +301,10 @@ function page() {
             </div>
             <div
               className="content flex flex-row px-[2vw] py-[1vw] w-full h-[17vw] justify-center items-center"
-              style={{ borderBottom: "0.5px solid rgba(255, 255, 255, 0.5)", borderTop: "0.5px solid rgba(255, 255, 255, 0.5)" }}
+              style={{
+                borderBottom: "0.5px solid rgba(255, 255, 255, 0.5)",
+                borderTop: "0.5px solid rgba(255, 255, 255, 0.5)",
+              }}
             >
               <div className="tag h-full w-[15vw]  p-[0.2vw]">
                 <span className=" bg-transparent py-[0.1vw] px-[1vw] rounded-[4vw] border-[#2F2F2F] border text-[1.5vw] text-white">
@@ -406,10 +430,10 @@ function page() {
               </div>
             </div>
           </div>
-          <div className ="relative top-[-30vh]">
-          <Banner />
+          <div className="relative top-[-30vh]">
+            <Banner />
           </div>
-         
+
           <div className=" h-[100vh] bg-[url(/footervector.svg)] flex flex-row relative top-[-30vh]">
             <div className=" h-full w-1/2 justify-center items-center flex flex-col px-[2vw]">
               <h1 className=" text-[5vw] text-white font-semibold">
