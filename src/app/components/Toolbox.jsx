@@ -35,6 +35,9 @@ function Toolbox() {
         end: "+=100%",
         scrub: true, 
       },
+      onComplete: () => {
+        containerRef.current.style.height='100vh';
+      }
     });
   }, []);
 

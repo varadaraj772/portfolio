@@ -76,14 +76,12 @@ function page() {
       </main>
       <main className="w-screen flex flex-col justify-center items-center relative top-[-10vh] bg-black">
         <div></div>
-        <section className="bg-[url(/svg.svg)] w-full">
+        <section className=" w-full">
           <Banner />
-          <div className="">
-            <div className="">
+          <div className="bg-[url(/svg.svg)] py-[7vw]">
               <h1 className=" text-white text-[9vw] px-[2vw]">
                 I blend creativity with technical expertise
               </h1>
-            </div>
             <div className="bg-black px-[2vw]">
               <GreenButton text="Become a client" />
             </div>
@@ -362,7 +360,7 @@ function page() {
               </div>
             </div>
           </div>
-          <div className=" bg-[#F8F8F8]">
+          <div className=" bg-[#F8F8F8] relative top-[-30vh]">
             <div className=" w-full h-[4vw] text-black opacity-50 p-[1vw] font-semibold text-[1.5vw]">
               {" "}
               {"{00}"} — Contact me
@@ -408,8 +406,11 @@ function page() {
               </div>
             </div>
           </div>
+          <div className ="relative top-[-30vh]">
           <Banner />
-          <div className=" h-[100vh] bg-[url(/footervector.svg)] flex flex-row">
+          </div>
+         
+          <div className=" h-[100vh] bg-[url(/footervector.svg)] flex flex-row relative top-[-30vh]">
             <div className=" h-full w-1/2 justify-center items-center flex flex-col px-[2vw]">
               <h1 className=" text-[5vw] text-white font-semibold">
                 Let's create something extraordinary together.
@@ -464,7 +465,7 @@ function page() {
               </div>
             </div>
           </div>
-          <footer className=" w-full h-[10vh] flex items-center justify-center text-[1vw] text-white opacity-50">
+          <footer className=" w-full h-[10vh] flex items-center justify-center text-[1vw] text-white opacity-50 relative top-[-30vh]">
             Copyright © sanith suvarna, 2024
           </footer>
         </section>
