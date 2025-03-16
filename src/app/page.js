@@ -90,27 +90,30 @@ function page() {
           </div>
         </section>
       </main>
-      <main className="w-screen flex flex-col justify-center items-center bg-black">
+      <main className="w-screen flex flex-col justify-center items-center bg-[rgb(17,17,17)]">
         <section className=" w-full">
           <Banner />
-          <div className="bg-[url(/svg.svg)] pb-[7vw] pt-[3vw]">
-            <h1 className=" text-white text-[9vw] px-[2.5vw]">
+          <div className="bg-[url(/svg.svg)] pb-[7vw] pt-[3vw] bg-right bg-no-repeat">
+            <h1 className=" text-white text-[6.5vw] px-[2.5vw]">
               I blend creativity with technical expertise
             </h1>
-            <div className="bg-black px-[2.5vw]">
+            <div className="bg-[rgb(17,17,17)] px-[2.5vw] pt-[2vw]">
               <GreenButton text="Become a client" />
             </div>
           </div>
-          <div className="flex flex-col py-[2vw] pb-[6vw]">
+          <div className="flex flex-col pt-[2vw]">
             <div
-              className="flex flex-row h-[50vw] pb-[3vw] px-[2vw]"
+              className="flex flex-row h-[50vw] px-[2vw] "
               style={{
-                borderTop: "0.5px solid rgba(255, 255, 255, 0.5)",
-                borderBottom: "0.5px solid rgba(255, 255, 255, 0.5)",
+                borderTop: "1px solid rgba(255, 255, 255, 0.1)",
+                borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
               }}
             >
-              <div className="w-1/2 flex flex-col text-white bg-red-70 px-[1.5vw]">
-              <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
+              <div className="w-1/2 flex flex-col text-white px-[1.5vw]"
+              style={{
+                borderRight: "1px solid rgba(255, 255, 255, 0.1)",
+              }}>
+              <div className=" flex flex-col h-[30%] justify-center gap-[0.5vw]">
               <span className="text-[1.2vw] text-[#8CFF2E]">
                {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
                 </span>
@@ -122,10 +125,10 @@ function page() {
                 <img
                   src="/img1.jpg"
                   alt="Project Image: Nexus"
-                  className="h-[80%] object-cover rounded-[2vw] w-full"
+                  className="h-[50%] object-cover rounded-[2vw] w-[85%]"
                 />
               </div>
-              <div className="w-1/2 flex flex-col text-white bg-red-70 px-[1.5vw]">
+              <div className="w-1/2 flex flex-col text-white px-[1.5vw] translate-x-[3.5vw] ">
               <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
               <span className="text-[1.2vw] text-[#8CFF2E]">
                {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
@@ -138,19 +141,22 @@ function page() {
                 <img
                   src="/img1.jpg"
                   alt="Project Image: Nexus"
-                  className="h-[80%] object-cover rounded-[2vw] w-full"
+                  className="h-[50%] object-cover rounded-[2vw] w-[85%]"
                 />
               </div>
             </div>
             <div
-              className="flex flex-row h-[50vw] pb-[3vw] px-[2vw]"
+              className="flex flex-row h-[50vw] px-[2vw]"
               style={{
-                borderTop: "0.5px solid rgba(255, 255, 255, 0.5)",
-                borderBottom: "0.5px solid rgba(255, 255, 255, 0.5)",
+                borderTop: "1px solid rgba(255, 255, 255, 0.1)",
+                borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
               }}
             >
-              <div className="w-1/2 flex flex-col text-white bg-red-70 px-[1.5vw]">
-              <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
+              <div className="w-1/2 flex flex-col text-white px-[1.5vw] "
+              style={{
+                borderRight: "1px solid rgba(255, 255, 255, 0.1)",
+              }}>
+              <div className=" flex flex-col h-[30%] justify-center gap-[0.5vw]">
               <span className="text-[1.2vw] text-[#8CFF2E]">
                {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
                 </span>
@@ -162,10 +168,10 @@ function page() {
                 <img
                   src="/img1.jpg"
                   alt="Project Image: Nexus"
-                  className="h-[80%] object-cover rounded-[2vw] w-full"
+                  className="h-[50%] object-cover rounded-[2vw] w-[85%]"
                 />
               </div>
-              <div className="w-1/2 flex flex-col text-white bg-red-70 px-[1.5vw]">
+              <div className="w-1/2 flex flex-col text-white px-[1.5vw] translate-x-[3.5vw] ">
               <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
               <span className="text-[1.2vw] text-[#8CFF2E]">
                {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
@@ -178,18 +184,21 @@ function page() {
                 <img
                   src="/img1.jpg"
                   alt="Project Image: Nexus"
-                  className="h-[80%] object-cover rounded-[2vw] w-full"
+                  className="h-[50%] object-cover rounded-[2vw] w-[85%]"
                 />
               </div>
             </div>
             <div
-              className="flex flex-row h-[50vw] pb-[3vw] px-[2vw]"
+              className="flex flex-row h-[50vw] px-[2vw]"
               style={{
-                borderTop: "0.5px solid rgba(255, 255, 255, 0.5)",
+                borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
             >
-              <div className="w-1/2 flex flex-col text-white bg-red-70 px-[1.5vw]">
-              <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
+              <div className="w-1/2 flex flex-col text-white px-[1.5vw] "
+              style={{
+                borderRight: "1px solid rgba(255, 255, 255, 0.1)",
+              }}>
+              <div className=" flex flex-col h-[30%] justify-center gap-[0.5vw]">
               <span className="text-[1.2vw] text-[#8CFF2E]">
                {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
                 </span>
@@ -201,10 +210,10 @@ function page() {
                 <img
                   src="/img1.jpg"
                   alt="Project Image: Nexus"
-                  className="h-[80%] object-cover rounded-[2vw] w-full"
+                  className="h-[50%] object-cover rounded-[2vw] w-[85%]"
                 />
               </div>
-              <div className="w-1/2 flex flex-col text-white bg-red-70 px-[1.5vw]">
+              <div className="w-1/2 flex flex-col text-white px-[1.5vw] translate-x-[3.5vw] ">
               <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
               <span className="text-[1.2vw] text-[#8CFF2E]">
                {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
@@ -217,7 +226,7 @@ function page() {
                 <img
                   src="/img1.jpg"
                   alt="Project Image: Nexus"
-                  className="h-[80%] object-cover rounded-[2vw] w-full"
+                  className="h-[50%] object-cover rounded-[2vw] w-[85%]"
                 />
               </div>
             </div>
@@ -238,8 +247,8 @@ function page() {
             <div
               className="content flex flex-row px-[2.5vw] py-[3vw] w-full h-[22vw] justify-center items-center"
               style={{
-                borderBottom: "0.5px solid rgba(255, 255, 255, 0.5)",
-                borderTop: "0.5px solid rgba(255, 255, 255, 0.5)",
+                borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
+                borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
             >
               <div className="tag h-full w-[15vw] p-[0.2vw]">
@@ -285,8 +294,8 @@ function page() {
             <div
               className="content flex flex-row px-[2.5vw] py-[3vw] w-full h-[22vw] justify-center items-center"
               style={{
-                borderBottom: "0.5px solid rgba(255, 255, 255, 0.5)",
-                borderTop: "0.5px solid rgba(255, 255, 255, 0.5)",
+                borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
+                borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
             >
               <div className="tag h-full w-[15vw]  p-[0.2vw]">
@@ -333,7 +342,7 @@ function page() {
               className="content flex flex-row px-[2.5vw] py-[3vw] w-full h-[22vw] justify-center items-center"
               style={{
               
-                borderTop: "0.5px solid rgba(255, 255, 255, 0.5)",
+                borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
             >
               <div className="tag h-full w-[15vw]  p-[0.2vw]">
