@@ -288,7 +288,7 @@ function page() {
                 </ul>
               </div>
               <div className="days text-[#2F2F2F] h-full w-[15vw]">
-                01/02 Weeks
+                
               </div>
             </div>
             <div
@@ -335,7 +335,7 @@ function page() {
                 </ul>
               </div>
               <div className="days text-[#2F2F2F] h-full w-[15vw]">
-                01/02 Weeks
+                
               </div>
             </div>
             <div
@@ -382,7 +382,7 @@ function page() {
                 </ul>
               </div>
               <div className="days text-[#2F2F2F] h-full w-[15vw]">
-                01/02 Weeks
+                
               </div>
             </div>
 
