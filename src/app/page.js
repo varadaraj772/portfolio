@@ -109,12 +109,13 @@ function page() {
               }}
             >
               <div
-                className="w-1/2 flex flex-col text-white px-[1.5vw]"
+                className="w-1/2 flex flex-col text-white px-[1.5vw] justify-center items-center"
                 style={{
                   borderRight: "1px solid rgba(255, 255, 255, 0.1)",
                 }}
               >
-                <div className=" flex flex-col h-[30%] justify-center gap-[0.5vw]">
+              <div className=" h-full">
+              <div className=" flex flex-col h-[30%] justify-center gap-[0.5vw]">
                   {/* <span className="text-[1.2vw] text-[#8CFF2E]">
                {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
                 </span> */}
@@ -128,6 +129,8 @@ function page() {
                   alt="Project Image: Nexus"
                   className="h-[50%] object-cover rounded-[2vw] w-[85%] text-center"
                 />
+              </div>
+
               </div>
               <div className="w-1/2 flex flex-col text-white px-[1.5vw] translate-x-[3.5vw] ">
                 <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
