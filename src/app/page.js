@@ -6,6 +6,7 @@ import { FaBehance } from "react-icons/fa";
 import { BsArrowReturnRight } from "react-icons/bs";
 import Banner from "./components/Banner";
 import Toolbox from "./components/Toolbox";
+import { GoDotFill } from "react-icons/go";
 
 function page() {
   return (
@@ -93,6 +94,12 @@ function page() {
         <section className=" w-full">
           <Banner />
           <div className="bg-[url(/svg.png)] pb-[7vw] pt-[7vw] bg-[100%] bg-no-repeat bg-contain">
+            <span className=" px-[2.5vw] text-white flex flex-row gap-[0.7vw] items-center font-semibold">
+              <GoDotFill className=" text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] text-[1.8vw]" />
+              <span className=" opacity-50 text-[1.5vw]">
+                {"{01} — Featured projects"}
+              </span>
+            </span>
             <h1 className=" text-white text-[6.5vw] px-[2.5vw]">
               I blend creativity with technical expertise
             </h1>
@@ -108,12 +115,13 @@ function page() {
                 borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
               }}
             >
-              <div className="w-1/2 flex flex-col text-white "
+              <div
+                className="w-1/2 flex flex-col text-white "
                 style={{
                   borderRight: "1px solid rgba(255, 255, 255, 0.1)",
-                }}>
+                }}
+              >
                 <div className=" flex flex-col h-[30%] justify-center gap-[1vw] translate-x-[3.5vw]">
-                 
                   <span className="text-[2vw]">SilverLinex Technologies</span>
                   <span className="opacity-50">
                     Web design & Developement
@@ -149,12 +157,13 @@ function page() {
                 borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
               }}
             >
-              <div className="w-1/2 flex flex-col text-white "
+              <div
+                className="w-1/2 flex flex-col text-white "
                 style={{
                   borderRight: "1px solid rgba(255, 255, 255, 0.1)",
-                }}>
+                }}
+              >
                 <div className=" flex flex-col h-[30%] justify-center gap-[1vw] translate-x-[3.5vw]">
-                 
                   <span className="text-[2vw]">SilverLinex Technologies</span>
                   <span className="opacity-50">
                     Web design & Developement
@@ -189,12 +198,13 @@ function page() {
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
             >
-              <div className="w-1/2 flex flex-col text-white "
+              <div
+                className="w-1/2 flex flex-col text-white "
                 style={{
                   borderRight: "1px solid rgba(255, 255, 255, 0.1)",
-                }}>
+                }}
+              >
                 <div className=" flex flex-col h-[30%] justify-center gap-[1vw] translate-x-[3.5vw]">
-                 
                   <span className="text-[2vw]">SilverLinex Technologies</span>
                   <span className="opacity-50">
                     Web design & Developement
@@ -223,8 +233,6 @@ function page() {
                 />
               </div>
             </div>
-            
-            
           </div>
           <Toolbox />
           <div className="">
@@ -233,6 +241,12 @@ function page() {
 
           <div className=" pb-[10vw]">
             <div className="head py-[3vw]">
+              <span className=" px-[2.5vw] text-white flex flex-row gap-[0.7vw] items-center font-semibold">
+                <GoDotFill className=" text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] text-[1.5vw]" />
+                <span className=" opacity-50 text-[1.3vw]">
+                  {"{03} — Process"}
+                </span>
+              </span>
               <h1 className=" text-[6.5vw] text-white px-[2.5vw]">
                 {" "}
                 How it works
@@ -426,9 +440,13 @@ function page() {
             </div>
           </div>
           <div className=" bg-[#F8F8F8]  py-[7vw] px-[2.5vw] ">
-            <div className=" w-full h-[4vw] text-black opacity-50 font-semibold text-[1.5vw]">
-              {" "}
-              {"{00}"} — Contact me
+            <div className=" w-full h-[4vw] font-semibold flex items-center mx-[-2.5vw]">
+              <span className=" px-[2.5vw] text-black flex flex-row gap-[0.7vw] items-center ">
+                <GoDotFill className=" text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] text-[1.7vw]" />
+                <span className=" opacity-50 text-[1.5vw]">
+                  {"{04} — Contact me"}
+                </span>
+              </span>
             </div>
             <div className=" text-[6.5vw]">
               <h1>I’m all over the internet</h1>

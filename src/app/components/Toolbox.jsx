@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { GoDotFill } from "react-icons/go";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,7 +15,7 @@ function Toolbox() {
   const box4Ref = useRef(null);
   const box5Ref = useRef(null);
   const box6Ref = useRef(null);
-// .to(containerRef.current, { clipPath: "inset(0 0 50% 0)" });
+  // .to(containerRef.current, { clipPath: "inset(0 0 50% 0)" });
   useEffect(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -25,11 +26,11 @@ function Toolbox() {
         pin: true,
       },
     });
-    tl.to(box2Ref.current, { top: '37%' })
-      .to(box3Ref.current, { top: '37%' })
-      .to(box4Ref.current, { top: '37%' })
-      .to(box5Ref.current, { top: '37%' })
-      .to(box6Ref.current, { top: '37%' })
+    tl.to(box2Ref.current, { top: "37%" })
+      .to(box3Ref.current, { top: "37%" })
+      .to(box4Ref.current, { top: "37%" })
+      .to(box5Ref.current, { top: "37%" })
+      .to(box6Ref.current, { top: "37%" });
   }, []);
 
   return (
@@ -37,7 +38,13 @@ function Toolbox() {
       ref={containerRef}
       className="bg-[#F8F8F8] flex flex-row overflow--hidden h-[100vh]"
     >
-      <div className=" w-1/2 flex justify-center items-center h-full">
+      <div className=" w-1/2 flex justify-center items-center h-full flex-col">
+        <span className=" px-[2.5vw] text-black flex flex-row gap-[0.7vw] items-center font-semibold w-[82%]">
+          <GoDotFill className=" text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] text-[1.8vw]" />
+          <span className=" opacity-50 text-[1.5vw]">
+            {"{02} — Tools & Skills"}
+          </span>
+        </span>
         <span className=" text-[6.5vw] text-center">My Creative Toolbox</span>
       </div>
       <div className=" w-1/2 flex flex-col gap-[2.5vw] relative top-[37%]">
