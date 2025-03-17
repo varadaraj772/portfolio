@@ -10,14 +10,14 @@ import Toolbox from "./components/Toolbox";
 function page() {
   return (
     <>
-      <main className="w-screen flex flex-col justify-center items-center bg-[url(/background.png)] bg-cover overflow-x-hidden">
+      <main className="w-screen flex flex-col justify-center items-center bg-[url(/background.png)] bg-cover overflow-hidden">
         <nav
-          className=" w-full h-[13vh] flex flex-row justify-between items-center pr-[3vw] pl-[2.5vw] bg-transparent z-50 relative font-semibold"
+          className=" w-full h-[13vh] flex flex-row justify-between items-center pr-[3vw] pl-[2.5vw] bg-transparent z-50 relative font-semibold overflow-hidden"
           style={{
             borderBottom: "1px solid rgba(0, 0, 0, 0.2)",
           }}
         >
-          <div className=" flex flex-row text-[1.3vw] py-[1vw] gap-[2vw] ">
+          <div className=" flex flex-row text-[1.3vw] py-[1vw] gap-[2vw]">
             <h2>Projects</h2>
             <h2>About & Contact</h2>
           </div>
