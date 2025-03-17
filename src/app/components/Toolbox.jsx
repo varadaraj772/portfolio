@@ -25,11 +25,11 @@ function Toolbox() {
         pin: true,
       },
     });
-    tl.to(box2Ref.current, { y: "-27vh" })
-      .to(box3Ref.current, { y: "-60vh" })
-      .to(box4Ref.current, { y: "-90vh" })
-      .to(box5Ref.current, { y: "-120vh" })
-      .to(box6Ref.current, { y: "-155vh" })
+    tl.to(box2Ref.current, { y: "-33.5vh" })
+      .to(box3Ref.current, { y: "-67vh" })
+      .to(box4Ref.current, { y: "-100.4vh" })
+      .to(box5Ref.current, { y: "-134vh" })
+      .to(box6Ref.current, { y: "-167vh" })
   }, []);
 
   return (
@@ -43,7 +43,7 @@ function Toolbox() {
       <div className=" w-1/2 flex flex-col justify-around items-center pt-[6.5vw] gap-[2.5vw]">
         <div
           ref={box1Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] p-[3vw]"
+          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] p-[3vw] shadow-md"
         >
           <img src="/react.png" alt="React" className=" h-1/2" />
           <div>
@@ -57,7 +57,7 @@ function Toolbox() {
         </div>
         <div
           ref={box2Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] p-[3vw]"
+          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] p-[3vw] shadow-md"
         >
           <img src="/react.png" alt="React" className=" h-1/2" />
           <div>
@@ -71,7 +71,7 @@ function Toolbox() {
         </div>
         <div
           ref={box3Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] p-[3vw]"
+          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] p-[3vw] shadow-md"
         >
           <img src="/react.png" alt="React" className=" h-1/2" />
           <div>
@@ -85,7 +85,7 @@ function Toolbox() {
         </div>
         <div
           ref={box4Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] p-[3vw]"
+          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] p-[3vw] shadow-md"
         >
           <img src="/react.png" alt="React" className=" h-1/2" />
           <div>
@@ -99,7 +99,7 @@ function Toolbox() {
         </div>
         <div
           ref={box5Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] p-[3vw]"
+          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] p-[3vw] shadow-md"
         >
           <img src="/react.png" alt="React" className=" h-1/2" />
           <div>
@@ -113,7 +113,7 @@ function Toolbox() {
         </div>
         <div
           ref={box6Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] p-[3vw]"
+          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] p-[3vw] shadow-md"
         >
           <img src="/react.png" alt="React" className=" h-1/2" />
           <div>
