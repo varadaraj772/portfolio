@@ -718,7 +718,7 @@ function page() {
                 <h2 className=" text-[3vw] text-left font-semibold p-[1vw] text-white">
                   sanith.s74<span className=" text-[#8CFF2E]">@</span>gmail.com
                 </h2>
-                <p className="text-[1.8vw] text-white text-left font-semibold p-[1vw] mb-[0.8vw]">
+                <p className="text-[1.8vw] text-white text-left font-semibold p-[1vw] mb-[0.5vw]">
                   <span className="opacity-50">
                     Hit me up if you’re looking for a{" "}
                   </span>
@@ -730,7 +730,7 @@ function page() {
                     who can bring your vision to life.
                   </span>
                 </p>
-                <div className="p-[1vw]">
+                <div className="px-[1vw]">
                   <GreenButton text="Contact me" />
                 </div>
               </div>

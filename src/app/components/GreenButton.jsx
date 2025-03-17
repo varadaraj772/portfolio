@@ -3,7 +3,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 function GreenButton({ text = "", rotate = "rotate-45", icon: IconComponent }) {
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row z-50">
       <button className="bg-[#8CFF2E] py-[2.3vw] pl-[2.1vw] pr-[1vw] rounded-[4vw] flex flex-row gap-[1vw] text-[1.5vw] text-black items-center cursor-pointer group h-[2vw]">
         {text}
         <div
