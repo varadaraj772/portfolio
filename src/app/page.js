@@ -10,7 +10,7 @@ import Toolbox from "./components/Toolbox";
 function page() {
   return (
     <>
-      <main className="w-screen flex flex-col justify-center items-center bg-[url(/background.png)] bg-cover">
+      <main className="w-screen flex flex-col justify-center items-center bg-[url(/background.png)] bg-cover overflow-x-hidden">
         <nav
           className=" w-full h-[13vh] flex flex-row justify-between items-center pr-[3vw] pl-[2.5vw] bg-transparent z-50 relative font-semibold"
           style={{
@@ -92,7 +92,7 @@ function page() {
       <main className="w-screen flex flex-col justify-center items-center bg-[rgb(17,17,17)]">
         <section className=" w-full">
           <Banner />
-          <div className="bg-[url(/svg.svg)] pb-[7vw] pt-[3vw] bg-[calc(100%+30rem)] bg-no-repeat">
+          <div className="bg-[url(/svg.svg)] pb-[7vw] pt-[3vw] bg-[calc(100%+20rem)_calc(100%+25rem)] bg-no-repeat">
             <h1 className=" text-white text-[6.5vw] px-[2.5vw]">
               I blend creativity with technical expertise
             </h1>
@@ -494,7 +494,7 @@ function page() {
                 Let’s make an impact
               </h2>
             </div>
-            <div className="h-full w-1/2 flex flex-col">
+            <div className="h-full w-1/2 flex flex-col bg-[rgb(17,17,17)] ml-[4.1vw]">
               <div className=" text-white h-[40%] flex items-end p-[2vw] ">
                 <div className="w-3/4 flex flex-row justify-around mt-[2vw]">
                   <div className="flex justify-center items-center  h-[10vw] rounded-full w-[10vw]">
