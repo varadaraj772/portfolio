@@ -415,12 +415,12 @@ function page() {
               <span className=" px-[2.5vw] text-white flex flex-row gap-[0.7vw] items-center font-semibold">
                 <GoDotFill className=" text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] text-[1.5vw]" />
                 <span className=" opacity-50 text-[1.3vw]">
-                  {"{03} — Process"}
+                  {"{03} — Technical skills"}
                 </span>
               </span>
               <h1 className=" text-[6.5vw] text-white px-[2.5vw]">
                 {" "}
-                How it works
+                Powering ideas with skills
               </h1>
             </div>
 
@@ -434,7 +434,7 @@ function page() {
             >
               <div className="tag h-full w-[15vw] pt-[1vw]">
                 <span className=" bg-transparent py-[0.7vw] px-[1.4vw] rounded-[4vw] border-[#2F2F2F] border text-white">
-                  Discovery
+                User Experience
                 </span>
               </div>
               <div className="number text-[2.5vw] h-full w-[15vw]">
@@ -443,55 +443,47 @@ function page() {
               </div>
               <div className="body flex flex-col text-white h-full w-[55vw] b">
                 <h2 className=" text-[1.8vw]">
-                  I'll create mockups that bring your brand to life
+                I'll design experiences that bring your vision to life
                 </h2>
                 <ul className="list-none mt-[1.8vw] space-y-[1vw]">
                   <li className=" flex flex-row ">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Wireframing: Create low-fidelity wireframes to map out the
-                    site’s structure.
+                    User Research & Stakeholder Interviews – Understanding needs and defining goals.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Style Guide Creation: Develop a design language including
-                    colors, fonts, and UI e
+                    Information Architecture & Data Hierarchy – Organizing content for clarity and efficiency.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Prototype Development: Build clickable prototypes for client
-                    feedback.
+                    User Flows & Journey Mapping – Crafting smooth, intuitive user experiences.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Finalize Design: Approve the final design with detailed
-                    mockups for all pages.
+                    Wireframing & Prototyping (Low/High Fidelity) – Bringing ideas to life visually.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Finalize Design: Approve the final design with detailed
-                    mockups for all pages.
+                    Usability Testing – Ensuring seamless interactions through real user feedback.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Finalize Design: Approve the final design with detailed
-                    mockups for all pages.
+                    Accessibility & Inclusive Design – Designing for every user, without limits.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Finalize Design: Approve the final design with detailed
-                    mockups for all pages.
+                    User Behavior Analytics – Leveraging data to enhance usability and engagement.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Finalize Design: Approve the final design with detailed
-                    mockups for all pages.
+                   A/B Testing – Refining and optimizing designs for maximum impact.
                   </li>
                 </ul>
               </div>
               <div className="days text-[#2F2F2F] h-full w-[15vw]"></div>
             </div>
             <div
-              className="content flex flex-row px-[2.5vw] py-[3vw] w-full h-[22vw] justify-center items-center"
+              className="content flex flex-row px-[2.5vw] py-[3vw] w-full h-[29vw] justify-center items-center"
               style={{
                
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
@@ -500,7 +492,7 @@ function page() {
             >
               <div className="tag h-full w-[15vw]  pt-[1vw]">
                 <span className=" bg-transparent py-[0.7vw] px-[1.4vw] rounded-[4vw] border-[#2F2F2F] border text-white">
-                  Design
+                User Interface
                 </span>
               </div>
               <div className="number text-[2.5vw] h-full w-[15vw]">
@@ -509,28 +501,28 @@ function page() {
               </div>
               <div className="body flex flex-col text-white h-full w-[55vw] b">
                 <h2 className=" text-[1.8vw]">
-                  I'll create mockups that bring your brand to life
+                  I'll design visually compelling and intuitive interfaces that users enjoy.
                 </h2>
                 <ul className="list-none mt-[1.8vw] space-y-[1vw]">
                   <li className=" flex flex-row ">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Wireframing: Create low-fidelity wireframes to map out the
-                    site’s structure.
+                    User Interface (UI) & Visual Design – Crafting aesthetically pleasing and functional designs.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Style Guide Creation: Develop a design language including
-                    colors, fonts, and UI e
+                    Design Systems & Component Libraries – Building consistency and scalability across products.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Prototype Development: Build clickable prototypes for client
-                    feedback.
+                    Typography & Layout for Data-Heavy Interfaces – Making complex information easy to scan and understand.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Finalize Design: Approve the final design with detailed
-                    mockups for all pages.
+                    Micro interactions & UX Writing – Enhancing engagement with thoughtful details and clear messaging.
+                  </li>
+                  <li className=" flex flex-row">
+                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                    Responsive Design – Ensuring a seamless experience across all screen sizes and devices.
                   </li>
                 </ul>
               </div>
@@ -545,7 +537,7 @@ function page() {
             >
               <div className="tag h-full w-[15vw]  pt-[1vw]">
                 <span className=" bg-transparent py-[0.7vw] px-[1.4vw] rounded-[4vw] border-[#2F2F2F] border text-white">
-                  Build
+                Creative Leadership
                 </span>
               </div>
               <div className="number text-[2.5vw] h-full w-[15vw]">
@@ -554,23 +546,20 @@ function page() {
               </div>
               <div className="body flex flex-col text-white h-full w-[55vw] b">
                 <h2 className=" text-[1.8vw]">
-                  I'll create mockups that bring your brand to life
+                I'll shape design excellence through leadership and collaboration.
                 </h2>
                 <ul className="list-none mt-[1.8vw] space-y-[1vw]">
                   <li className=" flex flex-row ">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Wireframing: Create low-fidelity wireframes to map out the
-                    site’s structure.
+                    Design Leadership & Team Mentorship – Empowering teams to innovate and grow.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Style Guide Creation: Develop a design language including
-                    colors, fonts, and UI e
+                    Stakeholder & Client Communication – Aligning vision, goals, and expectations.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Prototype Development: Build clickable prototypes for client
-                    feedback.
+                    Agile UX & Sprint Planning – Delivering seamless experiences in fast-paced workflows.
                   </li>
                 </ul>
               </div>

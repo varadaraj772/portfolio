@@ -52,15 +52,15 @@ function Banner() {
 
       <div ref={wrapperRef} className="flex whitespace-nowrap gap-[2vw]">
         <div className="flex items-center gap-[1vw]">
-          <span className="text-[#8CFF2E] text-[3vw]">4+</span>
-          <span className="text-white text-[3vw]">years of experience</span>
+          <span className="text-[#8CFF2E] text-[2.5vw]">10+</span>
+          <span className="text-white text-[3vw]">projects</span>
         </div>
         <div className="flex items-center text-[#8CFF2E] text-[3vw]">
           <PiAsterisk />
         </div>
         <div className="flex items-center gap-[1vw]">
-          <span className="text-[#8CFF2E] text-[3vw]">{"10+"}</span>
-          <span className="text-white text-[3vw]">projects</span>
+          <span className="text-[#8CFF2E] text-[2.5vw]">4+</span>
+          <span className="text-white text-[3vw]">years of experience</span>
         </div>
       </div>
     </div>

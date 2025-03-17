@@ -17,7 +17,6 @@ function Toolbox() {
   const box6Ref = useRef(null);
 
   useEffect(() => {
-
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: containerRef.current,
@@ -32,8 +31,6 @@ function Toolbox() {
       .to(box4Ref.current, { top: "37%" })
       .to(box5Ref.current, { top: "37%" })
       .to(box6Ref.current, { top: "37%" });
-
-      
   }, []);
 
   return (
@@ -44,21 +41,21 @@ function Toolbox() {
       <div className=" w-1/2 flex justify-center items-center h-full flex-col">
         <span className=" px-[2.5vw] text-black flex flex-row gap-[0.7vw] items-center font-semibold w-[82%]">
           <GoDotFill className=" text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] text-[1.8vw]" />
-          <span className=" opacity-50 text-[1.5vw]">
-            {"{02} — Tools & Skills"}
-          </span>
+          <span className=" opacity-50 text-[1.5vw]">{"{02} — Tools"}</span>
         </span>
-        <span className=" text-[6.5vw] text-center">My Creative Toolbox</span>
+        <span className=" text-[6.5vw] text-center">
+          My Go-To Creative Toolkit
+        </span>
       </div>
       <div className=" w-1/2 flex flex-col gap-[2.5vw]">
         <div
           ref={box1Ref}
           className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[37%]"
         >
-          <img src="/react.png" alt="React" className=" h-1/2" />
+          <img src="/figma.png" alt="React" className=" h-1/2" />
           <div>
             <h2 className="w-full text-left text-[1.5vw] font-bold">
-              React.Jss
+             Figma
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
               Javascript Library
@@ -69,10 +66,10 @@ function Toolbox() {
           ref={box2Ref}
           className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[70%]"
         >
-          <img src="/react.png" alt="React" className=" h-1/2" />
+          <img src="/figma.png" alt="React" className=" h-1/2" />
           <div>
             <h2 className="w-full text-left text-[1.5vw] font-bold">
-              React.Jss
+             Photoshop
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
               Javascript Library
@@ -83,10 +80,10 @@ function Toolbox() {
           ref={box3Ref}
           className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[103%]"
         >
-          <img src="/react.png" alt="React" className=" h-1/2" />
+          <img src="/figma.png" alt="React" className=" h-1/2" />
           <div>
             <h2 className="w-full text-left text-[1.5vw] font-bold">
-              React.Jss
+              Illustration
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
               Javascript Library
@@ -97,10 +94,10 @@ function Toolbox() {
           ref={box4Ref}
           className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[136%]"
         >
-          <img src="/react.png" alt="React" className=" h-1/2" />
+          <img src="/figma.png" alt="React" className=" h-1/2" />
           <div>
             <h2 className="w-full text-left text-[1.5vw] font-bold">
-              React.Jss
+              Notion
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
               Javascript Library
@@ -111,10 +108,10 @@ function Toolbox() {
           ref={box5Ref}
           className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[169%]"
         >
-          <img src="/react.png" alt="React" className=" h-1/2" />
+          <img src="/figma.png" alt="React" className=" h-1/2" />
           <div>
             <h2 className="w-full text-left text-[1.5vw] font-bold">
-              React.Jss
+              Miro
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
               Javascript Library
@@ -125,10 +122,10 @@ function Toolbox() {
           ref={box6Ref}
           className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[202%]"
         >
-          <img src="/react.png" alt="React" className=" h-1/2" />
+          <img src="/figma.png" alt="React" className=" h-1/2" />
           <div>
             <h2 className="w-full text-left text-[1.5vw] font-bold">
-              React.Jss
+              Ai Tools
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
               Javascript Library
