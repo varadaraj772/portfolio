@@ -100,7 +100,7 @@ function page() {
               <GreenButton text="Become a client" />
             </div>
           </div>
-          <div className="flex flex-col pt-[2vw]">
+          <div className="flex flex-col pt-[2vw] overflow-x-hidden">
             <div
               className="flex flex-row h-[50vw] px-[2vw] "
               style={{
@@ -237,11 +237,11 @@ function page() {
             </div>
           </div>
           <Toolbox />
-          <div className="relative top-[-50vh]">
+          <div className="">
             <Banner />
           </div>
 
-          <div className=" relative top-[-50vh]">
+          <div className=" pb-[10vw]">
             <div className="head py-[3vw]">
               <h1 className=" text-[6.5vw] text-white px-[2.5vw]">
                 {" "}
@@ -435,7 +435,7 @@ function page() {
               </div>
             </div>
           </div>
-          <div className=" bg-[#F8F8F8] relative top-[-30vh] py-[7vw] px-[2.5vw]">
+          <div className=" bg-[#F8F8F8]  py-[7vw] px-[2.5vw] ">
             <div className=" w-full h-[4vw] text-black opacity-50 font-semibold text-[1.5vw]">
               {" "}
               {"{00}"} — Contact me
@@ -481,11 +481,11 @@ function page() {
               </div>
             </div>
           </div>
-          <div className="relative top-[-30vh]">
+          <div className="">
             <Banner />
           </div>
 
-          <div className=" h-[100vh] bg-[url(/footervector.svg)] flex flex-row relative top-[-30vh]">
+          <div className=" h-[100vh] bg-[url(/footervector.svg)] flex flex-row ">
             <div className=" h-full w-1/2 justify-center items-center flex flex-col px-[2vw]">
               <h1 className=" text-[5vw] text-white font-semibold">
                 Let's create something extraordinary together.
@@ -517,8 +517,8 @@ function page() {
                   </div>
                 </div>
               </div>
-              <div className=" h-1/2">
-                <h2 className="opacity-50 text-[2vw] text-left font-semibold p-[1vw]">
+              <div className=" h-1/2 px-[4vw]">
+                <h2 className="opacity-50 text-[2vw] text-left font-semibold p-[1vw] text-white">
                   Contact me
                 </h2>
                 <h2 className=" text-[3vw] text-left font-semibold p-[1vw] text-white">
@@ -540,7 +540,7 @@ function page() {
               </div>
             </div>
           </div>
-          <footer className=" w-full h-[10vh] flex items-center justify-center text-[1vw] text-white opacity-50 relative top-[-30vh]">
+          <footer className=" w-full h-[10vh] flex items-center justify-center text-[1vw] text-white opacity-50 ">
             Copyright © sanith suvarna, 2024
           </footer>
         </section>

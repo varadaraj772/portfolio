@@ -14,7 +14,7 @@ function Toolbox() {
   const box4Ref = useRef(null);
   const box5Ref = useRef(null);
   const box6Ref = useRef(null);
-
+// .to(containerRef.current, { clipPath: "inset(0 0 50% 0)" });
   useEffect(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -25,24 +25,22 @@ function Toolbox() {
         pin: true,
       },
     });
-    const boxHeight = '15vw';
     tl.to(box2Ref.current, { y: "-27vh" })
-      .to(box3Ref.current, { y: "-53vh" })
-      .to(box4Ref.current, { y: "-79vh" })
-      .to(box5Ref.current, { y: "-105vh" })
-      .to(box6Ref.current, { y: "-131vh" })
-      .to(containerRef.current, { clipPath: "inset(0 0 50% 0)" });
+      .to(box3Ref.current, { y: "-60vh" })
+      .to(box4Ref.current, { y: "-90vh" })
+      .to(box5Ref.current, { y: "-120vh" })
+      .to(box6Ref.current, { y: "-155vh" })
   }, []);
 
   return (
     <div
       ref={containerRef}
-      className="bg-[#F8F8F8] flex flex-row overflow-y-auto"
+      className="bg-[#F8F8F8] flex flex-row overflow-y-hidden h-[80vh]"
     >
       <div className=" w-1/2 px-[2vw] text-right pt-[6.5vw] ">
         <h2 className=" text-[6.5vw]">My Creative Toolbox</h2>
       </div>
-      <div className=" w-1/2 flex flex-col justify-around items-center pt-[6.5vw]">
+      <div className=" w-1/2 flex flex-col justify-around items-center pt-[6.5vw] gap-[2.5vw]">
         <div
           ref={box1Ref}
           className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] p-[3vw]"
