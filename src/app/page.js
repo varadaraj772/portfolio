@@ -92,15 +92,15 @@ function page() {
       <main className="w-screen flex flex-col justify-center items-center bg-[rgb(17,17,17)]">
         <section className=" w-full">
           <Banner />
-          <div className="bg-[url(/svg.svg)] pb-[7vw] pt-[3vw] bg-[calc(100%+20rem)_calc(100%+25rem)] bg-no-repeat">
+          <div className="bg-[url(/svg.png)] pb-[7vw] pt-[7vw] bg-[100%] bg-no-repeat bg-contain">
             <h1 className=" text-white text-[6.5vw] px-[2.5vw]">
               I blend creativity with technical expertise
             </h1>
-            <div className="bg-[rgb(17,17,17)] px-[2.5vw] pt-[2vw]">
+            <div className="bg-transparent px-[2.5vw] pt-[2vw]">
               <GreenButton text="Become a client" />
             </div>
           </div>
-          <div className="flex flex-col pt-[2vw] overflow-x-hidden">
+          <div className="flex flex-col overflow-x-hidden">
             <div
               className="flex flex-row h-[50vw]"
               style={{
