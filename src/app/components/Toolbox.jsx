@@ -50,7 +50,7 @@ function Toolbox() {
         </span>
         <span className=" text-[6.5vw] text-center">My Creative Toolbox</span>
       </div>
-      <div className=" w-1/2 flex flex-col gap-[2.5vw] relative top-[37%]">
+      <div className=" w-1/2 flex flex-col gap-[2.5vw]">
         <div
           ref={box1Ref}
           className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[37%]"
