@@ -33,7 +33,7 @@ function page() {
   const list1Ref = useRef(null);
   const list2Ref = useRef(null);
   const list3Ref = useRef(null);
-  
+
   const imageRefs = [
     image1Ref,
     image2Ref,
@@ -246,7 +246,11 @@ function page() {
               combining design and development to deliver fast, impactful
               results.
             </span>
-            <GreenButton text="Download Resume" icon={MdArrowForward} rotate="rotate-90"/>
+            <GreenButton
+              text="Download Resume"
+              icon={MdArrowForward}
+              rotate="rotate-90"
+            />
           </div>
         </section>
       </main>
@@ -714,7 +718,7 @@ function page() {
                 <h2 className=" text-[3vw] text-left font-semibold p-[1vw] text-white">
                   sanith.s74<span className=" text-[#8CFF2E]">@</span>gmail.com
                 </h2>
-                <p className="text-[1.8vw] text-white text-left font-semibold p-[1vw] mb-[0.8vw] bg-red-400">
+                <p className="text-[1.8vw] text-white text-left font-semibold p-[1vw] mb-[0.8vw]">
                   <span className="opacity-50">
                     Hit me up if you’re looking for a{" "}
                   </span>
@@ -726,7 +730,9 @@ function page() {
                     who can bring your vision to life.
                   </span>
                 </p>
-                <GreenButton text="Contact me" />
+                <div className="p-[1vw]">
+                  <GreenButton text="Contact me" />
+                </div>
               </div>
             </div>
           </div>
