@@ -23,7 +23,7 @@ function Toolbox() {
         trigger: containerRef.current,
         start: "top top",
         end: "+=500%",
-        scrub: true,
+        scrub: 2,
         pin: true,
       },
     });

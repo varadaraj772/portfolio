@@ -429,7 +429,7 @@ function page() {
             <div
               className="content flex flex-row px-[2.5vw] py-[3vw] w-full h-[33vw] justify-center items-center"
               style={{
-                borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
+               
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
               ref={list1Ref}
@@ -495,7 +495,7 @@ function page() {
             <div
               className="content flex flex-row px-[2.5vw] py-[3vw] w-full h-[22vw] justify-center items-center"
               style={{
-                borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
+               
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
               ref={list2Ref}
@@ -712,10 +712,10 @@ function page() {
                 </div>
               </div>
               <div className=" h-1/2 px-[4vw]">
-                <h2 className="opacity-50 text-[1.8vw] text-left font-semibold p-[1vw] text-white">
+                <h2 className="opacity-50 text-[1.5vw] text-left font-semibold px-[1vw] text-white">
                   Contact me
                 </h2>
-                <h2 className=" text-[3vw] text-left font-semibold p-[1vw] text-white">
+                <h2 className=" text-[3vw] text-left font-semibold px-[1vw] text-white">
                   sanith.s74<span className=" text-[#8CFF2E]">@</span>gmail.com
                 </h2>
                 <p className="text-[1.8vw] text-white text-left font-semibold p-[1vw] mb-[0.5vw]">
