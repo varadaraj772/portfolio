@@ -1,6 +1,6 @@
 import React from "react";
 import { MdArrowOutward } from "react-icons/md";
-function GreenButton({ text = "" }) {
+function GreenButton({ text = "" ,rotate}) {
   return (
     <div className="flex flex-row">
       <button className=" bg-[#8CFF2E] py-[2.3vw] pl-[2.1vw] pr-[1vw] rounded-[4vw] flex flex-row gap-[1vw] text-[1.5vw] text-black items-center cursor-pointer group h-[2vw]">

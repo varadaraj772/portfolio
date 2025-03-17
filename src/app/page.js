@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { PiAsterisk } from "react-icons/pi";
 import GreenButton from "./components/GreenButton";
@@ -7,8 +8,64 @@ import { BsArrowReturnRight } from "react-icons/bs";
 import Banner from "./components/Banner";
 import Toolbox from "./components/Toolbox";
 import { GoDotFill } from "react-icons/go";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 function page() {
+  const nameRef = useRef(null);
+  const image1Ref = useRef(null);
+  const image2Ref = useRef(null);
+  const image3Ref = useRef(null);
+  const image4Ref = useRef(null);
+  const image5Ref = useRef(null);
+  const image6Ref = useRef(null);
+  const headingRef = useRef(null);
+
+  const imageRefs = [
+    image1Ref,
+    image2Ref,
+    image3Ref,
+    image4Ref,
+    image5Ref,
+    image6Ref,
+  ];
+
+  useEffect(() => {
+    gsap.fromTo(
+      nameRef.current,
+      { opacity: 0, y: -20 },
+      { opacity: 1, y: 0, duration: 1, ease: "power4.out" }
+    );
+    imageRefs.forEach((imageRef) => {
+      if (!imageRef.current) {
+        return;
+      }
+      gsap.to(imageRef.current, {
+        scale: 1.1,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: imageRef.current,
+          scrub: true,
+        },
+      });
+    });
+    gsap.fromTo(
+      headingRef.current,
+      { opacity: 0, y: "30%" },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: headingRef.current,
+          scrub: true,
+        },
+      }
+    );
+  }, []);
+
   return (
     <>
       <main className="w-screen flex flex-col justify-center items-center bg-[url(/background.png)] bg-cover overflow-hidden">
@@ -57,7 +114,10 @@ function page() {
           <section className=" h-full w-[50%] flex flex-col justify-between text-[6.5vw] mt-[6.5vw]">
             <span className="w-full flex items-center gap-[2vw]">
               Hi! I'm{" "}
-              <span className=" bg-white py-[1.4vw] px-[1.8vw] rounded-[4vw] text-[3vw] shadow-md">
+              <span
+                className=" bg-white py-[1.4vw] px-[1.8vw] rounded-[4vw] text-[3vw] shadow-md"
+                ref={nameRef}
+              >
                 Sanith Suvarna
               </span>
             </span>
@@ -93,7 +153,10 @@ function page() {
       <main className="w-screen flex flex-col justify-center items-center bg-[rgb(17,17,17)]">
         <section className=" w-full">
           <Banner />
-          <div className="bg-[url(/svg.png)] pb-[7vw] pt-[7vw] bg-[100%] bg-no-repeat bg-contain">
+          <div
+            className="bg-[url(/svg.png)] pb-[7vw] pt-[7vw] bg-[100%] bg-no-repeat bg-contain"
+            ref={headingRef}
+          >
             <span className=" px-[2.5vw] text-white flex flex-row gap-[0.7vw] items-center font-semibold">
               <GoDotFill className=" text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] text-[1.8vw]" />
               <span className=" opacity-50 text-[1.5vw]">
@@ -129,8 +192,9 @@ function page() {
                 </div>
                 <img
                   src="/img1.jpg"
+                  ref={image1Ref}
                   alt="Project Image: Nexus"
-                  className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
+                  className="h-[48%] object-cover rounded-[2vw] w-[82%] translate-x-[3.5vw]"
                 />
               </div>
               <div className="w-1/2 flex flex-col text-white translate-x-[3.5vw] ">
@@ -146,6 +210,7 @@ function page() {
                 <img
                   src="/img1.jpg"
                   alt="Project Image: Nexus"
+                  ref={image2Ref}
                   className="h-[50%] object-cover rounded-[2vw] w-[85%]"
                 />
               </div>
@@ -172,6 +237,7 @@ function page() {
                 <img
                   src="/img1.jpg"
                   alt="Project Image: Nexus"
+                  ref={image3Ref}
                   className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
                 />
               </div>
@@ -187,6 +253,7 @@ function page() {
                 </div>
                 <img
                   src="/img1.jpg"
+                  ref={image4Ref}
                   alt="Project Image: Nexus"
                   className="h-[50%] object-cover rounded-[2vw] w-[85%]"
                 />
@@ -212,6 +279,7 @@ function page() {
                 </div>
                 <img
                   src="/img1.jpg"
+                  ref={image5Ref}
                   alt="Project Image: Nexus"
                   className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
                 />
@@ -228,6 +296,7 @@ function page() {
                 </div>
                 <img
                   src="/img1.jpg"
+                  ref={image6Ref}
                   alt="Project Image: Nexus"
                   className="h-[50%] object-cover rounded-[2vw] w-[85%]"
                 />
