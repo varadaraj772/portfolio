@@ -30,12 +30,13 @@ function Toolbox() {
       .to(box4Ref.current, { y: "-100.4vh" })
       .to(box5Ref.current, { y: "-134vh" })
       .to(box6Ref.current, { y: "-167vh" })
+      .to(containerRef.current, { clipPath: "inset(0 0 20% 0)" });
   }, []);
 
   return (
     <div
       ref={containerRef}
-      className="bg-[#F8F8F8] flex flex-row overflow-y-hidden h-[80vh]"
+      className="bg-[#F8F8F8] flex flex-row overflow-y-hidden h-[100vh]"
     >
       <div className=" w-1/2 px-[2vw] text-right pt-[6.5vw] ">
         <h2 className=" text-[6.5vw]">My Creative Toolbox</h2>

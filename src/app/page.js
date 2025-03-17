@@ -126,7 +126,7 @@ function page() {
                 <img
                   src="/img1.jpg"
                   alt="Project Image: Nexus"
-                  className="h-[50%] object-cover rounded-[2vw] w-[85%]"
+                  className="h-[50%] object-cover rounded-[2vw] w-[85%] text-center"
                 />
               </div>
               <div className="w-1/2 flex flex-col text-white px-[1.5vw] translate-x-[3.5vw] ">
