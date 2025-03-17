@@ -25,12 +25,11 @@ function Toolbox() {
         pin: true,
       },
     });
-    tl.to(box2Ref.current, { y: "-33.5vh" })
-      .to(box3Ref.current, { y: "-67vh" })
-      .to(box4Ref.current, { y: "-100.4vh" })
-      .to(box5Ref.current, { y: "-134vh" })
-      .to(box6Ref.current, { y: "-167vh" })
-      .to(containerRef.current, { clipPath: "inset(0 0 20% 0)" });
+    tl.to(box2Ref.current, { top: '37%' })
+      .to(box3Ref.current, { top: '37%' })
+      .to(box4Ref.current, { top: '37%' })
+      .to(box5Ref.current, { top: '37%' })
+      .to(box6Ref.current, { top: '37%' })
   }, []);
 
   return (
@@ -38,18 +37,18 @@ function Toolbox() {
       ref={containerRef}
       className="bg-[#F8F8F8] flex flex-row overflow-y-hidden h-[100vh]"
     >
-      <div className=" w-1/2 px-[2vw] text-right pt-[6.5vw] ">
-        <h2 className=" text-[6.5vw]">My Creative Toolbox</h2>
+      <div className=" w-1/2 flex justify-center items-center h-full">
+        <span className=" text-[6.5vw] text-center">My Creative Toolbox</span>
       </div>
-      <div className=" w-1/2 flex flex-col justify-around items-center pt-[6.5vw] gap-[2.5vw]">
+      <div className=" w-1/2 flex flex-col gap-[2.5vw] relative top-[37%]">
         <div
           ref={box1Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] p-[3vw] shadow-md"
+          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] justify-center items-center shadow-md fixed top-[37%]"
         >
           <img src="/react.png" alt="React" className=" h-1/2" />
           <div>
             <h2 className="w-full text-left text-[1.5vw] font-bold">
-              React.Js
+              React.Jss
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
               Javascript Library
@@ -58,12 +57,12 @@ function Toolbox() {
         </div>
         <div
           ref={box2Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] p-[3vw] shadow-md"
+          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] justify-center items-center shadow-md fixed top-[70%]"
         >
           <img src="/react.png" alt="React" className=" h-1/2" />
           <div>
             <h2 className="w-full text-left text-[1.5vw] font-bold">
-              React.Js
+              React.Jss
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
               Javascript Library
@@ -72,12 +71,12 @@ function Toolbox() {
         </div>
         <div
           ref={box3Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] p-[3vw] shadow-md"
+          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] justify-center items-center shadow-md fixed top-[103%]"
         >
           <img src="/react.png" alt="React" className=" h-1/2" />
           <div>
             <h2 className="w-full text-left text-[1.5vw] font-bold">
-              React.Js
+              React.Jss
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
               Javascript Library
@@ -86,12 +85,12 @@ function Toolbox() {
         </div>
         <div
           ref={box4Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] p-[3vw] shadow-md"
+          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] justify-center items-center shadow-md fixed top-[136%]"
         >
           <img src="/react.png" alt="React" className=" h-1/2" />
           <div>
             <h2 className="w-full text-left text-[1.5vw] font-bold">
-              React.Js
+              React.Jss
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
               Javascript Library
@@ -100,12 +99,12 @@ function Toolbox() {
         </div>
         <div
           ref={box5Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] p-[3vw] shadow-md"
+          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] justify-center items-center shadow-md fixed top-[169%]"
         >
           <img src="/react.png" alt="React" className=" h-1/2" />
           <div>
             <h2 className="w-full text-left text-[1.5vw] font-bold">
-              React.Js
+              React.Jss
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
               Javascript Library
@@ -114,12 +113,12 @@ function Toolbox() {
         </div>
         <div
           ref={box6Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] p-[3vw] shadow-md"
+          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] justify-center items-center shadow-md fixed top-[202%]"
         >
           <img src="/react.png" alt="React" className=" h-1/2" />
           <div>
             <h2 className="w-full text-left text-[1.5vw] font-bold">
-              React.Js
+              React.Jss
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
               Javascript Library
