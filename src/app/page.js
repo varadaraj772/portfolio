@@ -242,7 +242,8 @@ function page() {
           <span className="text-[2vw] w-[45%] px-[2vw]">(2020 - PRESENT)</span>
           <div className="text-[2vw] text-gray-700 w-[50%] flex flex-col">
             <span className="mb-[2vw]">
-            I design websites and mobile apps that make ideas shine—blending creativity and usability for experiences people love.
+              I design websites and mobile apps that make ideas shine—blending
+              creativity and usability for experiences people love.
             </span>
             <GreenButton
               text="Download Resume"
@@ -427,14 +428,13 @@ function page() {
             <div
               className="content flex flex-row px-[2.5vw] py-[3vw] w-full h-[33vw] justify-center items-center"
               style={{
-               
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
               ref={list1Ref}
             >
               <div className="tag h-full w-[15vw] pt-[1vw]">
                 <span className=" bg-transparent py-[0.7vw] px-[1.4vw] rounded-[4vw] border-[#2F2F2F] border text-white">
-                User Experience
+                  User Experience
                 </span>
               </div>
               <div className="number text-[2.5vw] h-full w-[15vw]">
@@ -443,56 +443,63 @@ function page() {
               </div>
               <div className="body flex flex-col text-white h-full w-[55vw] b">
                 <h2 className=" text-[1.8vw]">
-                I'll design experiences that bring your vision to life
+                  I'll design experiences that bring your vision to life
                 </h2>
                 <ul className="list-none mt-[1.8vw] space-y-[1vw]">
                   <li className=" flex flex-row ">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    User Research & Stakeholder Interviews – Understanding needs and defining goals.
+                    User Research & Stakeholder Interviews – Understanding needs
+                    and defining goals.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Information Architecture & Data Hierarchy – Organizing content for clarity and efficiency.
+                    Information Architecture & Data Hierarchy – Organizing
+                    content for clarity and efficiency.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    User Flows & Journey Mapping – Crafting smooth, intuitive user experiences.
+                    User Flows & Journey Mapping – Crafting smooth, intuitive
+                    user experiences.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Wireframing & Prototyping (Low/High Fidelity) – Bringing ideas to life visually.
+                    Wireframing & Prototyping (Low/High Fidelity) – Bringing
+                    ideas to life visually.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Usability Testing – Ensuring seamless interactions through real user feedback.
+                    Usability Testing – Ensuring seamless interactions through
+                    real user feedback.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Accessibility & Inclusive Design – Designing for every user, without limits.
+                    Accessibility & Inclusive Design – Designing for every user,
+                    without limits.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    User Behavior Analytics – Leveraging data to enhance usability and engagement.
+                    User Behavior Analytics – Leveraging data to enhance
+                    usability and engagement.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                   A/B Testing – Refining and optimizing designs for maximum impact.
+                    A/B Testing – Refining and optimizing designs for maximum
+                    impact.
                   </li>
                 </ul>
               </div>
               <div className="days text-[#2F2F2F] h-full w-[15vw]"></div>
             </div>
             <div
-              className="content flex flex-row px-[2.5vw] py-[3vw] w-full h-[29vw] justify-center items-center"
+              className="content flex flex-row px-[2.5vw] py-[3vw] w-full h-[25vw] justify-center items-center"
               style={{
-               
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
               ref={list2Ref}
             >
               <div className="tag h-full w-[15vw]  pt-[1vw]">
                 <span className=" bg-transparent py-[0.7vw] px-[1.4vw] rounded-[4vw] border-[#2F2F2F] border text-white">
-                User Interface
+                  User Interface
                 </span>
               </div>
               <div className="number text-[2.5vw] h-full w-[15vw]">
@@ -501,28 +508,29 @@ function page() {
               </div>
               <div className="body flex flex-col text-white h-full w-[55vw] b">
                 <h2 className=" text-[1.8vw]">
-                  I'll design visually compelling and intuitive interfaces that users enjoy.
+                  I'll design visually compelling and intuitive interfaces that
+                  users enjoy.
                 </h2>
                 <ul className="list-none mt-[1.8vw] space-y-[1vw]">
                   <li className=" flex flex-row ">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    User Interface (UI) & Visual Design – Crafting aesthetically pleasing and functional designs.
+                    User Interface (UI) & Visual Design – Crafting aesthetically
+                    pleasing and functional designs.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Design Systems & Component Libraries – Building consistency and scalability across products.
+                    Design Systems & Component Libraries – Building consistency
+                    and scalability across products.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Typography & Layout for Data-Heavy Interfaces – Making complex information easy to scan and understand.
+                    Typography & Layout for Data-Heavy Interfaces – Making
+                    complex information easy to scan and understand.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Micro interactions & UX Writing – Enhancing engagement with thoughtful details and clear messaging.
-                  </li>
-                  <li className=" flex flex-row">
-                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Responsive Design – Ensuring a seamless experience across all screen sizes and devices.
+                    Responsive Design – Ensuring a seamless experience across
+                    all screen sizes and devices.
                   </li>
                 </ul>
               </div>
@@ -537,7 +545,7 @@ function page() {
             >
               <div className="tag h-full w-[15vw]  pt-[1vw]">
                 <span className=" bg-transparent py-[0.7vw] px-[1.4vw] rounded-[4vw] border-[#2F2F2F] border text-white">
-                Creative Leadership
+                  Creative Leadership
                 </span>
               </div>
               <div className="number text-[2.5vw] h-full w-[15vw]">
@@ -546,20 +554,24 @@ function page() {
               </div>
               <div className="body flex flex-col text-white h-full w-[55vw] b">
                 <h2 className=" text-[1.8vw]">
-                I'll shape design excellence through leadership and collaboration.
+                  I'll shape design excellence through leadership and
+                  collaboration.
                 </h2>
                 <ul className="list-none mt-[1.8vw] space-y-[1vw]">
                   <li className=" flex flex-row ">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Design Leadership & Team Mentorship – Empowering teams to innovate and grow.
+                    Design Leadership & Team Mentorship – Empowering teams to
+                    innovate and grow.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Stakeholder & Client Communication – Aligning vision, goals, and expectations.
+                    Stakeholder & Client Communication – Aligning vision, goals,
+                    and expectations.
                   </li>
                   <li className=" flex flex-row">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    Agile UX & Sprint Planning – Delivering seamless experiences in fast-paced workflows.
+                    Agile UX & Sprint Planning – Delivering seamless experiences
+                    in fast-paced workflows.
                   </li>
                 </ul>
               </div>
@@ -567,37 +579,33 @@ function page() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 mt-[5vw] gap-[2vw] px-[2.5vw] font-semibold">
               {/* Figma Box */}
-              <div className=" rounded-[0.9vw] bg-[#8CFF2E] text-black h-[15vw] shadow-md cursor-pointer group hover:px-[1vw]  transition-all duration-500">
+              <div className=" rounded-[0.9vw] bg-[#8CFF2E] text-black h-[15vw] shadow-md cursor-pointer ">
                 <div className=" w-full p-[1vw]">
-                  <p className=" text-[5vw] ">95+</p>
+                  <p className=" text-[5vw] ">08+</p>
                 </div>
                 <div className=" w-full flex flex-col items-end justify-end px-[2vw]">
-                  <span className=" text-[1.2vw]">Percent</span>
+                  <span className=" text-[1.2vw]">null</span>
                   <span className=" text-[1.7vw] opacity-50">
-                    Customer Satisfaction
+                    Digital Solutions
                   </span>
                 </div>
               </div>
-              <div className=" rounded-[0.9vw] bg-[#242424] text-white h-[15vw] shadow-md cursor-pointer group hover:px-[1vw]  transition-all duration-500">
+              <div className=" rounded-[0.9vw] bg-[#242424] text-white h-[15vw] shadow-md cursor-pointer ">
                 <div className=" w-full p-[1vw]">
-                  <p className=" text-[5vw]">95+</p>
+                  <p className=" text-[5vw]">04+</p>
                 </div>
                 <div className=" w-full flex flex-col items-end justify-end px-[2vw]">
-                  <span className=" text-[1.2vw]">Percent</span>
-                  <span className=" text-[1.7vw] opacity-50">
-                    Customer Satisfaction
-                  </span>
+                  <span className=" text-[1.2vw]">Years</span>
+                  <span className=" text-[1.7vw] opacity-50">Experience</span>
                 </div>
               </div>
-              <div className=" rounded-[0.9vw] bg-white h-[15vw] shadow-md cursor-pointer group hover:px-[1vw]  transition-all duration-500">
+              <div className=" rounded-[0.9vw] bg-white h-[15vw] shadow-md cursor-pointer ">
                 <div className=" w-full p-[1vw]">
-                  <p className=" text-[5vw]">95+</p>
+                  <p className=" text-[5vw]">10++</p>
                 </div>
                 <div className=" w-full flex flex-col items-end justify-end px-[2vw]">
-                  <span className=" text-[1.2vw]">Percent</span>
-                  <span className=" text-[1.7vw] opacity-50">
-                    Customer Satisfaction
-                  </span>
+                  <span className=" text-[1.2vw]">null</span>
+                  <span className=" text-[1.7vw] opacity-50">Projects</span>
                 </div>
               </div>
             </div>
@@ -612,7 +620,7 @@ function page() {
               </span>
             </div>
             <div className=" text-[6.5vw]">
-              <h1>I’m all over the internet</h1>
+              <h1>Find me across the internet</h1>
             </div>
             <div className=" py-[2vw]">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-[2vw]">
@@ -664,7 +672,7 @@ function page() {
           >
             <div className=" h-full w-1/2 justify-center items-center flex flex-col px-[2vw] bg-[url(/footervector.svg)] bg-cover">
               <h1 className=" text-[5vw] text-white font-semibold">
-                Let's create something extraordinary together.
+                Let's design experiences that inspire the world.
               </h1>
               <h2 className=" text-[2vw] text-white opacity-50 w-full mt-[3vw]">
                 Let’s make an impact
@@ -710,11 +718,13 @@ function page() {
                     Hit me up if you’re looking for a{" "}
                   </span>
                   <span className="text-white opacity-100">
-                    fast, reliable web-designer
+                    skilled , versatile designer
                   </span>
-                  <span className="opacity-50">
+                  <span className="">
                     {" "}
-                    who can bring your vision to life.
+                    <span className="opacity-50">who can bring your{" "}</span>
+                    <span>web{" "}</span> <span className="opacity-50">and{" "}</span> <span>mobile</span>{" "}
+                    <span className="opacity-50">vision to life.</span>
                   </span>
                 </p>
                 <div className="px-[1vw]">
