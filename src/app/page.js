@@ -10,6 +10,7 @@ import Toolbox from "./components/Toolbox";
 import { GoDotFill } from "react-icons/go";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { IoMdArrowDown } from "react-icons/io";
 import Lenis from "lenis";
 import "lenis/dist/lenis.css";
 
@@ -245,7 +246,7 @@ function page() {
               combining design and development to deliver fast, impactful
               results.
             </span>
-            <GreenButton text="Download Resume" />
+            <GreenButton text="Download Resume" icon={IoMdArrowDown} rotate="rotate-0"/>
           </div>
         </section>
       </main>
@@ -625,7 +626,7 @@ function page() {
             <div className=" py-[2vw]">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-[2vw]">
                 {/* Figma Box */}
-                <div className=" rounded-[0.9vw] bg-white text-[3vw] h-[15vw] shadow-md cursor-pointer group">
+                <div className=" rounded-[0.9vw] bg-white text-[2.5vw] h-[15vw] shadow-md cursor-pointer group">
                   <div className=" w-full p-[2vw]">
                     <p className="">behance</p>
                   </div>
@@ -635,7 +636,7 @@ function page() {
                     </div>
                   </div>
                 </div>
-                <div className=" rounded-[0.9vw] bg-white text-[3vw] h-[15vw] shadow-md cursor-pointer group">
+                <div className=" rounded-[0.9vw] bg-white text-[2.5vw] h-[15vw] shadow-md cursor-pointer group">
                   <div className=" w-full p-[2vw]">
                     <p className="">Linkedin</p>
                   </div>
@@ -645,7 +646,7 @@ function page() {
                     </div>
                   </div>
                 </div>
-                <div className=" rounded-[0.9vw] bg-[#8CFF2E] text-[3vw] h-[15vw] shadow-md cursor-pointer hover:px-[1vw] transition-all duration-500">
+                <div className=" rounded-[0.9vw] bg-[#8CFF2E] text-[2.5vw] h-[15vw] shadow-md cursor-pointer hover:px-[1vw] transition-all duration-500">
                   <div className=" w-full  p-[2vw]">
                     <p className="">Get in touch</p>
                   </div>
@@ -725,7 +726,7 @@ function page() {
                     who can bring your vision to life.
                   </span>
                 </p>
-                <GreenButton text="Book a call" />
+                <GreenButton text="Contact me" />
               </div>
             </div>
           </div>
