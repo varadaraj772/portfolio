@@ -232,19 +232,17 @@ function page() {
               </span>
             </span>
             <div className=" w-full flex flex-col" ref={groupTextRef}>
-              <span className="w-full  mt-[-3vw]">turning Your</span>
-              <span className="w-full  mt-[-3vw]">Ideas into pixel-</span>
-              <span className="w-full  mt-[-3vw]">perfect realities</span>
+              <span className="w-full  mt-[-3vw]">bringing ideas</span>
+              <span className="w-full  mt-[-3vw]">to life</span>
+              <span className="w-full  mt-[-3vw]">with design</span>
             </div>
           </section>
         </div>
         <section className="h-[25%] w-full flex flex-row justify-between mt-[5vw] py-[2vw] mb-[6vw]">
-          <span className="text-[2vw] w-[45%] px-[2vw]">(2018 - PRESENT)</span>
+          <span className="text-[2vw] w-[45%] px-[2vw]">(2020 - PRESENT)</span>
           <div className="text-[2vw] text-gray-700 w-[50%] flex flex-col">
             <span className="mb-[2vw]">
-              I’m dedicated to crafting websites that bring your ideas to life,
-              combining design and development to deliver fast, impactful
-              results.
+            I design websites and mobile apps that make ideas shine—blending creativity and usability for experiences people love.
             </span>
             <GreenButton
               text="Download Resume"
@@ -264,11 +262,11 @@ function page() {
             <span className=" px-[2.5vw] text-white flex flex-row gap-[0.7vw] items-center font-semibold">
               <GoDotFill className=" text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] text-[1.8vw]" />
               <span className=" opacity-50 text-[1.5vw]">
-                {"{01} — Featured projects"}
+                {"{01} — projects"}
               </span>
             </span>
             <h1 className=" text-white text-[6.5vw] px-[2.5vw]">
-              I blend creativity with technical expertise
+              Where creativity meets real-world solutions
             </h1>
             <div className="bg-transparent px-[2.5vw] pt-[2vw]">
               <GreenButton text="Become a client" />
