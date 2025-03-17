@@ -92,7 +92,7 @@ function page() {
       <main className="w-screen flex flex-col justify-center items-center bg-[rgb(17,17,17)]">
         <section className=" w-full">
           <Banner />
-          <div className="bg-[url(/svg.svg)] pb-[7vw] pt-[3vw] bg-right bg-no-repeat">
+          <div className="bg-[url(/svg.svg)] pb-[7vw] pt-[3vw] bg-[calc(100%+30rem)] bg-no-repeat">
             <h1 className=" text-white text-[6.5vw] px-[2.5vw]">
               I blend creativity with technical expertise
             </h1>
