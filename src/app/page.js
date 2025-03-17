@@ -10,7 +10,7 @@ import Toolbox from "./components/Toolbox";
 import { GoDotFill } from "react-icons/go";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { IoMdArrowDown } from "react-icons/io";
+import { MdArrowForward } from "react-icons/md";
 import Lenis from "lenis";
 import "lenis/dist/lenis.css";
 
@@ -246,7 +246,7 @@ function page() {
               combining design and development to deliver fast, impactful
               results.
             </span>
-            <GreenButton text="Download Resume" icon={IoMdArrowDown} rotate="rotate-0"/>
+            <GreenButton text="Download Resume" icon={MdArrowForward} rotate="rotate-90"/>
           </div>
         </section>
       </main>
@@ -714,7 +714,7 @@ function page() {
                 <h2 className=" text-[3vw] text-left font-semibold p-[1vw] text-white">
                   sanith.s74<span className=" text-[#8CFF2E]">@</span>gmail.com
                 </h2>
-                <p className="text-[1.8vw] text-white text-left font-semibold p-[1vw] mb-[0.8vw]">
+                <p className="text-[1.8vw] text-white text-left font-semibold p-[1vw] mb-[0.8vw] bg-red-400">
                   <span className="opacity-50">
                     Hit me up if you’re looking for a{" "}
                   </span>
