@@ -15,8 +15,9 @@ function Toolbox() {
   const box4Ref = useRef(null);
   const box5Ref = useRef(null);
   const box6Ref = useRef(null);
-  // .to(containerRef.current, { clipPath: "inset(0 0 50% 0)" });
+
   useEffect(() => {
+
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: containerRef.current,
@@ -31,6 +32,8 @@ function Toolbox() {
       .to(box4Ref.current, { top: "37%" })
       .to(box5Ref.current, { top: "37%" })
       .to(box6Ref.current, { top: "37%" });
+
+      
   }, []);
 
   return (

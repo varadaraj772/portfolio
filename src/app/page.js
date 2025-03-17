@@ -10,18 +10,29 @@ import Toolbox from "./components/Toolbox";
 import { GoDotFill } from "react-icons/go";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import Lenis from "lenis";
+import "lenis/dist/lenis.css";
 
+gsap.registerPlugin(ScrollTrigger);
 function page() {
   const nameRef = useRef(null);
+  const DesignationRef = useRef(null);
+  const placeRef = useRef(null);
+  const groupTextRef = useRef(null);
+
+  const headingRef = useRef(null);
   const image1Ref = useRef(null);
   const image2Ref = useRef(null);
   const image3Ref = useRef(null);
   const image4Ref = useRef(null);
   const image5Ref = useRef(null);
   const image6Ref = useRef(null);
-  const headingRef = useRef(null);
 
+  const listHeadingRef = useRef(null);
+  const list1Ref = useRef(null);
+  const list2Ref = useRef(null);
+  const list3Ref = useRef(null);
+  
   const imageRefs = [
     image1Ref,
     image2Ref,
@@ -32,11 +43,38 @@ function page() {
   ];
 
   useEffect(() => {
+    const lenis = new Lenis({
+      autoRaf: true,
+    });
+    lenis.on("scroll", ScrollTrigger.update);
+
+    gsap.ticker.add((time) => {
+      lenis.raf(time * 1000);
+    });
+
+    gsap.ticker.lagSmoothing(0);
+
     gsap.fromTo(
       nameRef.current,
-      { opacity: 0, y: -20 },
-      { opacity: 1, y: 0, duration: 1, ease: "power4.out" }
+      { opacity: 0, y: "-1vw" },
+      { opacity: 1, y: 0, duration: 1, delay: 0.1, ease: "power4.out" }
     );
+    gsap.fromTo(
+      DesignationRef.current,
+      { opacity: 0, y: "-1vw" },
+      { opacity: 1, y: 0, duration: 1, delay: 0.2, ease: "power4.out" }
+    );
+    gsap.fromTo(
+      placeRef.current,
+      { opacity: 0, x: "-2vw" },
+      { opacity: 1, x: 0, duration: 2, delay: 0.3, ease: "power4.out" }
+    );
+    gsap.fromTo(
+      groupTextRef.current,
+      { opacity: 0, y: "2vw" },
+      { opacity: 1, y: 0, duration: 2, delay: 0.4, ease: "power4.out" }
+    );
+
     imageRefs.forEach((imageRef) => {
       if (!imageRef.current) {
         return;
@@ -64,11 +102,67 @@ function page() {
         },
       }
     );
+    gsap.fromTo(
+      listHeadingRef.current,
+      { opacity: 0, y: "30%" },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: listHeadingRef.current,
+          scrub: true,
+        },
+      }
+    );
+    gsap.fromTo(
+      list1Ref.current,
+      { opacity: 0, y: "30%" },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: list1Ref.current,
+          scrub: true,
+        },
+      }
+    );
+    gsap.fromTo(
+      list2Ref.current,
+      { opacity: 0, y: "30%" },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: list2Ref.current,
+          scrub: true,
+        },
+      }
+    );
+    gsap.fromTo(
+      list3Ref.current,
+      { opacity: 0, y: "30%" },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: list3Ref.current,
+          scrub: true,
+        },
+      }
+    );
   }, []);
 
   return (
     <>
-      <main className="w-screen flex flex-col justify-center items-center bg-[url(/background.png)] bg-cover overflow-hidden">
+      <main className="w-screen flex flex-col justify-center items-center bg-[url(/background.png)] bg-cover overflow-hidden relative z-50">
         <nav
           className=" w-full h-[13vh] flex flex-row justify-between items-center pr-[3vw] pl-[2.5vw] bg-transparent z-50 relative font-semibold overflow-hidden"
           style={{
@@ -89,7 +183,7 @@ function page() {
             </button>
           </div>
         </nav>
-        <div className="flex flex-row w-full justify-between items-center px-[2vw]">
+        <div className="flex flex-row w-full justify-between items-center px-[2vw] relative z-50">
           <section className="h-full w-[40%] flex">
             <div className="w-full flex flex-row gap-[3vw]">
               <div className="flex justify-center items-center  h-[10vw] rounded-full w-[10vw]">
@@ -121,21 +215,26 @@ function page() {
                 Sanith Suvarna
               </span>
             </span>
-            <span className="w-full mt-[-3vw] gap-[2vw]">
+            <span className="w-full mt-[-3vw] gap-[2vw]" ref={DesignationRef}>
               a{" "}
               <span className=" bg-[#2F2F2F] py-[1.4vw] px-[1.8vw] rounded-[4vw] text-white text-[3vw] shadow-md">
                 UX/UI Designer
               </span>
             </span>
-            <span className="w-full mt-[-0.5vw] flex items-center gap-[2vw]">
+            <span
+              className="w-full mt-[-0.5vw] flex items-center gap-[2vw]"
+              ref={placeRef}
+            >
               from{" "}
               <span className=" bg-transparent py-[1.4vw] px-[1.8vw] rounded-[4vw] text-[#2F2F2F] border-[#2F2F2F] border text-[3vw]">
                 Mangalore
               </span>
             </span>
-            <span className="w-full  mt-[-3vw]">turning Your</span>
-            <span className="w-full  mt-[-3vw]">Ideas into pixel-</span>
-            <span className="w-full  mt-[-3vw]">perfect realities</span>
+            <div className=" w-full flex flex-col" ref={groupTextRef}>
+              <span className="w-full  mt-[-3vw]">turning Your</span>
+              <span className="w-full  mt-[-3vw]">Ideas into pixel-</span>
+              <span className="w-full  mt-[-3vw]">perfect realities</span>
+            </div>
           </section>
         </div>
         <section className="h-[25%] w-full flex flex-row justify-between mt-[5vw] py-[2vw] mb-[6vw]">
@@ -194,7 +293,7 @@ function page() {
                   src="/img1.jpg"
                   ref={image1Ref}
                   alt="Project Image: Nexus"
-                  className="h-[48%] object-cover rounded-[2vw] w-[82%] translate-x-[3.5vw]"
+                  className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
                 />
               </div>
               <div className="w-1/2 flex flex-col text-white translate-x-[3.5vw] ">
@@ -309,7 +408,7 @@ function page() {
           </div>
 
           <div className=" pb-[10vw]">
-            <div className="head py-[3vw]">
+            <div className="head py-[3vw]" ref={listHeadingRef}>
               <span className=" px-[2.5vw] text-white flex flex-row gap-[0.7vw] items-center font-semibold">
                 <GoDotFill className=" text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] text-[1.5vw]" />
                 <span className=" opacity-50 text-[1.3vw]">
@@ -328,6 +427,7 @@ function page() {
                 borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
+              ref={list1Ref}
             >
               <div className="tag h-full w-[15vw] pt-[1vw]">
                 <span className=" bg-transparent py-[0.7vw] px-[1.4vw] rounded-[4vw] border-[#2F2F2F] border text-white">
@@ -393,6 +493,7 @@ function page() {
                 borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
+              ref={list2Ref}
             >
               <div className="tag h-full w-[15vw]  pt-[1vw]">
                 <span className=" bg-transparent py-[0.7vw] px-[1.4vw] rounded-[4vw] border-[#2F2F2F] border text-white">
@@ -437,6 +538,7 @@ function page() {
               style={{
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
+              ref={list3Ref}
             >
               <div className="tag h-full w-[15vw]  pt-[1vw]">
                 <span className=" bg-transparent py-[0.7vw] px-[1.4vw] rounded-[4vw] border-[#2F2F2F] border text-white">
