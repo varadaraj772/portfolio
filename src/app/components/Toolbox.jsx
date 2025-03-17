@@ -43,7 +43,7 @@ function Toolbox() {
       <div className=" w-1/2 flex flex-col gap-[2.5vw] relative top-[37%]">
         <div
           ref={box1Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] justify-center items-center shadow-md fixed top-[37%]"
+          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[37%]"
         >
           <img src="/react.png" alt="React" className=" h-1/2" />
           <div>
@@ -57,7 +57,7 @@ function Toolbox() {
         </div>
         <div
           ref={box2Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] justify-center items-center shadow-md fixed top-[70%]"
+          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[70%]"
         >
           <img src="/react.png" alt="React" className=" h-1/2" />
           <div>
@@ -71,7 +71,7 @@ function Toolbox() {
         </div>
         <div
           ref={box3Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] justify-center items-center shadow-md fixed top-[103%]"
+          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[103%]"
         >
           <img src="/react.png" alt="React" className=" h-1/2" />
           <div>
@@ -85,7 +85,7 @@ function Toolbox() {
         </div>
         <div
           ref={box4Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] justify-center items-center shadow-md fixed top-[136%]"
+          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[136%]"
         >
           <img src="/react.png" alt="React" className=" h-1/2" />
           <div>
@@ -99,7 +99,7 @@ function Toolbox() {
         </div>
         <div
           ref={box5Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] justify-center items-center shadow-md fixed top-[169%]"
+          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[169%]"
         >
           <img src="/react.png" alt="React" className=" h-1/2" />
           <div>
@@ -113,7 +113,7 @@ function Toolbox() {
         </div>
         <div
           ref={box6Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] justify-center items-center shadow-md fixed top-[202%]"
+          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[202%]"
         >
           <img src="/react.png" alt="React" className=" h-1/2" />
           <div>

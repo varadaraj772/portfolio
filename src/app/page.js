@@ -114,23 +114,22 @@ function page() {
                   borderRight: "1px solid rgba(255, 255, 255, 0.1)",
                 }}
               >
-              <div className=" h-full">
-              <div className=" flex flex-col h-[30%] justify-center gap-[0.5vw]">
-                  {/* <span className="text-[1.2vw] text-[#8CFF2E]">
+                <div className=" h-full">
+                  <div className=" flex flex-col h-[30%] justify-center gap-[0.5vw]">
+                    {/* <span className="text-[1.2vw] text-[#8CFF2E]">
                {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
                 </span> */}
-                  <span className="text-[2vw]">SilverLinex Technologies</span>
-                  <span className="opacity-50">
-                    Web design & Developement
-                  </span>{" "}
+                    <span className="text-[2vw]">SilverLinex Technologies</span>
+                    <span className="opacity-50">
+                      Web design & Developement
+                    </span>{" "}
+                  </div>
+                  <img
+                    src="/img1.jpg"
+                    alt="Project Image: Nexus"
+                    className="h-[50%] object-cover rounded-[2vw] w-[85%] text-center"
+                  />
                 </div>
-                <img
-                  src="/img1.jpg"
-                  alt="Project Image: Nexus"
-                  className="h-[50%] object-cover rounded-[2vw] w-[85%] text-center"
-                />
-              </div>
-
               </div>
               <div className="w-1/2 flex flex-col text-white px-[1.5vw] translate-x-[3.5vw] ">
                 <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
@@ -488,16 +487,23 @@ function page() {
             <Banner />
           </div>
 
-          <div className=" h-[100vh] bg-[url(/footervector.svg)] flex flex-row ">
-            <div className=" h-full w-1/2 justify-center items-center flex flex-col px-[2vw]">
+          <div className=" h-[100vh] flex flex-row"  style={{
+                borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
+              }}>
+            <div
+              className=" h-full w-1/2 justify-center items-center flex flex-col px-[2vw] bg-[url(/footervector.svg)] bg-cover"
+             
+            >
               <h1 className=" text-[5vw] text-white font-semibold">
                 Let's create something extraordinary together.
               </h1>
-              <h2 className=" text-[2vw] text-white opacity-50 w-full">
+              <h2 className=" text-[2vw] text-white opacity-50 w-full mt-[3vw]">
                 Let’s make an impact
               </h2>
             </div>
-            <div className="h-full w-1/2 flex flex-col bg-[rgb(17,17,17)] ml-[4.1vw]">
+            <div className="h-full w-1/2 flex flex-col" style={{
+              borderLeft:'1px solid rgba(255,255,255,0.1)'
+              }}>
               <div className=" text-white h-[40%] flex items-end p-[2vw] ">
                 <div className="w-3/4 flex flex-row justify-around mt-[2vw]">
                   <div className="flex justify-center items-center  h-[10vw] rounded-full w-[10vw]">
@@ -521,13 +527,13 @@ function page() {
                 </div>
               </div>
               <div className=" h-1/2 px-[4vw]">
-                <h2 className="opacity-50 text-[2vw] text-left font-semibold p-[1vw] text-white">
+                <h2 className="opacity-50 text-[1.8vw] text-left font-semibold p-[1vw] text-white">
                   Contact me
                 </h2>
                 <h2 className=" text-[3vw] text-left font-semibold p-[1vw] text-white">
                   sanith.s74<span className=" text-[#8CFF2E]">@</span>gmail.com
                 </h2>
-                <p className="text-[2vw] text-white text-left font-semibold p-[1vw]">
+                <p className="text-[1.8vw] text-white text-left font-semibold p-[1vw] mb-[0.8vw]">
                   <span className="opacity-50">
                     Hit me up if you’re looking for a{" "}
                   </span>
