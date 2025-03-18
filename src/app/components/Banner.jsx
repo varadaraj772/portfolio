@@ -64,11 +64,9 @@ function Banner({ words }) {
                 {parts.map((part, partIndex) => (
                   <React.Fragment key={partIndex}>
                     <span
-                      className={
-                        partIndex % 2 === 1
-                          ? "text-[#8CFF2E] text-[2.5vw]"
-                          : "text-white text-[2.5vw]"    
-                      }
+                      className={`text-[2.5vw] preserve-spaces ${
+                        partIndex % 2 === 1 ? "text-[#8CFF2E]" : "text-white"
+                      }`}
                     >
                       {part}
                     </span>

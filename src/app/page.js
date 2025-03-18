@@ -255,7 +255,7 @@ function page() {
       </main>
       <main className="w-screen flex flex-col justify-center items-center bg-[rgb(17,17,17)]">
         <section className=" w-full">
-          <Banner words={["4 + experience & 10 + projects"]} />
+          <Banner words={["4 + experience  &  10 + projects"]} />
           <div
             className="bg-[url(/svg.svg)] pb-[7vw] pt-[7vw] bg-[100%] bg-no-repeat bg-contain"
             ref={headingRef}
@@ -288,13 +288,13 @@ function page() {
                 }}
               >
                 <div className=" flex flex-col h-[30%] justify-center gap-[1vw] translate-x-[3.5vw]">
-                  <span className="text-[2vw]">SilverLinex Technologies</span>
+                  <span className="text-[2vw]">IRS Plus</span>
                   <span className="opacity-50">
-                    Web design & Developement
+                  Web and Mobile Design 
                   </span>{" "}
                 </div>
                 <img
-                  src="/img1.jpg"
+                  src="/project1.png"
                   ref={image1Ref}
                   alt="Project Image: Nexus"
                   className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
@@ -305,13 +305,13 @@ function page() {
                   {/* <span className="text-[1.2vw] text-[#8CFF2E]">
                {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
                 </span> */}
-                  <span className="text-[2vw]">SilverLinex Technologies</span>
+                  <span className="text-[2vw]">Casa Malta</span>
                   <span className="opacity-50">
-                    Web design & Developement
+                  Web and Mobile Design 
                   </span>{" "}
                 </div>
                 <img
-                  src="/img1.jpg"
+                  src="/project2.png"
                   alt="Project Image: Nexus"
                   ref={image2Ref}
                   className="h-[50%] object-cover rounded-[2vw] w-[85%]"
@@ -332,13 +332,13 @@ function page() {
                 }}
               >
                 <div className=" flex flex-col h-[30%] justify-center gap-[1vw] translate-x-[3.5vw]">
-                  <span className="text-[2vw]">SilverLinex Technologies</span>
+                  <span className="text-[2vw]">Primesophic Technology</span>
                   <span className="opacity-50">
-                    Web design & Developement
+                  Web and Mobile Design 
                   </span>{" "}
                 </div>
                 <img
-                  src="/img1.jpg"
+                  src="/project3.png"
                   alt="Project Image: Nexus"
                   ref={image3Ref}
                   className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
@@ -349,13 +349,13 @@ function page() {
                   {/* <span className="text-[1.2vw] text-[#8CFF2E]">
                {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
                 </span> */}
-                  <span className="text-[2vw]">SilverLinex Technologies</span>
+                  <span className="text-[2vw]">Malta Tourism </span>
                   <span className="opacity-50">
-                    Web design & Developement
+                  Web Design 
                   </span>{" "}
                 </div>
                 <img
-                  src="/img1.jpg"
+                  src="/project4.png"
                   ref={image4Ref}
                   alt="Project Image: Nexus"
                   className="h-[50%] object-cover rounded-[2vw] w-[85%]"
@@ -375,13 +375,13 @@ function page() {
                 }}
               >
                 <div className=" flex flex-col h-[30%] justify-center gap-[1vw] translate-x-[3.5vw]">
-                  <span className="text-[2vw]">SilverLinex Technologies</span>
+                  <span className="text-[2vw]">Old Town Market</span>
                   <span className="opacity-50">
-                    Web design & Developement
+                  Web Design 
                   </span>{" "}
                 </div>
                 <img
-                  src="/img1.jpg"
+                  src="/project5.png"
                   ref={image5Ref}
                   alt="Project Image: Nexus"
                   className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
@@ -392,13 +392,13 @@ function page() {
                   {/* <span className="text-[1.2vw] text-[#8CFF2E]">
                {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
                 </span> */}
-                  <span className="text-[2vw]">SilverLinex Technologies</span>
+                  <span className="text-[2vw]">Testaahel</span>
                   <span className="opacity-50">
-                    Web design & Developement
+                  Mobile App
                   </span>{" "}
                 </div>
                 <img
-                  src="/img1.jpg"
+                  src="/project6.png"
                   ref={image6Ref}
                   alt="Project Image: Nexus"
                   className="h-[50%] object-cover rounded-[2vw] w-[85%]"
@@ -626,7 +626,7 @@ function page() {
                   <p className=" text-[5vw] ">08+</p>
                 </div>
                 <div className=" w-full flex flex-col items-end justify-end px-[2vw]">
-                  <span className=" text-[1.2vw]">null</span>
+                  <span className=" text-[1.2vw]">Solutions Delivered</span>
                   <span className=" text-[1.7vw] opacity-50">
                     Digital Solutions
                   </span>
@@ -646,7 +646,7 @@ function page() {
                   <p className=" text-[5vw]">10+</p>
                 </div>
                 <div className=" w-full flex flex-col items-end justify-end px-[2vw]">
-                  <span className=" text-[1.2vw]">null</span>
+                  <span className=" text-[1.2vw]">Completed</span>
                   <span className=" text-[1.7vw] opacity-50">Projects</span>
                 </div>
               </div>

@@ -58,7 +58,7 @@ function Toolbox() {
              Figma
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
-              Javascript Library
+            My digital canvas for pixel-perfect magic
             </h3>
           </div>
         </div>
@@ -72,7 +72,7 @@ function Toolbox() {
              Photoshop
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
-              Javascript Library
+            Where ideas get a visual upgrade
             </h3>
           </div>
         </div>
@@ -86,7 +86,7 @@ function Toolbox() {
               Illustrator
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
-              Javascript Library
+            Icons, vectors & creativity unleashed
             </h3>
 
           </div>
@@ -101,7 +101,7 @@ function Toolbox() {
               Notion
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
-              Javascript Library
+            My brain&apos;s second home for all things design
             </h3>
           </div>
         </div>
@@ -115,7 +115,7 @@ function Toolbox() {
               Miro
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
-              Javascript Library
+            Sticky notes, big ideas, zero mess
             </h3>
           </div>
         </div>
@@ -129,7 +129,7 @@ function Toolbox() {
               Ai Tools
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
-              Javascript Library
+            Work smarter, not harder
             </h3>
           </div>
         </div>
