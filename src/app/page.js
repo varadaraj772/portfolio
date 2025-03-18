@@ -174,7 +174,7 @@ function page() {
             <h2>Projects</h2>
             <h2>About & Contact</h2>
           </div>
-          <div className="flex flex-row w-1/2 justify-end items-center gap-[2vw] ">
+          <div className="flex flex-row w-1/2 justify-end items-center gap-[2vw] text-[1.2vw]">
             <div>
               <span className=" opacity-50">Email :</span>
               <span>sanith.s74@gmail.com</span>
@@ -255,7 +255,7 @@ function page() {
       </main>
       <main className="w-screen flex flex-col justify-center items-center bg-[rgb(17,17,17)]">
         <section className=" w-full">
-          <Banner words={["4 + experience", "10 + projects"]} />
+          <Banner words={["4 + experience & 10 + projects"]} />
           <div
             className="bg-[url(/svg.svg)] pb-[7vw] pt-[7vw] bg-[100%] bg-no-repeat bg-contain"
             ref={headingRef}

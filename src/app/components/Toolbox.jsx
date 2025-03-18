@@ -39,11 +39,11 @@ function Toolbox() {
       className="bg-[#F8F8F8] flex flex-row overflow--hidden h-[100vh]"
     >
       <div className=" w-1/2 flex justify-center items-center h-full flex-col">
-        <span className=" px-[2.5vw] text-black flex flex-row gap-[0.7vw] items-center font-semibold w-[82%]">
+        <span className=" pl-[3vw] text-black flex flex-row gap-[0.7vw] items-center font-semibold w-full">
           <GoDotFill className=" text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] text-[1.8vw]" />
           <span className=" opacity-50 text-[1.5vw]">{"{02} — Tools"}</span>
         </span>
-        <span className=" text-[6vw] text-center">
+        <span className=" text-[6vw] text-left pl-[3vw]">
           My Go-To Creative Toolkit
         </span>
       </div>
@@ -80,7 +80,7 @@ function Toolbox() {
           ref={box3Ref}
           className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[103%]"
         >
-          <img src="/illustrator.png" alt="React" className=" h-1/2" />
+          <img src="/Illustrator.png" alt="React" className=" h-1/2" />
           <div>
             <h2 className="w-full text-left text-[1.5vw] font-bold">
               Illustrator
@@ -88,6 +88,7 @@ function Toolbox() {
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
               Javascript Library
             </h3>
+
           </div>
         </div>
         <div
@@ -122,7 +123,7 @@ function Toolbox() {
           ref={box6Ref}
           className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[202%]"
         >
-          <img src="/ai.jpg" alt="React" className=" h-1/2 rounded-[2vw] w-[30%] object-cover" />
+          <img src="/ai.jpg" alt="React" className=" h-1/2 rounded-[2vw]" />
           <div>
             <h2 className="w-full text-left text-[1.5vw] font-bold">
               Ai Tools
