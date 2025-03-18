@@ -17,20 +17,39 @@ function Toolbox() {
   const box6Ref = useRef(null);
 
   useEffect(() => {
+    const container = containerRef.current;
+    const box2 = box2Ref.current;
+    const box3 = box3Ref.current;
+    const box4 = box4Ref.current;
+    const box5 = box5Ref.current;
+    const box6 = box6Ref.current;
+
+    if (!container || !box2 || !box3 || !box4 || !box5 || !box6) {
+      return;
+    }
+
+    const boxes = [box2, box3, box4, box5, box6];
+
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: containerRef.current,
+        trigger: container,
         start: "top top",
         end: "+=500%",
         scrub: 2,
         pin: true,
       },
     });
-    tl.to(box2Ref.current, { top: "37%" })
-      .to(box3Ref.current, { top: "37%" })
-      .to(box4Ref.current, { top: "37%" })
-      .to(box5Ref.current, { top: "37%" })
-      .to(box6Ref.current, { top: "37%" });
+
+    tl.to(boxes, {
+      top: "37%",
+      stagger: {
+        amount: 1,
+      },
+    });
+
+    return () => {
+      tl.kill();
+    };
   }, []);
 
   return (
@@ -54,11 +73,9 @@ function Toolbox() {
         >
           <img src="/figma.png" alt="React" className=" h-1/2" />
           <div>
-            <h2 className="w-full text-left text-[1.5vw] font-bold">
-             Figma
-            </h2>
+            <h2 className="w-full text-left text-[1.5vw] font-bold">Figma</h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
-            My digital canvas for pixel-perfect magic
+              My digital canvas for pixel-perfect magic
             </h3>
           </div>
         </div>
@@ -69,10 +86,10 @@ function Toolbox() {
           <img src="/photoshop.svg" alt="React" className=" h-1/2" />
           <div>
             <h2 className="w-full text-left text-[1.5vw] font-bold">
-             Photoshop
+              Photoshop
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
-            Where ideas get a visual upgrade
+              Where ideas get a visual upgrade
             </h3>
           </div>
         </div>
@@ -86,9 +103,8 @@ function Toolbox() {
               Illustrator
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
-            Icons, vectors & creativity unleashed
+              Icons, vectors & creativity unleashed
             </h3>
-
           </div>
         </div>
         <div
@@ -97,11 +113,9 @@ function Toolbox() {
         >
           <img src="/notion.png" alt="React" className=" h-1/2" />
           <div>
-            <h2 className="w-full text-left text-[1.5vw] font-bold">
-              Notion
-            </h2>
+            <h2 className="w-full text-left text-[1.5vw] font-bold">Notion</h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
-            My brain&apos;s second home for all things design
+              My brain&apos;s second home for all things design
             </h3>
           </div>
         </div>
@@ -111,11 +125,9 @@ function Toolbox() {
         >
           <img src="/miro.png" alt="React" className=" h-1/2" />
           <div>
-            <h2 className="w-full text-left text-[1.5vw] font-bold">
-              Miro
-            </h2>
+            <h2 className="w-full text-left text-[1.5vw] font-bold">Miro</h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
-            Sticky notes, big ideas, zero mess
+              Sticky notes, big ideas, zero mess
             </h3>
           </div>
         </div>
@@ -129,7 +141,7 @@ function Toolbox() {
               Ai Tools
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
-            Work smarter, not harder
+              Work smarter, not harder
             </h3>
           </div>
         </div>
