@@ -9,13 +9,18 @@ import Banner from "./components/Banner";
 import Toolbox from "./components/Toolbox";
 import { GoDotFill } from "react-icons/go";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { MdArrowForward } from "react-icons/md";
 import Lenis from "lenis";
 import "lenis/dist/lenis.css";
+import Link from "next/link";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 function page() {
+  const linkedinURL = "https://www.linkedin.com/in/sanith-suvarna/";
+  const behanceURL = "https://www.behance.net/sanisuv";
+
   const nameRef = useRef(null);
   const DesignationRef = useRef(null);
   const placeRef = useRef(null);
@@ -45,15 +50,23 @@ function page() {
 
   useEffect(() => {
     const lenis = new Lenis({
-      autoRaf: true,
+      duration: 1.2, // Adjust for desired smoothness
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Standard Lenis easing
+      orientation: "vertical",
+      gestureOrientation: "vertical",
+      smoothWheel: true,
+      smoothTouch: false,
+      touchMultiplier: 2,
     });
-    lenis.on("scroll", ScrollTrigger.update);
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf); // Use requestAnimationFrame directly
+    }
+    requestAnimationFrame(raf);
 
-    gsap.ticker.add((time) => {
-      lenis.raf(time * 1000);
+    ScrollTrigger.defaults({
+      scroller: ".lenis", // Use a class selector for Lenis (important)
     });
-
-    gsap.ticker.lagSmoothing(0);
 
     gsap.fromTo(
       nameRef.current,
@@ -159,6 +172,11 @@ function page() {
         },
       }
     );
+    return () => {
+      lenis.destroy(); // Important: Destroy Lenis on component unmount
+      ScrollTrigger.getAll().forEach((st) => st.kill()); // Kill all ScrollTriggers
+      gsap.ticker.remove(raf); // Remove the raf from the ticker
+    };
   }, []);
 
   return (
@@ -171,17 +189,23 @@ function page() {
           }}
         >
           <div className=" flex flex-row text-[1.3vw] py-[1vw] gap-[2vw]">
-            <h2>Projects</h2>
-            <h2>About & Contact</h2>
+            <Link href="#projects" className="no-underline text-current">
+              <h2>Projects</h2>
+            </Link>
           </div>
           <div className="flex flex-row w-1/2 justify-end items-center gap-[2vw] text-[1.2vw]">
             <div>
-              <span className=" opacity-50">Email :</span>
-              <span>sanith.s74@gmail.com</span>
+              <a href="mailto:sanith.s74@gmail.com">
+                <span className=" opacity-50">Email :</span>
+                <span>sanith.s74@gmail.com</span>
+              </a>
             </div>
-            <button className=" bg-[#8CFF2E] py-[1.1vw] px-[1.7vw] rounded-[2vw] text-black">
-              <a href="mailto:varadaraj277@gmail.com">Contact me</a>
-            </button>
+            <a
+              href="mailto:sanith.s74@gmail.com"
+              className="bg-[#8CFF2E] py-[1.1vw] px-[1.7vw] rounded-[2vw] text-black no-underline inline-block"
+            >
+              Contact me
+            </a>
           </div>
         </nav>
         <div className="flex flex-row w-full justify-between items-center px-[2vw] relative z-50">
@@ -200,8 +224,20 @@ function page() {
                   UX/UI Designer
                 </h2>
                 <div className=" flex flex-row mt-[1vw] text-[1.5vw] gap-[1vw] opacity-50">
-                  <FaBehance className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
-                  <FaLinkedin className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                  <Link
+                    href={behanceURL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaBehance className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                  </Link>
+                  <Link
+                    href={linkedinURL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaLinkedin className="hover:rotate-[360deg] cursor-pointer transition-transform duration-700" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -249,11 +285,17 @@ function page() {
               text="Download Resume"
               icon={MdArrowForward}
               rotate="rotate-90"
+              href="/Sanith_Snr_UXUI_Resume.pdf"
+              downloadAttribute="Sanith_Snr_UXUI_Resume.pdf"
+              targetAttribute="_blank"
             />
           </div>
         </section>
       </main>
-      <main className="w-screen flex flex-col justify-center items-center bg-[rgb(17,17,17)]">
+      <main
+        className="w-screen flex flex-col justify-center items-center bg-[rgb(17,17,17)]"
+        id="projects"
+      >
         <section className=" w-full">
           <Banner words={["4 + experience  &  10 + projects"]} />
           <div
@@ -270,7 +312,12 @@ function page() {
               Where creativity meets real-world solutions
             </h1>
             <div className="bg-transparent px-[2.5vw] pt-[2vw]">
-              <GreenButton text="Become a client" />
+              <GreenButton
+                text="Become a client"
+                href="mailto:sanith.s74@gmail.com"
+                downloadAttribute={false}
+                targetAttribute={null}
+              />
             </div>
           </div>
           <div className="flex flex-col overflow-x-hidden">
@@ -289,16 +336,22 @@ function page() {
               >
                 <div className=" flex flex-col h-[30%] justify-center gap-[1vw] translate-x-[3.5vw]">
                   <span className="text-[2vw]">IRS Plus</span>
-                  <span className="opacity-50">
-                  Web and Mobile Design 
-                  </span>{" "}
+                  <span className="opacity-50">Web and Mobile Design</span>{" "}
                 </div>
-                <img
+                <Image
+                  src="/project1.png"
+                  ref={image1Ref}
+                  className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
+                   alt="Project Image: IRS Plus"
+                  width={200}
+                  height={200}
+                />
+                {/* <img
                   src="/project1.png"
                   ref={image1Ref}
                   alt="Project Image: Nexus"
                   className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
-                />
+                /> */}
               </div>
               <div className="w-1/2 flex flex-col text-white translate-x-[3.5vw] ">
                 <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
@@ -306,16 +359,22 @@ function page() {
                {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
                 </span> */}
                   <span className="text-[2vw]">Casa Malta</span>
-                  <span className="opacity-50">
-                  Web and Mobile Design 
-                  </span>{" "}
+                  <span className="opacity-50">Web and Mobile Design</span>{" "}
                 </div>
-                <img
+                <Image
+                  src="/project2.png"
+                  alt="Project Image: Casa Malta"
+                  ref={image2Ref}
+                  className="h-[50%] object-cover rounded-[2vw] w-[85%]"
+                  width={200}
+                  height={200}
+                />
+                {/* <img
                   src="/project2.png"
                   alt="Project Image: Nexus"
                   ref={image2Ref}
                   className="h-[50%] object-cover rounded-[2vw] w-[85%]"
-                />
+                /> */}
               </div>
             </div>
             <div
@@ -333,16 +392,22 @@ function page() {
               >
                 <div className=" flex flex-col h-[30%] justify-center gap-[1vw] translate-x-[3.5vw]">
                   <span className="text-[2vw]">Primesophic Technology</span>
-                  <span className="opacity-50">
-                  Web and Mobile Design 
-                  </span>{" "}
+                  <span className="opacity-50">Web and Mobile Design</span>{" "}
                 </div>
-                <img
+                <Image
+                 src="/project3.png"
+                  alt="Project Image: Primesophic Technology"
+                  ref={image3Ref}
+                  className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
+                  width={200}
+                  height={200}
+                />
+                {/* <img
                   src="/project3.png"
                   alt="Project Image: Nexus"
                   ref={image3Ref}
                   className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
-                />
+                /> */}
               </div>
               <div className="w-1/2 flex flex-col text-white translate-x-[3.5vw] ">
                 <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
@@ -350,16 +415,22 @@ function page() {
                {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
                 </span> */}
                   <span className="text-[2vw]">Malta Tourism </span>
-                  <span className="opacity-50">
-                  Web Design 
-                  </span>{" "}
+                  <span className="opacity-50">Web Design</span>{" "}
                 </div>
-                <img
+                <Image
+                 src="/project4.png"
+                  ref={image4Ref}
+                  alt="Project Image: Malta Tourism"
+                  className="h-[50%] object-cover rounded-[2vw] w-[85%]"
+                  width={200}
+                  height={200}
+                />
+                {/* <img
                   src="/project4.png"
                   ref={image4Ref}
                   alt="Project Image: Nexus"
                   className="h-[50%] object-cover rounded-[2vw] w-[85%]"
-                />
+                /> */}
               </div>
             </div>
             <div
@@ -376,16 +447,22 @@ function page() {
               >
                 <div className=" flex flex-col h-[30%] justify-center gap-[1vw] translate-x-[3.5vw]">
                   <span className="text-[2vw]">Old Town Market</span>
-                  <span className="opacity-50">
-                  Web Design 
-                  </span>{" "}
+                  <span className="opacity-50">Web Design</span>{" "}
                 </div>
-                <img
+                <Image
+                 src="/project5.png"
+                  ref={image5Ref}
+                  alt="Project Image: Old Town Market"
+                  className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
+                  width={200}
+                  height={200}
+                />
+                {/* <img
                   src="/project5.png"
                   ref={image5Ref}
                   alt="Project Image: Nexus"
                   className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
-                />
+                /> */}
               </div>
               <div className="w-1/2 flex flex-col text-white translate-x-[3.5vw] ">
                 <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
@@ -393,16 +470,22 @@ function page() {
                {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
                 </span> */}
                   <span className="text-[2vw]">Testaahel</span>
-                  <span className="opacity-50">
-                  Mobile App
-                  </span>{" "}
+                  <span className="opacity-50">Mobile App</span>{" "}
                 </div>
-                <img
+                <Image
+                  src="/project6.png"
+                  ref={image6Ref}
+                  alt="Project Image: Testaahel"
+                  className="h-[50%] object-cover rounded-[2vw] w-[85%]"
+                  width={200}
+                  height={200}
+                />
+                {/* <img
                   src="/project6.png"
                   ref={image6Ref}
                   alt="Project Image: Nexus"
                   className="h-[50%] object-cover rounded-[2vw] w-[85%]"
-                />
+                /> */}
               </div>
             </div>
           </div>
@@ -673,7 +756,14 @@ function page() {
                   </div>
                   <div className=" w-full flex items-center justify-end px-[2vw]">
                     <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
-                      <FaBehance className="group-hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                      <Link
+                        href={behanceURL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {" "}
+                        <FaBehance className="group-hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -683,27 +773,38 @@ function page() {
                   </div>
                   <div className=" w-full flex items-center justify-end px-[2vw]">
                     <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
-                      <FaLinkedin className="group-hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                      <Link
+                        href={linkedinURL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaLinkedin className="group-hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                      </Link>
                     </div>
                   </div>
                 </div>
-                <div className=" rounded-[0.9vw] bg-[#8CFF2E] text-[2.5vw] h-[15vw] shadow-md cursor-pointer hover:px-[1vw] transition-all duration-500">
-                  <div className=" w-full  p-[2vw]">
-                    <p className="">Get in touch</p>
-                  </div>
-                  <div className=" w-full  flex items-center justify-end px-[3vw]">
-                    <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
-                      <a href="mailto:sanith.s74@gmail.com">
+                <a href="mailto:sanith.s74@gmail.com" className="no-underline">
+                  <div className="rounded-[0.9vw] bg-[#8CFF2E] text-[2.5vw] h-[15vw] shadow-md cursor-pointer hover:px-[1vw] transition-all duration-500">
+                    <div className="w-full p-[2vw]">
+                      <p className="">Get in touch</p>
+                    </div>
+                    <div className="w-full flex items-center justify-end px-[3vw]">
+                      <div className="bg-[#8CFF2E] p-[1vw] rounded-[100%]">
                         <BsArrowReturnRight />
-                      </a>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
           <div className="">
-            <Banner words={['Guest speaker, MITE college - " Job opportunity in UI/UX field "','Speaker, Design Quest (Design Community Event) - " Why Digital Marketing is Failing ? "']} />
+            <Banner
+              words={[
+                'Guest speaker, MITE college - " Job opportunity in UI/UX field "',
+                'Speaker, Design Quest (Design Community Event) - " Why Digital Marketing is Failing ? "',
+              ]}
+            />
           </div>
 
           <div
@@ -741,9 +842,22 @@ function page() {
                       UX/UI Designer
                     </h2>
                     <div className=" flex flex-row mt-[1vw] text-[1.5vw] gap-[1vw] opacity-50">
-                      <FaBehance className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
-
-                      <FaLinkedin className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                      <Link
+                        href={behanceURL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {" "}
+                        <FaBehance className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                      </Link>
+                      <Link
+                        href={linkedinURL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {" "}
+                        <FaLinkedin className="hover:rotate-360 cursor-pointer transition-transform duration-700" />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -765,14 +879,18 @@ function page() {
                   <span className="">
                     {" "}
                     <span className="opacity-50">who can bring your </span>
-                    <span>web </span>{" "}
-                    <span className="opacity-50">and</span>{" "}
+                    <span>web </span> <span className="opacity-50">and</span>{" "}
                     <span>mobile</span>{" "}
                     <span className="opacity-50">vision to life.</span>
                   </span>
                 </p>
                 <div className="px-[1vw]">
-                  <GreenButton text="Contact me" />
+                  <GreenButton
+                    text="Contact me"
+                    href="mailto:sanith.s74@gmail.com"
+                    downloadAttribute={false}
+                    targetAttribute={null}
+                  />
                 </div>
               </div>
             </div>
