@@ -43,7 +43,7 @@ function Toolbox() {
           <GoDotFill className=" text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] text-[1.8vw]" />
           <span className=" opacity-50 text-[1.5vw]">{"{02} — Tools"}</span>
         </span>
-        <span className=" text-[6.5vw] text-center">
+        <span className=" text-[6vw] text-center">
           My Go-To Creative Toolkit
         </span>
       </div>

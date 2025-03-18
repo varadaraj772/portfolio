@@ -56,13 +56,28 @@ function Banner({ words }) {
 
       <div ref={wrapperRef} className="flex whitespace-nowrap gap-[2vw]">
         <div className="flex items-center gap-[1vw]">
-          {words.map((word, index) => (
-            <React.Fragment key={index}>
-              <span className="text-white text-[2.5vw]">{word}</span>
-              {/* Always render the asterisk after each word */}
+          {words.map((word, index) => {
+            const parts = word.split('"');
+
+            return (
+              <React.Fragment key={index}>
+                {parts.map((part, partIndex) => (
+                  <React.Fragment key={partIndex}>
+                    <span
+                      className={
+                        partIndex % 2 === 1
+                          ? "text-[#8CFF2E] text-[2.5vw]"
+                          : "text-white text-[2.5vw]"    
+                      }
+                    >
+                      {part}
+                    </span>
+                  </React.Fragment>
+                ))}
                 <PiAsterisk className="text-[#8CFF2E] text-[3vw]" />
-            </React.Fragment>
-          ))}
+              </React.Fragment>
+            );
+          })}
         </div>
       </div>
     </div>
