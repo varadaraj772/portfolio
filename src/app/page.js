@@ -455,7 +455,7 @@ function page() {
                 <h2 className=" text-[1.8vw]">
                   I'll design experiences that bring your vision to life
                 </h2>
-                <ul className="list-none mt-[1.8vw] space-y-[1vw]">
+                <ul className="list-none mt-[1.8vw] space-y-[1vw] text-[1.3vw]">
                   <li className=" flex flex-row ">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
                     <span> User Research & Stakeholder Interviews :</span>
@@ -533,12 +533,12 @@ function page() {
                 <span className=" text-[#8CFF2E]">/</span>
                 <span className=" text-white">02</span>
               </div>
-              <div className="body flex flex-col text-white h-full w-[80vw] b">
+              <div className="body flex flex-col text-white h-full w-[84vw]">
                 <h2 className=" text-[1.8vw]">
                   I'll design visually compelling and intuitive interfaces that
                   users enjoy.
                 </h2>
-                <ul className="list-none mt-[1.8vw] space-y-[1vw]">
+                <ul className="list-none mt-[1.8vw] space-y-[1vw] text-[1.3vw]">
                   <li className=" flex flex-row ">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
                     <span> User Interface (UI) & Visual Design :</span>
@@ -589,12 +589,12 @@ function page() {
                 <span className=" text-[#8CFF2E]">/</span>
                 <span className=" text-white">03</span>
               </div>
-              <div className="body flex flex-col text-white h-full w-[80vw] b">
+              <div className="body flex flex-col text-white h-full w-[80vw]">
                 <h2 className=" text-[1.8vw]">
                   I'll shape design excellence through leadership and
                   collaboration.
                 </h2>
-                <ul className="list-none mt-[1.8vw] space-y-[1vw]">
+                <ul className="list-none mt-[1.8vw] space-y-[1vw] text-[1.3vw]">
                   <li className=" flex flex-row ">
                     <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
                     <span> Design Leadership & Team Mentorship :</span>
@@ -766,7 +766,7 @@ function page() {
                     {" "}
                     <span className="opacity-50">who can bring your </span>
                     <span>web </span>{" "}
-                    <span className="opacity-50">and 12345</span>{" "}
+                    <span className="opacity-50">and</span>{" "}
                     <span>mobile</span>{" "}
                     <span className="opacity-50">vision to life.</span>
                   </span>
