@@ -338,14 +338,15 @@ function page() {
                   <span className="text-[2vw]">IRS Plus</span>
                   <span className="opacity-50">Web and Mobile Design</span>{" "}
                 </div>
-                <Image
-                  src="/Project1.png"
-                  ref={image1Ref}
-                  className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
-                   alt="Project Image: IRS Plus"
-                  width={200}
-                  height={200}
-                />
+                <div className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
+                  <Image
+                    src="/Project1.png"
+                    ref={image1Ref}
+                    alt="Project Image: IRS Plus"
+                    fill
+                  />
+                </div>
+
                 {/* <img
                   src="/project1.png"
                   ref={image1Ref}
@@ -366,8 +367,8 @@ function page() {
                   alt="Project Image: Casa Malta"
                   ref={image2Ref}
                   className="h-[50%] object-cover rounded-[2vw] w-[85%]"
-                  width={200}
-                  height={200}
+                  width={400}
+                  height={350}
                 />
                 {/* <img
                   src="/project2.png"
@@ -395,12 +396,12 @@ function page() {
                   <span className="opacity-50">Web and Mobile Design</span>{" "}
                 </div>
                 <Image
-                 src="/Project3.png"
+                  src="/Project3.png"
                   alt="Project Image: Primesophic Technology"
                   ref={image3Ref}
                   className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
-                  width={200}
-                  height={200}
+                  width={400}
+                  height={350}
                 />
                 {/* <img
                   src="/project3.png"
@@ -418,12 +419,12 @@ function page() {
                   <span className="opacity-50">Web Design</span>{" "}
                 </div>
                 <Image
-                 src="/Project4.png"
+                  src="/Project4.png"
                   ref={image4Ref}
                   alt="Project Image: Malta Tourism"
                   className="h-[50%] object-cover rounded-[2vw] w-[85%]"
-                  width={200}
-                  height={200}
+                  width={400}
+                  height={350}
                 />
                 {/* <img
                   src="/project4.png"
@@ -450,12 +451,12 @@ function page() {
                   <span className="opacity-50">Web Design</span>{" "}
                 </div>
                 <Image
-                 src="/Project5.png"
+                  src="/Project5.png"
                   ref={image5Ref}
                   alt="Project Image: Old Town Market"
                   className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
-                  width={200}
-                  height={200}
+                  width={400}
+                  height={350}
                 />
                 {/* <img
                   src="/project5.png"
@@ -477,8 +478,8 @@ function page() {
                   ref={image6Ref}
                   alt="Project Image: Testaahel"
                   className="h-[50%] object-cover rounded-[2vw] w-[85%]"
-                  width={200}
-                  height={200}
+                  width={400}
+                  height={350}
                 />
                 {/* <img
                   src="/project6.png"
