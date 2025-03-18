@@ -339,7 +339,7 @@ function page() {
                   <span className="opacity-50">Web and Mobile Design</span>{" "}
                 </div>
                 <Image
-                  src="/project1.png"
+                  src="/Project1.png"
                   ref={image1Ref}
                   className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
                    alt="Project Image: IRS Plus"
@@ -362,7 +362,7 @@ function page() {
                   <span className="opacity-50">Web and Mobile Design</span>{" "}
                 </div>
                 <Image
-                  src="/project2.png"
+                  src="/Project2.png"
                   alt="Project Image: Casa Malta"
                   ref={image2Ref}
                   className="h-[50%] object-cover rounded-[2vw] w-[85%]"
@@ -395,7 +395,7 @@ function page() {
                   <span className="opacity-50">Web and Mobile Design</span>{" "}
                 </div>
                 <Image
-                 src="/project3.png"
+                 src="/Project3.png"
                   alt="Project Image: Primesophic Technology"
                   ref={image3Ref}
                   className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
@@ -418,7 +418,7 @@ function page() {
                   <span className="opacity-50">Web Design</span>{" "}
                 </div>
                 <Image
-                 src="/project4.png"
+                 src="/Project4.png"
                   ref={image4Ref}
                   alt="Project Image: Malta Tourism"
                   className="h-[50%] object-cover rounded-[2vw] w-[85%]"
@@ -450,7 +450,7 @@ function page() {
                   <span className="opacity-50">Web Design</span>{" "}
                 </div>
                 <Image
-                 src="/project5.png"
+                 src="/Project5.png"
                   ref={image5Ref}
                   alt="Project Image: Old Town Market"
                   className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
@@ -473,7 +473,7 @@ function page() {
                   <span className="opacity-50">Mobile App</span>{" "}
                 </div>
                 <Image
-                  src="/project6.png"
+                  src="/Project6.png"
                   ref={image6Ref}
                   alt="Project Image: Testaahel"
                   className="h-[50%] object-cover rounded-[2vw] w-[85%]"
