@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 import { PiAsterisk } from "react-icons/pi";
 import gsap from "gsap";
 
-function Banner() {
+function Banner({ words }) {
   const containerRef = useRef(null);
   const wrapperRef = useRef(null);
   const animationRef = useRef(null);
@@ -17,23 +17,27 @@ function Banner() {
     const containerWidth = containerRef.current.offsetWidth;
     let wrapperWidth = wrapperRef.current.scrollWidth;
 
-    while (wrapperWidth < containerWidth * 2) {
-      const clone = wrapperRef.current.cloneNode(true);
-      wrapperRef.current.appendChild(clone);
+    requestAnimationFrame(() => {
       wrapperWidth = wrapperRef.current.scrollWidth;
-    }
 
-    animationRef.current = gsap.to(wrapperRef.current, {
-      x: `-=${wrapperWidth / 2}`,
-      duration: wrapperWidth / 2 / 50,
-      ease: "linear",
-      repeat: -1,
+      while (wrapperWidth < containerWidth * 2) {
+        const clone = wrapperRef.current.cloneNode(true);
+        wrapperRef.current.appendChild(clone);
+        wrapperWidth = wrapperRef.current.scrollWidth;
+      }
+
+      animationRef.current = gsap.to(wrapperRef.current, {
+        x: `-=${wrapperWidth / 2}`,
+        duration: wrapperWidth / 2 / 50,
+        ease: "linear",
+        repeat: -1,
+      });
     });
 
     return () => {
       if (animationRef.current) animationRef.current.kill();
     };
-  }, []);
+  }, [words]);
 
   return (
     <div
@@ -52,15 +56,13 @@ function Banner() {
 
       <div ref={wrapperRef} className="flex whitespace-nowrap gap-[2vw]">
         <div className="flex items-center gap-[1vw]">
-          <span className="text-[#8CFF2E] text-[2.5vw]">10+</span>
-          <span className="text-white text-[3vw]">projects</span>
-        </div>
-        <div className="flex items-center text-[#8CFF2E] text-[3vw]">
-          <PiAsterisk />
-        </div>
-        <div className="flex items-center gap-[1vw]">
-          <span className="text-[#8CFF2E] text-[2.5vw]">4+</span>
-          <span className="text-white text-[3vw]">years of experience</span>
+          {words.map((word, index) => (
+            <React.Fragment key={index}>
+              <span className="text-white text-[2.5vw]">{word}</span>
+              {/* Always render the asterisk after each word */}
+                <PiAsterisk className="text-[#8CFF2E] text-[3vw]" />
+            </React.Fragment>
+          ))}
         </div>
       </div>
     </div>

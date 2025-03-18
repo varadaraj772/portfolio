@@ -5,7 +5,7 @@ import { PiAsterisk } from "react-icons/pi";
 import GreenButton from "./components/GreenButton";
 import { FaBehance } from "react-icons/fa";
 import { BsArrowReturnRight } from "react-icons/bs";
-import Banner from "./components/Banner";
+// import Banner from "./components/Banner";
 import Toolbox from "./components/Toolbox";
 import { GoDotFill } from "react-icons/go";
 import { gsap } from "gsap";
@@ -33,6 +33,12 @@ function page() {
   const list1Ref = useRef(null);
   const list2Ref = useRef(null);
   const list3Ref = useRef(null);
+
+  const containerRef = useRef(null);
+  const wrapperRef = useRef(null);
+  const animationRef = useRef(null);
+  const fadeLeftRef = useRef(null);
+  const fadeRightRef = useRef(null);
 
   const imageRefs = [
     image1Ref,
@@ -159,6 +165,27 @@ function page() {
         },
       }
     );
+    if (!containerRef.current || !wrapperRef.current) return;
+
+    const containerWidth = containerRef.current.offsetWidth;
+    let wrapperWidth = wrapperRef.current.scrollWidth;
+
+    while (wrapperWidth < containerWidth * 2) {
+      const clone = wrapperRef.current.cloneNode(true);
+      wrapperRef.current.appendChild(clone);
+      wrapperWidth = wrapperRef.current.scrollWidth;
+    }
+
+    animationRef.current = gsap.to(wrapperRef.current, {
+      x: `-=${wrapperWidth / 2}`,
+      duration: wrapperWidth / 2 / 50,
+      ease: "linear",
+      repeat: -1,
+    });
+
+    return () => {
+      if (animationRef.current) animationRef.current.kill();
+    };
   }, []);
 
   return (
@@ -255,7 +282,37 @@ function page() {
       </main>
       <main className="w-screen flex flex-col justify-center items-center bg-[rgb(17,17,17)]">
         <section className=" w-full">
-          <Banner words={["4 + experience", "10 + projects"]} />
+          {/* <Banner/> */}
+          <div
+            ref={containerRef}
+            className="banner bg-[#1C1C1C] h-[14vh] w-full flex items-center overflow-hidden relative"
+          >
+            <div
+              ref={fadeLeftRef}
+              className="absolute left-0 top-0 h-full w-[10vw] bg-gradient-to-r from-[#1C1C1C] to-transparent z-10"
+            ></div>
+
+            <div
+              ref={fadeRightRef}
+              className="absolute right-0 top-0 h-full w-[10vw] bg-gradient-to-l from-[#1C1C1C] to-transparent z-10"
+            ></div>
+
+            <div ref={wrapperRef} className="flex whitespace-nowrap gap-[2vw]">
+              <div className="flex items-center gap-[1vw]">
+                <span className="text-[#8CFF2E] text-[2.5vw]">10+</span>
+                <span className="text-white text-[3vw]">projects</span>
+              </div>
+              <div className="flex items-center text-[#8CFF2E] text-[3vw]">
+                <PiAsterisk />
+              </div>
+              <div className="flex items-center gap-[1vw]">
+                <span className="text-[#8CFF2E] text-[2.5vw]">4+</span>
+                <span className="text-white text-[3vw]">
+                  years of experience
+                </span>
+              </div>
+            </div>
+          </div>
           <div
             className="bg-[url(/svg.svg)] pb-[7vw] pt-[7vw] bg-[100%] bg-no-repeat bg-contain"
             ref={headingRef}
@@ -408,17 +465,33 @@ function page() {
           </div>
           <Toolbox />
           <div className="">
-            <Banner
-              words={[
-                "CRM",
-                "ERP",
-                "E-Commerce",
-                "Real Estate",
-                "Social Media",
-                "Corporate",
-                "Landing page",
-              ]}
-            />
+            {/* <Banner /> */}
+            <div
+              ref={containerRef}
+              className="banner bg-[#1C1C1C] h-[14vh] w-full flex items-center overflow-hidden relative"
+            >
+              <div
+                ref={fadeLeftRef}
+                className="absolute left-0 top-0 h-full w-[10vw] bg-gradient-to-r from-[#1C1C1C] to-transparent z-10"
+              ></div>
+
+              <div
+                ref={fadeRightRef}
+                className="absolute right-0 top-0 h-full w-[10vw] bg-gradient-to-l from-[#1C1C1C] to-transparent z-10"
+              ></div>
+
+              <div
+                ref={wrapperRef}
+                className="flex whitespace-nowrap gap-[2vw]"
+              >
+                <div className="flex items-center gap-[1vw]">
+                  <span className="text-white text-[2.5vw]">CRM</span>
+                  <PiAsterisk className="text-[#8CFF2E] text-[3vw]" />
+                  <span className="text-white text-[2.5vw]">ERP</span>
+                  <PiAsterisk className="text-[#8CFF2E] text-[3vw]" />
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className=" pb-[10vw]">
@@ -451,7 +524,7 @@ function page() {
                 <span className=" text-[#8CFF2E]">/</span>
                 <span className=" text-white">01</span>
               </div>
-              <div className="body flex flex-col text-white h-full w-[80vw] ">
+              <div className="body flex flex-col text-white h-full w-[80vw]">
                 <h2 className=" text-[1.8vw]">
                   I'll design experiences that bring your vision to life
                 </h2>
@@ -702,9 +775,7 @@ function page() {
               </div>
             </div>
           </div>
-          <div className="">
-            <Banner words={['Guest speaker, MITE college - " Job opportunity in UI/UX field "','Speaker, Design Quest (Design Community Event) - " Why Digital Marketing is Failing ? "']} />
-          </div>
+          <div className="">{/* <Banner /> */}</div>
 
           <div
             className=" h-[100vh] flex flex-row"
