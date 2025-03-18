@@ -362,14 +362,14 @@ function page() {
                   <span className="text-[2vw]">Casa Malta</span>
                   <span className="opacity-50">Web and Mobile Design</span>{" "}
                 </div>
-                <Image
-                  src="/Project2.png"
-                  alt="Project Image: Casa Malta"
-                  ref={image2Ref}
-                  className="h-[50%] object-cover rounded-[2vw] w-[85%]"
-                  width={400}
-                  height={350}
-                />
+                <div className="h-[50%] object-cover rounded-[2vw] w-[85%] relative">
+                  <Image
+                    src="/Project2.png"
+                    alt="Project Image: Casa Malta"
+                    ref={image2Ref}
+                    fill
+                  />
+                </div>
                 {/* <img
                   src="/project2.png"
                   alt="Project Image: Nexus"
@@ -395,14 +395,15 @@ function page() {
                   <span className="text-[2vw]">Primesophic Technology</span>
                   <span className="opacity-50">Web and Mobile Design</span>{" "}
                 </div>
-                <Image
-                  src="/Project3.png"
-                  alt="Project Image: Primesophic Technology"
-                  ref={image3Ref}
-                  className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
-                  width={400}
-                  height={350}
-                />
+                <div className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
+                  <Image
+                    src="/Project3.png"
+                    alt="Project Image: Primesophic Technology"
+                    ref={image3Ref}
+                    fill
+                  />
+                </div>
+
                 {/* <img
                   src="/project3.png"
                   alt="Project Image: Nexus"
@@ -418,14 +419,15 @@ function page() {
                   <span className="text-[2vw]">Malta Tourism </span>
                   <span className="opacity-50">Web Design</span>{" "}
                 </div>
-                <Image
-                  src="/Project4.png"
-                  ref={image4Ref}
-                  alt="Project Image: Malta Tourism"
-                  className="h-[50%] object-cover rounded-[2vw] w-[85%]"
-                  width={400}
-                  height={350}
-                />
+                <div className="h-[50%] object-cover rounded-[2vw] w-[85%] relative">
+                  <Image
+                    src="/Project4.png"
+                    ref={image4Ref}
+                    alt="Project Image: Malta Tourism"
+                    fill
+                  />
+                </div>
+
                 {/* <img
                   src="/project4.png"
                   ref={image4Ref}
@@ -450,14 +452,15 @@ function page() {
                   <span className="text-[2vw]">Old Town Market</span>
                   <span className="opacity-50">Web Design</span>{" "}
                 </div>
+                <div   className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
                 <Image
                   src="/Project5.png"
                   ref={image5Ref}
                   alt="Project Image: Old Town Market"
-                  className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
-                  width={400}
-                  height={350}
+                 fill
                 />
+                </div>
+               
                 {/* <img
                   src="/project5.png"
                   ref={image5Ref}
@@ -473,14 +476,16 @@ function page() {
                   <span className="text-[2vw]">Testaahel</span>
                   <span className="opacity-50">Mobile App</span>{" "}
                 </div>
+                <div  className="h-[50%] object-cover rounded-[2vw] w-[85%] relative">
                 <Image
                   src="/Project6.png"
                   ref={image6Ref}
                   alt="Project Image: Testaahel"
-                  className="h-[50%] object-cover rounded-[2vw] w-[85%]"
-                  width={400}
-                  height={350}
+                 
+                fill
                 />
+                </div>
+                
                 {/* <img
                   src="/project6.png"
                   ref={image6Ref}
@@ -664,7 +669,7 @@ function page() {
               }}
               ref={list3Ref}
             >
-              <div className="tag h-full w-[20vw]  pt-[1vw]">
+              <div className="tag h-full w-[18vw]  pt-[1vw]">
                 <span className=" bg-transparent py-[0.7vw] px-[1.4vw] rounded-[4vw] border-[#2F2F2F] border text-white">
                   Creative Leadership
                 </span>
