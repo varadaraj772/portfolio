@@ -452,15 +452,15 @@ function page() {
                   <span className="text-[2vw]">Old Town Market</span>
                   <span className="opacity-50">Web Design</span>{" "}
                 </div>
-                <div   className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
-                <Image
-                  src="/Project5.png"
-                  ref={image5Ref}
-                  alt="Project Image: Old Town Market"
-                 fill
-                />
+                <div className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
+                  <Image
+                    src="/Project5.png"
+                    ref={image5Ref}
+                    alt="Project Image: Old Town Market"
+                    fill
+                  />
                 </div>
-               
+
                 {/* <img
                   src="/project5.png"
                   ref={image5Ref}
@@ -476,16 +476,15 @@ function page() {
                   <span className="text-[2vw]">Testaahel</span>
                   <span className="opacity-50">Mobile App</span>{" "}
                 </div>
-                <div  className="h-[50%] object-cover rounded-[2vw] w-[85%] relative">
-                <Image
-                  src="/Project6.png"
-                  ref={image6Ref}
-                  alt="Project Image: Testaahel"
-                 
-                fill
-                />
+                <div className="h-[50%] object-cover rounded-[2vw] w-[85%] relative">
+                  <Image
+                    src="/Project6.png"
+                    ref={image6Ref}
+                    alt="Project Image: Testaahel"
+                    fill
+                  />
                 </div>
-                
+
                 {/* <img
                   src="/project6.png"
                   ref={image6Ref}
@@ -756,39 +755,39 @@ function page() {
             <div className=" py-[2vw]">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-[2vw]">
                 {/* Figma Box */}
-                <div className=" rounded-[0.9vw] bg-white text-[2.5vw] h-[15vw] shadow-md cursor-pointer group">
-                  <div className=" w-full p-[2vw]">
-                    <p className="">behance</p>
-                  </div>
-                  <div className=" w-full flex items-center justify-end px-[2vw]">
-                    <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
-                      <Link
-                        href={behanceURL}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                <Link
+                  href={behanceURL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className=" rounded-[0.9vw] bg-white text-[2.5vw] h-[15vw] shadow-md cursor-pointer group">
+                    <div className=" w-full p-[2vw]">
+                      <p className="">behance</p>
+                    </div>
+                    <div className=" w-full flex items-center justify-end px-[2vw]">
+                      <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
                         {" "}
                         <FaBehance className="group-hover:rotate-360 cursor-pointer transition-transform duration-700" />
-                      </Link>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className=" rounded-[0.9vw] bg-white text-[2.5vw] h-[15vw] shadow-md cursor-pointer group">
-                  <div className=" w-full p-[2vw]">
-                    <p className="">Linkedin</p>
-                  </div>
-                  <div className=" w-full flex items-center justify-end px-[2vw]">
-                    <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
-                      <Link
-                        href={linkedinURL}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                </Link>
+                <Link
+                  href={linkedinURL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className=" rounded-[0.9vw] bg-white text-[2.5vw] h-[15vw] shadow-md cursor-pointer group">
+                    <div className=" w-full p-[2vw]">
+                      <p className="">Linkedin</p>
+                    </div>
+                    <div className=" w-full flex items-center justify-end px-[2vw]">
+                      <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
                         <FaLinkedin className="group-hover:rotate-360 cursor-pointer transition-transform duration-700" />
-                      </Link>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
                 <a href="mailto:sanith.s74@gmail.com" className="no-underline">
                   <div className="rounded-[0.9vw] bg-[#8CFF2E] text-[2.5vw] h-[15vw] shadow-md cursor-pointer hover:px-[1vw] transition-all duration-500">
                     <div className="w-full p-[2vw]">
