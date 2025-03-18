@@ -66,7 +66,7 @@ function Toolbox() {
           ref={box2Ref}
           className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[70%]"
         >
-          <img src="/figma.png" alt="React" className=" h-1/2" />
+          <img src="/photoshop.svg" alt="React" className=" h-1/2" />
           <div>
             <h2 className="w-full text-left text-[1.5vw] font-bold">
              Photoshop
@@ -80,10 +80,10 @@ function Toolbox() {
           ref={box3Ref}
           className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[103%]"
         >
-          <img src="/figma.png" alt="React" className=" h-1/2" />
+          <img src="/illustrator.png" alt="React" className=" h-1/2" />
           <div>
             <h2 className="w-full text-left text-[1.5vw] font-bold">
-              Illustration
+              Illustrator
             </h2>
             <h3 className="w-full text-left text-[1.2vw] opacity-50">
               Javascript Library
@@ -94,7 +94,7 @@ function Toolbox() {
           ref={box4Ref}
           className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[136%]"
         >
-          <img src="/figma.png" alt="React" className=" h-1/2" />
+          <img src="/notion.png" alt="React" className=" h-1/2" />
           <div>
             <h2 className="w-full text-left text-[1.5vw] font-bold">
               Notion
@@ -108,7 +108,7 @@ function Toolbox() {
           ref={box5Ref}
           className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[169%]"
         >
-          <img src="/figma.png" alt="React" className=" h-1/2" />
+          <img src="/miro.png" alt="React" className=" h-1/2" />
           <div>
             <h2 className="w-full text-left text-[1.5vw] font-bold">
               Miro
@@ -122,7 +122,7 @@ function Toolbox() {
           ref={box6Ref}
           className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[202%]"
         >
-          <img src="/figma.png" alt="React" className=" h-1/2" />
+          <img src="/ai.jpg" alt="React" className=" h-1/2 rounded-[2vw] w-[30%] object-cover" />
           <div>
             <h2 className="w-full text-left text-[1.5vw] font-bold">
               Ai Tools
