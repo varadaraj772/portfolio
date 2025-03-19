@@ -15,6 +15,7 @@ import Lenis from "lenis";
 import "lenis/dist/lenis.css";
 import Link from "next/link";
 import Image from "next/image";
+import "./globals.css";
 
 gsap.registerPlugin(ScrollTrigger);
 function page() {
@@ -50,8 +51,8 @@ function page() {
 
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.2, // Adjust for desired smoothness
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Standard Lenis easing
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       orientation: "vertical",
       gestureOrientation: "vertical",
       smoothWheel: true,
@@ -60,12 +61,12 @@ function page() {
     });
     function raf(time) {
       lenis.raf(time);
-      requestAnimationFrame(raf); // Use requestAnimationFrame directly
+      requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
 
     ScrollTrigger.defaults({
-      scroller: ".lenis", // Use a class selector for Lenis (important)
+      scroller: ".lenis",
     });
 
     gsap.fromTo(
@@ -173,9 +174,9 @@ function page() {
       }
     );
     return () => {
-      lenis.destroy(); // Important: Destroy Lenis on component unmount
-      ScrollTrigger.getAll().forEach((st) => st.kill()); // Kill all ScrollTriggers
-      gsap.ticker.remove(raf); // Remove the raf from the ticker
+      lenis.destroy();
+      ScrollTrigger.getAll().forEach((st) => st.kill());
+      gsap.ticker.remove(raf);
     };
   }, []);
 
@@ -183,18 +184,18 @@ function page() {
     <>
       <main className="w-screen flex flex-col justify-center items-center bg-[url(/background.png)] bg-cover overflow-hidden relative z-50">
         <nav
-          className=" w-full h-[13vh] flex flex-row justify-between items-center pr-[3vw] pl-[2.5vw] bg-transparent z-50 relative font-semibold overflow-hidden"
+          className=" w-full md:h-[7vw] h-[12vw] flex flex-row justify-between items-center pr-[3vw] pl-[2.5vw] bg-transparent z-50 relative font-semibold overflow-hidden"
           style={{
             borderBottom: "1px solid rgba(0, 0, 0, 0.2)",
           }}
         >
-          <div className=" flex flex-row text-[1.3vw] py-[1vw] gap-[2vw]">
+          <div className=" flex flex-row md:text-[1.3vw] text-[5vw] py-[1vw] gap-[2vw]">
             <Link href="#projects" className="no-underline text-current">
               <h2>Projects</h2>
             </Link>
           </div>
-          <div className="flex flex-row w-1/2 justify-end items-center gap-[2vw] text-[1.2vw]">
-            <div>
+          <div className="flex flex-row w-1/2 justify-end items-center gap-[2vw] md:text-[1.2vw] text-[4vw]">
+            <div className=" hidden md:block">
               <a href="mailto:sanith.s74@gmail.com">
                 <span className=" opacity-50">Email :</span>
                 <span>sanith.s74@gmail.com</span>
@@ -208,22 +209,22 @@ function page() {
             </a>
           </div>
         </nav>
-        <div className="flex flex-row w-full justify-between items-center px-[2vw] relative z-50">
-          <section className="h-full w-[40%] flex">
-            <div className="w-full flex flex-row gap-[3vw]">
-              <div className="flex justify-center items-center  h-[10vw] rounded-full w-[10vw]">
+        <div className="flex md:flex-row flex-col w-full justify-between items-center px-[2vw] relative z-50">
+          <section className="h-full md:w-[40%] w-full flex  md:mt-0 mt-[3vw] sm:mt-[1vw]">
+            <div className="md:w-full w-3/4 sm:w-1/2 flex flex-row gap-[6vw] sm:gap-[3vw]">
+              <div className="flex justify-center items-center h-[20vw] sm:h-[10vw] w-[20vw] sm:w-[10vw] rounded-full">
                 <img
                   src="/sanith.jpeg"
                   alt="Image of the developer"
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
-              <div className=" h-[10vw] flex flex-col items-start justify-center text-[1vw] font-bold">
-                <h1 className="text-[2vw]">Sanith Suvarna</h1>
-                <h2 className="opacity-50 text-[1vw] text-left">
+              <div className="h-[20vw] sm:h-[10vw] flex flex-col items-start justify-center text-[3vw] sm:text-[1vw] font-bold">
+                <h1 className="text-[5vw] sm:text-[2vw]">Sanith Suvarna</h1>
+                <h2 className="opacity-50 text-[2.5vw] sm:text-[1vw] text-left">
                   UX/UI Designer
                 </h2>
-                <div className=" flex flex-row mt-[1vw] text-[1.5vw] gap-[1vw] opacity-50">
+                <div className="flex flex-row mt-[2vw] sm:mt-[1vw] text-[4vw] sm:text-[1.5vw] gap-[2vw] sm:gap-[1vw] opacity-50">
                   <Link
                     href={behanceURL}
                     target="_blank"
@@ -242,11 +243,11 @@ function page() {
               </div>
             </div>
           </section>
-          <section className=" h-full w-[50%] flex flex-col justify-between text-[6.5vw] mt-[6.5vw]">
+          <section className="h-full md:w-[50%] w-full flex flex-col justify-between  md:text-[6.5vw] mt-[6.5vw] text-[14vw]">
             <span className="w-full flex items-center gap-[2vw]">
               Hi! I'm{" "}
               <span
-                className=" bg-white py-[1.4vw] px-[1.8vw] rounded-[4vw] text-[3vw] shadow-md"
+                className=" bg-white py-[1.4vw] px-[1.8vw] md:rounded-[4vw] rounded-[8vw] md:text-[3vw] text-[7vw] shadow-md"
                 ref={nameRef}
               >
                 Sanith Suvarna
@@ -254,7 +255,7 @@ function page() {
             </span>
             <span className="w-full mt-[-3vw] gap-[2vw]" ref={DesignationRef}>
               a{" "}
-              <span className=" bg-[#2F2F2F] py-[1.4vw] px-[1.8vw] rounded-[4vw] text-white text-[3vw] shadow-md">
+              <span className=" bg-[#2F2F2F] py-[1.4vw] px-[1.8vw] md:rounded-[4vw] rounded-[8vw] md:text-[3vw] text-[7vw] text-white shadow-md">
                 UX/UI Designer
               </span>
             </span>
@@ -263,7 +264,7 @@ function page() {
               ref={placeRef}
             >
               from{" "}
-              <span className=" bg-transparent py-[1.4vw] px-[1.8vw] rounded-[4vw] text-[#2F2F2F] border-[#2F2F2F] border text-[3vw]">
+              <span className=" bg-transparent py-[1.4vw] px-[1.8vw] md:rounded-[4vw] rounded-[8vw] md:text-[3vw] text-[7vw] text-[#2F2F2F] border-[#2F2F2F] border">
                 Mangalore
               </span>
             </span>
@@ -274,9 +275,9 @@ function page() {
             </div>
           </section>
         </div>
-        <section className="h-[25%] w-full flex flex-row justify-between mt-[5vw] py-[2vw] mb-[6vw]">
-          <span className="text-[2vw] w-[45%] px-[2vw]">(2020 - PRESENT)</span>
-          <div className="text-[2vw] text-gray-700 w-[50%] flex flex-col">
+        <section className="h-[25%] w-full flex md:flex-row flex-col justify-between mt-[5vw] py-[2vw] mb-[6vw] md:text-[2vw] text-[4vw]">
+          <span className="md:w-[45%] w-full px-[2vw]">(2020 - PRESENT)</span>
+          <div className=" text-gray-700 md:w-[50%] w-full flex flex-col md:px-0 px-[2vw]">
             <span className="mb-[2vw]">
               I design websites and mobile apps that make ideas shine—blending
               creativity and usability for experiences people love.
@@ -303,12 +304,12 @@ function page() {
             ref={headingRef}
           >
             <span className=" px-[2.5vw] text-white flex flex-row gap-[0.7vw] items-center font-semibold">
-              <GoDotFill className=" text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] text-[1.8vw]" />
-              <span className=" opacity-50 text-[1.5vw]">
+              <GoDotFill className=" text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] md:text-[1.8vw] text-[5vw]" />
+              <span className=" opacity-50 md:text-[1.5vw] text-[4vw]">
                 {"{01} — Projects"}
               </span>
             </span>
-            <h1 className=" text-white text-[6.5vw] px-[2.5vw]">
+            <h1 className=" text-white md:text-[6.5vw] text-[10vw] px-[2.5vw]">
               Where creativity meets real-world solutions
             </h1>
             <div className="bg-transparent px-[2.5vw] pt-[2vw]">
@@ -346,19 +347,9 @@ function page() {
                     fill
                   />
                 </div>
-
-                {/* <img
-                  src="/project1.png"
-                  ref={image1Ref}
-                  alt="Project Image: Nexus"
-                  className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
-                /> */}
               </div>
               <div className="w-1/2 flex flex-col text-white translate-x-[3.5vw] ">
                 <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
-                  {/* <span className="text-[1.2vw] text-[#8CFF2E]">
-               {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
-                </span> */}
                   <span className="text-[2vw]">Casa Malta</span>
                   <span className="opacity-50">Web and Mobile Design</span>{" "}
                 </div>
@@ -370,12 +361,6 @@ function page() {
                     fill
                   />
                 </div>
-                {/* <img
-                  src="/project2.png"
-                  alt="Project Image: Nexus"
-                  ref={image2Ref}
-                  className="h-[50%] object-cover rounded-[2vw] w-[85%]"
-                /> */}
               </div>
             </div>
             <div
@@ -403,19 +388,9 @@ function page() {
                     fill
                   />
                 </div>
-
-                {/* <img
-                  src="/project3.png"
-                  alt="Project Image: Nexus"
-                  ref={image3Ref}
-                  className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
-                /> */}
               </div>
               <div className="w-1/2 flex flex-col text-white translate-x-[3.5vw] ">
                 <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
-                  {/* <span className="text-[1.2vw] text-[#8CFF2E]">
-               {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
-                </span> */}
                   <span className="text-[2vw]">Malta Tourism </span>
                   <span className="opacity-50">Web Design</span>{" "}
                 </div>
@@ -427,13 +402,6 @@ function page() {
                     fill
                   />
                 </div>
-
-                {/* <img
-                  src="/project4.png"
-                  ref={image4Ref}
-                  alt="Project Image: Nexus"
-                  className="h-[50%] object-cover rounded-[2vw] w-[85%]"
-                /> */}
               </div>
             </div>
             <div
@@ -460,19 +428,9 @@ function page() {
                     fill
                   />
                 </div>
-
-                {/* <img
-                  src="/project5.png"
-                  ref={image5Ref}
-                  alt="Project Image: Nexus"
-                  className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw]"
-                /> */}
               </div>
               <div className="w-1/2 flex flex-col text-white translate-x-[3.5vw] ">
                 <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
-                  {/* <span className="text-[1.2vw] text-[#8CFF2E]">
-               {"{ "} <span className=" text-white">Pottery Artistic Portfolio</span>{' }'}
-                </span> */}
                   <span className="text-[2vw]">Testaahel</span>
                   <span className="opacity-50">Mobile App</span>{" "}
                 </div>
@@ -484,13 +442,6 @@ function page() {
                     fill
                   />
                 </div>
-
-                {/* <img
-                  src="/project6.png"
-                  ref={image6Ref}
-                  alt="Project Image: Nexus"
-                  className="h-[50%] object-cover rounded-[2vw] w-[85%]"
-                /> */}
               </div>
             </div>
           </div>

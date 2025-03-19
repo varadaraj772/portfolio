@@ -42,7 +42,7 @@ function Banner({ words }) {
   return (
     <div
       ref={containerRef}
-      className="banner bg-[#1C1C1C] h-[14vh] w-full flex items-center overflow-hidden relative"
+      className="banner bg-[#1C1C1C] md:h-[14vh] h-[8vh] w-full flex items-center overflow-hidden relative"
     >
       <div
         ref={fadeLeftRef}
@@ -64,7 +64,7 @@ function Banner({ words }) {
                 {parts.map((part, partIndex) => (
                   <React.Fragment key={partIndex}>
                     <span
-                      className={`text-[2.5vw] preserve-spaces ${
+                      className={`md:text-[2.5vw] text-[5vw] preserve-spaces ${
                         partIndex % 2 === 1 ? "text-[#8CFF2E]" : "text-white"
                       }`}
                     >
@@ -72,7 +72,7 @@ function Banner({ words }) {
                     </span>
                   </React.Fragment>
                 ))}
-                <PiAsterisk className="text-[#8CFF2E] text-[3vw]" />
+                <PiAsterisk className="text-[#8CFF2E] md:text-[3vw] text-[6vw]" />
               </React.Fragment>
             );
           })}
