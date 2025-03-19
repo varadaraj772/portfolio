@@ -284,7 +284,7 @@ function page() {
             <GreenButton
               text="Download Resume"
               icon={MdArrowForward}
-              rotate="rotate-90"
+              rotate="90"
               href="/Sanith_Snr_UXUI_Resume.pdf"
               downloadAttribute="Sanith_Snr_UXUI_Resume.pdf"
               targetAttribute="_blank"
