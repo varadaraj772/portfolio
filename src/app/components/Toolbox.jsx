@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { GoDotFill } from "react-icons/go";
@@ -8,6 +8,9 @@ import { GoDotFill } from "react-icons/go";
 gsap.registerPlugin(ScrollTrigger);
 
 function Toolbox() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  // Define all refs at the top level
   const containerRef = useRef(null);
   const box1Ref = useRef(null);
   const box2Ref = useRef(null);
@@ -17,18 +20,21 @@ function Toolbox() {
   const box6Ref = useRef(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  // Ensure this useEffect runs at the correct time
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isMounted) return;
+
     const container = containerRef.current;
-    const box2 = box2Ref.current;
-    const box3 = box3Ref.current;
-    const box4 = box4Ref.current;
-    const box5 = box5Ref.current;
-    const box6 = box6Ref.current;
+    const boxes = [box2Ref.current, box3Ref.current, box4Ref.current, box5Ref.current, box6Ref.current];
 
-    if (!container || !box2 || !box3 || !box4 || !box5 || !box6) {
-      return;
-    }
-
-    const boxes = [box2, box3, box4, box5, box6];
+    if (!container || boxes.includes(null)) return;
 
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -37,114 +43,54 @@ function Toolbox() {
         end: "+=500%",
         scrub: 2,
         pin: true,
+        invalidateOnRefresh: true,
       },
     });
 
     tl.to(boxes, {
       top: "37%",
-      stagger: {
-        amount: 1,
-      },
+      stagger: { amount: 1 },
     });
 
     return () => {
       tl.kill();
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
-  }, []);
+  }, [isMounted]); // Ensure effect runs after mount
+
+  if (!isMounted) return null; // Now it's safe to return early
 
   return (
-    <div
-      ref={containerRef}
-      className="bg-[#F8F8F8] flex flex-row overflow--hidden h-[100vh]"
-    >
-      <div className=" w-1/2 flex justify-center items-center h-full flex-col">
-        <span className=" pl-[3vw] text-black flex flex-row gap-[0.7vw] items-center font-semibold w-full">
-          <GoDotFill className=" text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] text-[1.8vw]" />
-          <span className=" opacity-50 text-[1.5vw]">{"{02} — Tools"}</span>
+    <div ref={containerRef} className="bg-[#F8F8F8] flex flex-row overflow-hidden h-[100vh]">
+      <div className="w-1/2 flex justify-center items-center h-full flex-col">
+        <span className="pl-[3vw] text-black flex flex-row gap-[0.7vw] items-center font-semibold w-full">
+          <GoDotFill className="text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] text-[1.8vw]" />
+          <span className="opacity-50 text-[1.5vw]">{"{02} — Tools"}</span>
         </span>
-        <span className=" text-[6vw] text-left pl-[3vw]">
-          My Go-To Creative Toolkit
-        </span>
+        <span className="text-[6vw] text-left pl-[3vw]">My Go-To Creative Toolkit</span>
       </div>
-      <div className=" w-1/2 flex flex-col gap-[2.5vw]">
-        <div
-          ref={box1Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[37%]"
-        >
-          <img src="/figma.png" alt="React" className=" h-1/2" />
-          <div>
-            <h2 className="w-full text-left text-[1.5vw] font-bold">Figma</h2>
-            <h3 className="w-full text-left text-[1.2vw] opacity-50">
-              My digital canvas for pixel-perfect magic
-            </h3>
+      <div className="w-1/2 flex flex-col gap-[2.5vw]">
+        {[ 
+          { ref: box1Ref, img: "/figma.png", title: "Figma", desc: "My digital canvas for pixel-perfect magic", top: "37%" },
+          { ref: box2Ref, img: "/photoshop.svg", title: "Photoshop", desc: "Where ideas get a visual upgrade", top: "70%" },
+          { ref: box3Ref, img: "/Illustrator.png", title: "Illustrator", desc: "Icons, vectors & creativity unleashed", top: "103%" },
+          { ref: box4Ref, img: "/notion.png", title: "Notion", desc: "My brain's second home for all things design", top: "136%" },
+          { ref: box5Ref, img: "/miro.png", title: "Miro", desc: "Sticky notes, big ideas, zero mess", top: "169%" },
+          { ref: box6Ref, img: "/ai.jpg", title: "Ai Tools", desc: "Work smarter, not harder", top: "202%" }
+        ].map((box, index) => (
+          <div
+            key={index}
+            ref={box.ref}
+            className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed"
+            style={{ top: box.top }}
+          >
+            <img src={box.img} alt={box.title} className="h-1/2 rounded-[2vw]" />
+            <div>
+              <h2 className="w-full text-left text-[1.5vw] font-bold">{box.title}</h2>
+              <h3 className="w-full text-left text-[1.2vw] opacity-50">{box.desc}</h3>
+            </div>
           </div>
-        </div>
-        <div
-          ref={box2Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[70%]"
-        >
-          <img src="/photoshop.svg" alt="React" className=" h-1/2" />
-          <div>
-            <h2 className="w-full text-left text-[1.5vw] font-bold">
-              Photoshop
-            </h2>
-            <h3 className="w-full text-left text-[1.2vw] opacity-50">
-              Where ideas get a visual upgrade
-            </h3>
-          </div>
-        </div>
-        <div
-          ref={box3Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[103%]"
-        >
-          <img src="/Illustrator.png" alt="React" className=" h-1/2" />
-          <div>
-            <h2 className="w-full text-left text-[1.5vw] font-bold">
-              Illustrator
-            </h2>
-            <h3 className="w-full text-left text-[1.2vw] opacity-50">
-              Icons, vectors & creativity unleashed
-            </h3>
-          </div>
-        </div>
-        <div
-          ref={box4Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[136%]"
-        >
-          <img src="/notion.png" alt="React" className=" h-1/2" />
-          <div>
-            <h2 className="w-full text-left text-[1.5vw] font-bold">Notion</h2>
-            <h3 className="w-full text-left text-[1.2vw] opacity-50">
-              My brain&apos;s second home for all things design
-            </h3>
-          </div>
-        </div>
-        <div
-          ref={box5Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[169%]"
-        >
-          <img src="/miro.png" alt="React" className=" h-1/2" />
-          <div>
-            <h2 className="w-full text-left text-[1.5vw] font-bold">Miro</h2>
-            <h3 className="w-full text-left text-[1.2vw] opacity-50">
-              Sticky notes, big ideas, zero mess
-            </h3>
-          </div>
-        </div>
-        <div
-          ref={box6Ref}
-          className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed top-[202%]"
-        >
-          <img src="/ai.jpg" alt="React" className=" h-1/2 rounded-[2vw]" />
-          <div>
-            <h2 className="w-full text-left text-[1.5vw] font-bold">
-              Ai Tools
-            </h2>
-            <h3 className="w-full text-left text-[1.2vw] opacity-50">
-              Work smarter, not harder
-            </h3>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

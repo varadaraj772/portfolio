@@ -5,6 +5,7 @@ import { PiAsterisk } from "react-icons/pi";
 import GreenButton from "./components/GreenButton";
 import { FaBehance } from "react-icons/fa";
 import { BsArrowReturnRight } from "react-icons/bs";
+import { SiMinutemailer } from "react-icons/si";
 import Banner from "./components/Banner";
 import Toolbox from "./components/Toolbox";
 import { GoDotFill } from "react-icons/go";
@@ -203,9 +204,15 @@ function page() {
             </div>
             <a
               href="mailto:sanith.s74@gmail.com"
-              className="bg-[#8CFF2E] py-[1.1vw] px-[1.7vw] rounded-[2vw] text-black no-underline inline-block"
+              className="bg-[#8CFF2E] py-[clamp(0.5rem,1.1vw,1rem)] px-[clamp(0.8rem,1.7vw,1.5rem)] rounded-[2vw] text-black no-underline inline-block overflow-hidden relative transition-all duration-300 ease-in-out group"
             >
-              Contact me
+              <span className="relative z-10 transition-opacity duration-300 ease-in-out group-hover:opacity-0">
+                Contact me
+              </span>
+
+              <span className="absolute inset-0 flex items-center justify-center transition-transform duration-300 ease-in-out translate-y-full group-hover:translate-y-0">
+                <SiMinutemailer className="text-[clamp(1rem,2vw,2rem)]" />
+              </span>
             </a>
           </div>
         </nav>
