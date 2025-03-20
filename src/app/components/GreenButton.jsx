@@ -17,7 +17,7 @@ function GreenButton({
         href={href}
         download={downloadAttribute ? undefined : false}
         target={targetAttribute ? targetAttribute : undefined}
-        className="bg-[#8CFF2E] py-[2.3vw] pl-[2.1vw] md:pr-[1vw] pr-[2vw] md:rounded-[4vw] rounded-[8vw] flex flex-row gap-[1vw] md:text-[1.5vw] text-[4vw] text-black items-center cursor-pointer group no-underline md:h-[2vw] h-[10vw]"
+        className="bg-[#8CFF2E] py-[2.3vw] pl-[2.1vw] md:pr-[1vw] pr-[2vw] md:rounded-[4vw] rounded-[8vw] flex flex-row md:gap-[1vw] gap-[3vw] md:text-[1.5vw] text-[4vw] text-black items-center cursor-pointer group no-underline md:h-[2vw] h-[10vw]"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >

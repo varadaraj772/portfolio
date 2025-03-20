@@ -218,11 +218,8 @@ function page() {
               href="mailto:sanith.s74@gmail.com"
               className="bg-[#8CFF2E] py-[clamp(0.5rem,1.1vw,1rem)] px-[clamp(0.8rem,1.7vw,1.5rem)] md:rounded-[2vw] rounded-[8vw] text-black no-underline inline-block overflow-hidden group hover:bg-[#54ff2e] transition-color duration-300 ease-in-out"
             >
-              <span className="">
-                Contact me
-              </span>
+              <span className="">Contact me</span>
             </a>
-
           </div>
         </nav>
         <div className="flex md:flex-row flex-col w-full justify-between items-center px-[2vw] relative z-50">
@@ -479,41 +476,44 @@ function page() {
           <div className=" pb-[10vw]">
             <div className="head py-[3vw]" ref={listHeadingRef}>
               <span className=" px-[2.5vw] text-white flex flex-row gap-[0.7vw] items-center font-semibold">
-                <GoDotFill className=" text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] text-[1.5vw]" />
-                <span className=" opacity-50 text-[1.3vw]">
+                <GoDotFill className=" text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] md:text-[1.5vw] text-[5vw]" />
+                <span className=" opacity-50 md:text-[1.3vw] text-[4vw]">
                   {"{03} — Technical skills"}
                 </span>
               </span>
-              <h1 className=" text-[6.5vw] text-white px-[2.5vw]">
+              <h1 className="md:text-[6.5vw] text-[8vw] text-white px-[2.5vw]">
                 {" "}
                 Powering ideas with skills
               </h1>
             </div>
 
             <div
-              className="content flex flex-row px-[2.5vw] py-[3vw] w-full h-[33vw] justify-center items-center"
+              className="content flex md:flex-row flex-col px-[2.5vw] py-[3vw] w-full md:h-[33vw]  md:justify-center md:items-center"
               style={{
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
               ref={list1Ref}
             >
-              <div className="tag h-full w-[20vw] pt-[1vw]">
-                <span className=" bg-transparent py-[0.7vw] px-[1.4vw] rounded-[4vw] border-[#2F2F2F] border text-white">
+              <div className="tag h-full md:w-[20vw] w-full pt-[1vw]">
+                <span className=" bg-transparent md:py-[0.7vw] md:px-[1.4vw] py-[1vw] px-[2.4vw] rounded-[4vw] border-[#2F2F2F] border text-white">
                   User Experience
                 </span>
               </div>
-              <div className="number text-[2.5vw] h-full w-[15vw]">
+              <div className="number md:text-[2.5vw] text-[5vw] h-full w-[15vw]">
                 <span className=" text-[#8CFF2E]">/</span>
                 <span className=" text-white">01</span>
               </div>
-              <div className="body flex flex-col text-white h-full w-[80vw] ">
-                <h2 className=" text-[1.8vw]">
+              <div className="body flex flex-col text-white h-full md:w-[80vw] w-[90vw]">
+                <h2 className=" md:text-[1.8vw] text-[4vw]">
                   I'll design experiences that bring your vision to life
                 </h2>
-                <ul className="list-none mt-[1.8vw] space-y-[1vw] text-[1.3vw]">
-                  <li className=" flex flex-row ">
-                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    <span> User Research & Stakeholder Interviews :</span>
+                <ul className="list-none mt-[1.8vw] space-y-[1vw] md:text-[1.3vw] text-[3vw]">
+                  <li className=" flex md:flex-row flex-col">
+                    <div className=" flex flex-row">
+                      <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                      <span> User Research & Stakeholder Interviews :</span>
+                    </div>
+
                     <span className=" opacity-50 ml-[0.3vw]">
                       Understanding needs and defining goals.
                     </span>
@@ -676,42 +676,48 @@ function page() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 mt-[5vw] gap-[2vw] px-[2.5vw] font-semibold">
               {/* Figma Box */}
-              <div className=" rounded-[0.9vw] bg-[#8CFF2E] text-black h-[15vw] shadow-md cursor-pointer ">
-                <div className=" w-full p-[1vw]">
-                  <p className=" text-[5vw] ">08+</p>
+              <div className=" rounded-[0.9vw] bg-[#8CFF2E] text-black md:h-[15vw] shadow-md cursor-pointer ">
+                <div className=" w-full md:p-[1vw] p-[3vw]">
+                  <p className=" md:text-[5vw] text-[8vw] ">08+</p>
                 </div>
-                <div className=" w-full flex flex-col items-end justify-end px-[2vw]">
-                  <span className=" text-[1.2vw]">Solutions Delivered</span>
-                  <span className=" text-[1.7vw] opacity-50">
+                <div className=" w-full flex flex-col items-end justify-end px-[2vw] md:py-0 py-[2vw]">
+                  <span className=" md:text-[1.2vw] text-[4vw]">
+                    Solutions Delivered
+                  </span>
+                  <span className=" md:text-[1.7vw] text-[5vw] opacity-50">
                     Digital Solutions
                   </span>
                 </div>
               </div>
-              <div className=" rounded-[0.9vw] bg-[#242424] text-white h-[15vw] shadow-md cursor-pointer ">
-                <div className=" w-full p-[1vw]">
-                  <p className=" text-[5vw]">04+</p>
+              <div className=" rounded-[0.9vw] bg-[#242424] text-white md:h-[15vw] shadow-md cursor-pointer ">
+                <div className=" w-full  md:p-[1vw] p-[3vw]">
+                  <p className=" md:text-[5vw] text-[8vw]">04+</p>
                 </div>
-                <div className=" w-full flex flex-col items-end justify-end px-[2vw]">
-                  <span className=" text-[1.2vw]">Years</span>
-                  <span className=" text-[1.7vw] opacity-50">Experience</span>
+                <div className=" w-full flex flex-col items-end justify-end px-[2vw]  md:py-0 py-[2vw]">
+                  <span className="md:text-[1.2vw] text-[4vw]">Years</span>
+                  <span className=" md:text-[1.7vw] text-[5vw] opacity-50">
+                    Experience
+                  </span>
                 </div>
               </div>
-              <div className=" rounded-[0.9vw] bg-white h-[15vw] shadow-md cursor-pointer ">
-                <div className=" w-full p-[1vw]">
-                  <p className=" text-[5vw]">10+</p>
+              <div className=" rounded-[0.9vw] bg-white md:h-[15vw] shadow-md cursor-pointer ">
+                <div className=" w-full  md:p-[1vw] p-[3vw]">
+                  <p className=" md:text-[5vw] text-[8vw]">10+</p>
                 </div>
-                <div className=" w-full flex flex-col items-end justify-end px-[2vw]">
-                  <span className=" text-[1.2vw]">Completed</span>
-                  <span className=" text-[1.7vw] opacity-50">Projects</span>
+                <div className=" w-full flex flex-col items-end justify-end px-[2vw] md:py-0 py-[2vw]">
+                  <span className="md:text-[1.2vw] text-[4vw]">Completed</span>
+                  <span className=" md:text-[1.7vw] text-[5vw] opacity-50">
+                    Projects
+                  </span>
                 </div>
               </div>
             </div>
           </div>
           <div className=" bg-[#F8F8F8]  py-[7vw] px-[2.5vw] ">
             <div className=" w-full h-[4vw] font-semibold flex items-center mx-[-2.5vw]">
-              <span className=" px-[2.5vw] text-black flex flex-row gap-[0.7vw] items-center ">
-                <GoDotFill className=" text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] md:text-[1.7vw] text-[4vw]" />
-                <span className=" opacity-50 md:text-[1.5vw] text-[3vw]">
+              <span className=" px-[2.5vw] text-black flex flex-row gap-[0.7vw] items-center md:mb-0 mb-[4vw]">
+                <GoDotFill className=" text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] md:text-[1.7vw] text-[5vw]" />
+                <span className=" opacity-50 md:text-[1.5vw] text-[4vw]">
                   {"{04} — Contact me"}
                 </span>
               </span>
@@ -726,7 +732,6 @@ function page() {
                   href={behanceURL}
                   target="_blank"
                   rel="noopener noreferrer"
-                 
                 >
                   <div className=" rounded-[0.9vw] bg-white md:text-[2.5vw] text-[6.5vw] md:h-[15vw] h-[30vw] shadow-md cursor-pointer group">
                     <div className=" w-full p-[2vw]">
@@ -744,7 +749,6 @@ function page() {
                   href={linkedinURL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  
                 >
                   <div className=" rounded-[0.9vw] bg-white md:text-[2.5vw] text-[6.5vw] md:h-[15vw] h-[30vw] shadow-md cursor-pointer group">
                     <div className=" w-full p-[2vw]">
@@ -757,7 +761,7 @@ function page() {
                     </div>
                   </div>
                 </Link>
-                <a href="mailto:sanith.s74@gmail.com" className="no-underline" >
+                <a href="mailto:sanith.s74@gmail.com" className="no-underline">
                   <div className="rounded-[0.9vw] bg-[#8CFF2E] md:text-[2.5vw] text-[6.5vw] md:h-[15vw] h-[30vw] shadow-md cursor-pointer hover:px-[1vw] transition-all duration-500">
                     <div className="w-full p-[2vw]">
                       <p className="">Get in touch</p>
@@ -792,16 +796,16 @@ function page() {
                 Let's design experiences that inspire the world.
               </h1>
               <h2 className="md:text-[2vw] text-[4vw] text-white opacity-50 w-full mt-[3vw]">
-                Let’s make an impact
+                Let's make an impact
               </h2>
             </div>
             <div
-              className="md:h-full h-1/4 md:w-1/2 w-full flex flex-col "
+              className="md:h-full h-1/4 md:w-1/2 w-full flex flex-col"
               style={{
                 borderLeft: "1px solid rgba(255,255,255,0.1)",
               }}
             >
-              <div className=" text-white h-[40%] flex md:items-end items-center p-[2vw] ">
+              <div className=" text-white h-[40%] flex md:items-end items-center p-[2vw] md:mt-0 mt-[9vw]">
                 <div className="w-3/4 flex flex-row md:justify-around justify-between items-center mt-[2vw]">
                   <div className="flex justify-center items-center md:h-[10vw] h-[25vw] rounded-full md:w-[10vw] w-[25vw]">
                     <img
