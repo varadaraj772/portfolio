@@ -202,7 +202,7 @@ function page() {
                 <span>sanith.s74@gmail.com</span>
               </a>
             </div>
-            <a
+            {/* <a
               href="mailto:sanith.s74@gmail.com"
               className="bg-[#8CFF2E] py-[clamp(0.5rem,1.1vw,1rem)] px-[clamp(0.8rem,1.7vw,1.5rem)] rounded-[2vw] text-black no-underline inline-block overflow-hidden relative transition-all duration-300 ease-in-out group"
             >
@@ -213,7 +213,16 @@ function page() {
               <span className="absolute inset-0 flex items-center justify-center transition-transform duration-300 ease-in-out translate-y-full group-hover:translate-y-0">
                 <SiMinutemailer className="text-[clamp(1rem,2vw,2rem)]" />
               </span>
+            </a> */}
+            <a
+              href="mailto:sanith.s74@gmail.com"
+              className="bg-[#8CFF2E] py-[clamp(0.5rem,1.1vw,1rem)] px-[clamp(0.8rem,1.7vw,1.5rem)] md:rounded-[2vw] rounded-[8vw] text-black no-underline inline-block overflow-hidden group hover:bg-[#54ff2e] transition-color duration-300 ease-in-out"
+            >
+              <span className="">
+                Contact me
+              </span>
             </a>
+
           </div>
         </nav>
         <div className="flex md:flex-row flex-col w-full justify-between items-center px-[2vw] relative z-50">
@@ -250,7 +259,7 @@ function page() {
               </div>
             </div>
           </section>
-          <section className="h-full md:w-[50%] w-full flex flex-col justify-between  md:text-[6.5vw] mt-[6.5vw] text-[14vw]">
+          <section className="h-full md:w-[50%] w-full flex flex-col justify-between  md:text-[6.5vw] mt-[6.5vw] text-[12vw]">
             <span className="w-full flex items-center gap-[2vw]">
               Hi! I'm{" "}
               <span
@@ -701,8 +710,8 @@ function page() {
           <div className=" bg-[#F8F8F8]  py-[7vw] px-[2.5vw] ">
             <div className=" w-full h-[4vw] font-semibold flex items-center mx-[-2.5vw]">
               <span className=" px-[2.5vw] text-black flex flex-row gap-[0.7vw] items-center ">
-                <GoDotFill className=" text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] text-[1.7vw]" />
-                <span className=" opacity-50 text-[1.5vw]">
+                <GoDotFill className=" text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] md:text-[1.7vw] text-[4vw]" />
+                <span className=" opacity-50 md:text-[1.5vw] text-[3vw]">
                   {"{04} — Contact me"}
                 </span>
               </span>
@@ -717,13 +726,14 @@ function page() {
                   href={behanceURL}
                   target="_blank"
                   rel="noopener noreferrer"
+                 
                 >
-                  <div className=" rounded-[0.9vw] bg-white text-[2.5vw] h-[15vw] shadow-md cursor-pointer group">
+                  <div className=" rounded-[0.9vw] bg-white md:text-[2.5vw] text-[6.5vw] md:h-[15vw] h-[30vw] shadow-md cursor-pointer group">
                     <div className=" w-full p-[2vw]">
                       <p className="">behance</p>
                     </div>
-                    <div className=" w-full flex items-center justify-end px-[2vw]">
-                      <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
+                    <div className=" w-full flex items-center justify-end px-[2vw] md:py-0 py-[2vw]">
+                      <div className=" bg-[#8CFF2E] md:p-[1vw] p-[2vw] rounded-[100%]">
                         {" "}
                         <FaBehance className="group-hover:rotate-360 cursor-pointer transition-transform duration-700" />
                       </div>
@@ -734,25 +744,26 @@ function page() {
                   href={linkedinURL}
                   target="_blank"
                   rel="noopener noreferrer"
+                  
                 >
-                  <div className=" rounded-[0.9vw] bg-white text-[2.5vw] h-[15vw] shadow-md cursor-pointer group">
+                  <div className=" rounded-[0.9vw] bg-white md:text-[2.5vw] text-[6.5vw] md:h-[15vw] h-[30vw] shadow-md cursor-pointer group">
                     <div className=" w-full p-[2vw]">
                       <p className="">Linkedin</p>
                     </div>
-                    <div className=" w-full flex items-center justify-end px-[2vw]">
-                      <div className=" bg-[#8CFF2E] p-[1vw] rounded-[100%]">
+                    <div className=" w-full flex items-center justify-end px-[2vw] md:py-0 py-[2vw]">
+                      <div className=" bg-[#8CFF2E]md:p-[1vw] p-[2vw] rounded-[100%]">
                         <FaLinkedin className="group-hover:rotate-360 cursor-pointer transition-transform duration-700" />
                       </div>
                     </div>
                   </div>
                 </Link>
-                <a href="mailto:sanith.s74@gmail.com" className="no-underline">
-                  <div className="rounded-[0.9vw] bg-[#8CFF2E] text-[2.5vw] h-[15vw] shadow-md cursor-pointer hover:px-[1vw] transition-all duration-500">
+                <a href="mailto:sanith.s74@gmail.com" className="no-underline" >
+                  <div className="rounded-[0.9vw] bg-[#8CFF2E] md:text-[2.5vw] text-[6.5vw] md:h-[15vw] h-[30vw] shadow-md cursor-pointer hover:px-[1vw] transition-all duration-500">
                     <div className="w-full p-[2vw]">
                       <p className="">Get in touch</p>
                     </div>
-                    <div className="w-full flex items-center justify-end px-[3vw]">
-                      <div className="bg-[#8CFF2E] p-[1vw] rounded-[100%]">
+                    <div className="w-full flex items-center justify-end px-[3vw] md:py-0 py-[2vw]">
+                      <div className="bg-[#8CFF2E] md:p-[1vw] p-[2vw] rounded-[100%]">
                         <BsArrowReturnRight />
                       </div>
                     </div>
@@ -771,40 +782,40 @@ function page() {
           </div>
 
           <div
-            className=" h-[100vh] flex flex-row"
+            className=" md:h-[100vh] flex md:flex-row flex-col"
             style={{
               borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
             }}
           >
-            <div className=" h-full w-1/2 justify-center items-center flex flex-col px-[2vw] bg-[url(/footervector.svg)] bg-cover">
-              <h1 className=" text-[5vw] text-white font-semibold">
+            <div className=" md:h-full h-1/2 md:w-1/2 w-full justify-center items-center flex flex-col px-[2vw] bg-[url(/footervector.svg)] bg-cover ">
+              <h1 className=" md:text-[5vw] text-[10vw] text-white font-semibold">
                 Let's design experiences that inspire the world.
               </h1>
-              <h2 className=" text-[2vw] text-white opacity-50 w-full mt-[3vw]">
+              <h2 className="md:text-[2vw] text-[4vw] text-white opacity-50 w-full mt-[3vw]">
                 Let’s make an impact
               </h2>
             </div>
             <div
-              className="h-full w-1/2 flex flex-col"
+              className="md:h-full h-1/4 md:w-1/2 w-full flex flex-col "
               style={{
                 borderLeft: "1px solid rgba(255,255,255,0.1)",
               }}
             >
-              <div className=" text-white h-[40%] flex items-end p-[2vw] ">
-                <div className="w-3/4 flex flex-row justify-around mt-[2vw]">
-                  <div className="flex justify-center items-center  h-[10vw] rounded-full w-[10vw]">
+              <div className=" text-white h-[40%] flex md:items-end items-center p-[2vw] ">
+                <div className="w-3/4 flex flex-row md:justify-around justify-between items-center mt-[2vw]">
+                  <div className="flex justify-center items-center md:h-[10vw] h-[25vw] rounded-full md:w-[10vw] w-[25vw]">
                     <img
                       src="/sanith.jpeg"
                       alt="Image of the developer"
                       className="w-full h-full object-cover rounded-full"
                     />
                   </div>
-                  <div className=" h-[10%] flex flex-col items-start text-[1vw] font-bold">
-                    <h1 className="text-[2vw]">Sanith Suvarna</h1>
-                    <h2 className="opacity-50 text-[1vw] text-left">
+                  <div className=" md:h-[10%] h-full flex flex-col items-start font-bold">
+                    <h1 className="md:text-[2vw] text-[5vw]">Sanith Suvarna</h1>
+                    <h2 className="opacity-50 md:text-[1vw] text-[4vw] text-left">
                       UX/UI Designer
                     </h2>
-                    <div className=" flex flex-row mt-[1vw] text-[1.5vw] gap-[1vw] opacity-50">
+                    <div className=" flex flex-row mt-[1vw] md:text-[1.5vw] text-[5.5vw] gap-[1vw] opacity-50">
                       <Link
                         href={behanceURL}
                         target="_blank"
@@ -826,13 +837,13 @@ function page() {
                 </div>
               </div>
               <div className=" h-1/2 px-[4vw]">
-                <h2 className="opacity-50 text-[1.2vw] text-left font-semibold px-[1vw] text-white">
+                <h2 className="opacity-50 text-[1.2vw] text-left font-semibold px-[1vw] text-white hidden md:block">
                   Contact me
                 </h2>
-                <h2 className=" text-[3vw] text-left font-semibold px-[1vw] text-white">
+                <h2 className=" md:text-[3vw] text-[5vw] text-left font-semibold px-[1vw] text-white">
                   sanith.s74<span className=" text-[#8CFF2E]">@</span>gmail.com
                 </h2>
-                <p className="text-[1.8vw] text-white text-left font-semibold p-[1vw] mb-[0.5vw]">
+                <p className="md:text-[1.8vw] text-[3vw] text-white text-left font-semibold p-[1vw] mb-[0.5vw]">
                   <span className="opacity-50">
                     Hit me up if you’re looking for a{" "}
                   </span>
@@ -847,7 +858,7 @@ function page() {
                     <span className="opacity-50">vision to life.</span>
                   </span>
                 </p>
-                <div className="px-[1vw]">
+                <div className="px-[1vw] md:py-0 py-[3vw]">
                   <GreenButton
                     text="Contact me"
                     href="mailto:sanith.s74@gmail.com"
@@ -858,7 +869,7 @@ function page() {
               </div>
             </div>
           </div>
-          <footer className=" w-full h-[10vh] flex items-center justify-center text-[1vw] text-white opacity-50 ">
+          <footer className=" w-full md:h-[10vh] h-[5vh] flex items-center justify-center text-white opacity-50 md:text-[1vw] text-[3vw]">
             Copyright © sanith suvarna, 2024
           </footer>
         </section>
