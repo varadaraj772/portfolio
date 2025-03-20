@@ -494,12 +494,12 @@ function page() {
               }}
               ref={list1Ref}
             >
-              <div className="tag h-full md:w-[20vw] w-full pt-[1vw]">
+              <div className="tag h-full md:w-[20vw] w-full md:py-[1vw] py-[1vh]">
                 <span className=" bg-transparent md:py-[0.7vw] md:px-[1.4vw] py-[1vw] px-[2.4vw] rounded-[4vw] border-[#2F2F2F] border text-white">
                   User Experience
                 </span>
               </div>
-              <div className="number md:text-[2.5vw] text-[5vw] h-full w-[15vw]">
+              <div className="number md:text-[2.5vw] text-[5vw] h-full w-[15vw] md:py-0ne py-[1vh]">
                 <span className=" text-[#8CFF2E]">/</span>
                 <span className=" text-white">01</span>
               </div>
@@ -507,64 +507,79 @@ function page() {
                 <h2 className=" md:text-[1.8vw] text-[4vw]">
                   I'll design experiences that bring your vision to life
                 </h2>
-                <ul className="list-none mt-[1.8vw] space-y-[1vw] md:text-[1.3vw] text-[3vw]">
-                  <li className=" flex md:flex-row flex-col">
+                <ul className="list-none mt-[1.8vw] space-y-[1vw] md:text-[1.3vw] text-[3vw] md:gap-0 gap-[2vh]">
+                  <li className=" flex md:flex-row flex-col md:py-0 py-[1vh]">
                     <div className=" flex flex-row">
                       <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
                       <span> User Research & Stakeholder Interviews :</span>
                     </div>
-
                     <span className=" opacity-50 ml-[0.3vw]">
                       Understanding needs and defining goals.
                     </span>
                   </li>
-                  <li className=" flex flex-row">
-                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    <span>Information Architecture & Data Hierarchy :</span>
+                  <li className=" flex md:flex-row flex-col md:py-0 py-[1vh]">
+                    <div className=" flex flex-row">
+                      <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                      <span>Information Architecture & Data Hierarchy :</span>
+                    </div>
                     <span className=" opacity-50 ml-[0.3vw]">
                       Organizing content for clarity and efficiency.
                     </span>
                   </li>
-                  <li className=" flex flex-row">
-                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    <span>User Flows & Journey Mapping :</span>
+                  <li className=" flex md:flex-row flex-col md:py-0 py-[1vh]">
+                    <div className=" flex flex-row">
+                      <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                      <span>User Flows & Journey Mapping :</span>
+                    </div>
                     <span className=" opacity-50 ml-[0.3vw]">
                       OCrafting smooth, intuitive user experiences.
                     </span>
                   </li>
-                  <li className=" flex flex-row">
-                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    <span>Wireframing & Prototyping (Low/High Fidelity) :</span>
+                  <li className=" flex md:flex-row flex-col md:py-0 py-[1vh]">
+                    <div className=" flex flex-row">
+                      <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                      <span>
+                        Wireframing & Prototyping (Low/High Fidelity) :
+                      </span>
+                    </div>
                     <span className=" opacity-50 ml-[0.3vw]">
                       {" "}
                       Bringing ideas to life visually.
                     </span>
                   </li>
-                  <li className=" flex flex-row">
-                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    <span> Usability Testing :</span>
+                  <li className=" flex md:flex-row flex-col md:py-0 py-[1vh]">
+                    <div className=" flex flex-row">
+                      <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                      <span> Usability Testing :</span>
+                    </div>
                     <span className=" opacity-50 ml-[0.3vw]">
                       {" "}
                       Ensuring seamless interactions through real user feedback.
                     </span>
                   </li>
-                  <li className=" flex flex-row">
-                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    <span>Accessibility & Inclusive Design :</span>
+                  <li className=" flex md:flex-row flex-col md:py-0 py-[1vh]">
+                    <div className=" flex flex-row">
+                      <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                      <span>Accessibility & Inclusive Design :</span>
+                    </div>
                     <span className=" opacity-50 ml-[0.3vw]">
                       Designing for every user, without limits.
                     </span>
                   </li>
-                  <li className=" flex flex-row">
-                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    <span>User Behavior Analytics:</span>
+                  <li className=" flex md:flex-row flex-col md:py-0 py-[1vh]">
+                    <div className=" flex flex-row">
+                      <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                      <span>User Behavior Analytics:</span>
+                    </div>
                     <span className=" opacity-50 ml-[0.3vw]">
                       Leveraging data to enhance usability and engagement.
                     </span>
                   </li>
-                  <li className=" flex flex-row">
-                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    <span>A/B Testing :</span>
+                  <li className=" flex md:flex-row flex-col md:py-0 py-[1vh]">
+                    <div className=" flex flex-row">
+                      <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                      <span>A/B Testing :</span>
+                    </div>
                     <span className=" opacity-50 ml-[0.3vw]">
                       Refining and optimizing designs for maximum impact.
                     </span>
