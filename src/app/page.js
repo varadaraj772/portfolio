@@ -333,25 +333,25 @@ function page() {
               />
             </div>
           </div>
-          <div className="flex flex-col overflow-x-hidden">
+          <div className="flex flex-col overflow-x-hidden md:pb-0 pb-[5vh]">
             <div
-              className="flex flex-row  h-[50vw]"
+              className="flex md:flex-row flex-col md:h-[50vw] h-[70vh] md:py-0 py-[2vh]"
               style={{
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
                 borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
               }}
             >
               <div
-                className="w-1/2 flex flex-col text-white "
+                className="md:w-1/2 w-full h-1/2 flex flex-col text-white  md:px-0 px-[2.5vw]"
                 style={{
                   borderRight: "1px solid rgba(255, 255, 255, 0.1)",
                 }}
               >
-                <div className=" flex flex-col h-[30%] justify-center gap-[1vw] translate-x-[3.5vw]">
-                  <span className="text-[2vw]">IRS Plus</span>
-                  <span className="opacity-50">Web and Mobile Design</span>{" "}
+                <div className=" flex flex-col md:h-[30%] h-[35%] justify-center gap-[1vw] md:translate-x-[3.5vw]">
+                  <span className="md:text-[2vw] text-[5vw]">IRS Plus</span>
+                  <span className="opacity-50 md:text-[1vw] text-[4vw]">Web and Mobile Design</span>{" "}
                 </div>
-                <div className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
+                <div className="md:h-[50%] h-3/4 object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
                   <Image
                     src="/Project1.png"
                     ref={image1Ref}
@@ -360,12 +360,12 @@ function page() {
                   />
                 </div>
               </div>
-              <div className="w-1/2 flex flex-col text-white translate-x-[3.5vw] ">
-                <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
-                  <span className="text-[2vw]">Casa Malta</span>
-                  <span className="opacity-50">Web and Mobile Design</span>{" "}
+              <div className="md:w-1/2 w-full h-1/2 flex flex-col text-white translate-x-[3.5vw] md:py-0 py-[2vh]">
+                <div className=" flex flex-col md:h-[30%] h-[35%] justify-center gap-[1vw]">
+                  <span className="md:text-[2vw] text-[5vw]">Casa Malta</span>
+                  <span className="opacity-50 md:text-[1vw] text-[4vw]">Web and Mobile Design</span>{" "}
                 </div>
-                <div className="h-[50%] object-cover rounded-[2vw] w-[85%] relative">
+                <div className="md:h-[50%] h-3/4 object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
                   <Image
                     src="/Project2.png"
                     alt="Project Image: Casa Malta"
@@ -376,23 +376,23 @@ function page() {
               </div>
             </div>
             <div
-              className="flex flex-row h-[50vw]"
+              className="flex md:flex-row flex-col md:h-[50vw] h-[70vh]"
               style={{
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
                 borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
               }}
             >
               <div
-                className="w-1/2 flex flex-col text-white "
+                className="md:w-1/2 w-full h-1/2 flex flex-col text-white translate-x-[3.5vw] md:py-0 py-[2vh]"
                 style={{
                   borderRight: "1px solid rgba(255, 255, 255, 0.1)",
                 }}
               >
-                <div className=" flex flex-col h-[30%] justify-center gap-[1vw] translate-x-[3.5vw]">
-                  <span className="text-[2vw]">Primesophic Technology</span>
-                  <span className="opacity-50">Web and Mobile Design</span>{" "}
+                <div className=" flex flex-col md:h-[30%] h-[35%] justify-center gap-[1vw]">
+                  <span className="md:text-[2vw] text-[5vw]">Primesophic Technology</span>
+                  <span className="opacity-50 md:text-[1vw] text-[4vw]">Web and Mobile Design</span>{" "}
                 </div>
-                <div className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
+                <div className="md:h-[50%] h-3/4 object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
                   <Image
                     src="/Project3.png"
                     alt="Project Image: Primesophic Technology"
@@ -401,12 +401,12 @@ function page() {
                   />
                 </div>
               </div>
-              <div className="w-1/2 flex flex-col text-white translate-x-[3.5vw] ">
-                <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
-                  <span className="text-[2vw]">Malta Tourism </span>
-                  <span className="opacity-50">Web Design</span>{" "}
+              <div className="md:w-1/2 w-full h-1/2 flex flex-col text-white translate-x-[3.5vw] md:py-0 py-[2vh]">
+                <div className=" flex flex-col md:h-[30%] h-[35%] justify-center gap-[1vw]">
+                  <span className="md:text-[2vw] text-[5vw]">Malta Tourism </span>
+                  <span className="opacity-50 md:text-[1vw] text-[4vw]">Web Design</span>{" "}
                 </div>
-                <div className="h-[50%] object-cover rounded-[2vw] w-[85%] relative">
+                <div className="md:h-[50%] h-3/4 object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
                   <Image
                     src="/Project4.png"
                     ref={image4Ref}
@@ -417,22 +417,22 @@ function page() {
               </div>
             </div>
             <div
-              className="flex flex-row h-[50vw]"
+              className="flex md:flex-row flex-col md:h-[50vw] h-[70vh]"
               style={{
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
             >
               <div
-                className="w-1/2 flex flex-col text-white "
+                className="md:w-1/2 w-full h-1/2 flex flex-col text-white translate-x-[3.5vw] md:py-0 py-[2vh]"
                 style={{
                   borderRight: "1px solid rgba(255, 255, 255, 0.1)",
                 }}
               >
-                <div className=" flex flex-col h-[30%] justify-center gap-[1vw] translate-x-[3.5vw]">
-                  <span className="text-[2vw]">Old Town Market</span>
-                  <span className="opacity-50">Web Design</span>{" "}
+                <div className=" flex flex-col md:h-[30%] h-[35%] justify-center gap-[1vw]">
+                  <span className="md:text-[2vw] text-[5vw]">Old Town Market</span>
+                  <span className="opacity-50 md:text-[1vw] text-[4vw]">Web Design</span>{" "}
                 </div>
-                <div className="h-[50%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
+                <div className="md:h-[50%] h-3/4 object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
                   <Image
                     src="/Project5.png"
                     ref={image5Ref}
@@ -441,12 +441,12 @@ function page() {
                   />
                 </div>
               </div>
-              <div className="w-1/2 flex flex-col text-white translate-x-[3.5vw] ">
-                <div className=" flex flex-col h-[30%] justify-center gap-[1vw]">
-                  <span className="text-[2vw]">Testaahel</span>
-                  <span className="opacity-50">Mobile App</span>{" "}
+              <div className="md:w-1/2 w-full h-1/2 flex flex-col text-white translate-x-[3.5vw] md:py-0 py-[2vh]">
+                <div className=" flex flex-col md:h-[30%] h-[35%] justify-center gap-[1vw]">
+                  <span className="md:text-[2vw] text-[5vw]">Testaahel</span>
+                  <span className="opacity-50 md:text-[1vw] text-[4vw]">Mobile App</span>{" "}
                 </div>
-                <div className="h-[50%] object-cover rounded-[2vw] w-[85%] relative">
+                <div className="md:h-[50%] h-3/4 object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
                   <Image
                     src="/Project6.png"
                     ref={image6Ref}
