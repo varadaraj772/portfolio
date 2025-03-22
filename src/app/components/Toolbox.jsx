@@ -9,7 +9,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Toolbox() {
   const [isMounted, setIsMounted] = useState(false);
-
   const containerRef = useRef(null);
   const box1Ref = useRef(null);
   const box2Ref = useRef(null);
@@ -44,41 +43,42 @@ function Toolbox() {
       scrollTrigger: {
         trigger: container,
         start: "top top",
-        end: "+=500%",
+        end: "+=500%", 
         scrub: 2,
         pin: true,
         invalidateOnRefresh: true,
       },
     });
 
+    
     tl.to(boxes, {
-      top: "37%",
-      stagger: { amount: 1 },
+      top: "37%", 
+      stagger: { amount: 1 }, 
     });
-
-    return () => {
+      return () => {
       tl.kill();
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, [isMounted]);
+
 
   if (!isMounted) return null;
 
   return (
     <div
       ref={containerRef}
-      className="bg-[#F8F8F8] flex md:flex-row flex-col overflow-hidden h-[100vh]"
+      className="bg-[#F8F8F8] flex md:flex-row flex-col overflow-hidden h-[100vh] md:h-[100vh]"  
     >
-      <div className="w-1/2 flex justify-center items-center h-full flex-col">
-        <span className="pl-[3vw] text-black flex flex-row gap-[0.7vw] items-center font-semibold w-full">
-          <GoDotFill className="text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] text-[1.8vw]" />
-          <span className="opacity-50 text-[1.5vw]">{"{02} — Tools"}</span>
+      <div className="md:w-1/2 w-full flex justify-center items-center md:h-full flex-col md:py-0 py-8">
+        <span className="md:pl-[3vw] pl-4 text-black flex flex-row gap-[0.7vw] items-center font-semibold w-full">
+          <GoDotFill className="text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] md:text-[1.8vw] text-[4vw]" /> 
+          <span className="opacity-50 md:text-[1.5vw] text-[5vw]">{"{02} — Tools"}</span> 
         </span>
-        <span className="text-[6vw] text-left pl-[3vw]">
+        <span className="md:text-[6vw] text-[11vw] text-left md:pl-[3vw] pl-4"> 
           My Go-To Creative Toolkit
         </span>
       </div>
-      <div className="w-1/2 flex flex-col gap-[2.5vw]">
+      <div className="md:w-1/2 md:h-full h-1/2 w-full flex flex-col md:gap-[2.5vw] items-center">  
         {[
           {
             ref: box1Ref,
@@ -122,23 +122,22 @@ function Toolbox() {
             desc: "Work smarter, not harder",
             top: "202%",
           },
-        ].map((box, index) => (
-          <div
+        ].map((box, index) => ( <div
             key={index}
             ref={box.ref}
-            className="bg-white h-[15vw] w-[35vw] rounded-[1vw] flex flex-row gap-[2vw] px-[3.5vw] items-center shadow-md fixed"
+            className="bg-white md:h-[15vw] md:w-[35vw] h-[30vh] w-[90vw] md:rounded-[1vw] rounded-[4vw] flex flex-row md:gap-[2vw] gap-[4vw] md:px-[3.5vw] px-[5vw] items-center shadow-md fixed " 
             style={{ top: box.top }}
           >
             <img
               src={box.img}
               alt={box.title}
-              className="h-1/2 rounded-[2vw]"
+              className="md:h-1/2 h-1/3  rounded-[2vw]"
             />
             <div>
-              <h2 className="w-full text-left text-[1.5vw] font-bold">
+              <h2 className="w-full text-left md:text-[1.5vw] text-[6vw] font-bold"> 
                 {box.title}
               </h2>
-              <h3 className="w-full text-left text-[1.2vw] opacity-50">
+              <h3 className="w-full text-left md:text-[1.2vw] text-[4 qvw] opacity-50">
                 {box.desc}
               </h3>
             </div>

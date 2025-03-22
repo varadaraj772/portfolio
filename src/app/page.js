@@ -499,11 +499,11 @@ function page() {
                   User Experience
                 </span>
               </div>
-              <div className="number md:text-[2.5vw] text-[5vw] h-full w-[15vw] md:py-0ne py-[1vh]">
+              <div className="number md:text-[2.5vw] text-[5vw] h-full w-[15vw] md:py-0 py-[1vh] px-[2.4vw]">
                 <span className=" text-[#8CFF2E]">/</span>
                 <span className=" text-white">01</span>
               </div>
-              <div className="body flex flex-col text-white h-full md:w-[80vw] w-[90vw]">
+              <div className="body flex flex-col text-white h-full md:w-[84vw] w-[90vw]  px-[2.4vw]">
                 <h2 className=" md:text-[1.8vw] text-[4vw]">
                   I'll design experiences that bring your vision to life
                 </h2>
@@ -532,7 +532,7 @@ function page() {
                       <span>User Flows & Journey Mapping :</span>
                     </div>
                     <span className=" opacity-50 ml-[0.3vw]">
-                      OCrafting smooth, intuitive user experiences.
+                      Crafting smooth, intuitive user experiences.
                     </span>
                   </li>
                   <li className=" flex md:flex-row flex-col md:py-0 py-[1vh]">
@@ -588,53 +588,63 @@ function page() {
               </div>
             </div>
             <div
-              className="content flex flex-row px-[2.5vw] py-[3vw] w-full h-[25vw] justify-center items-center"
+              className="content flex  md:flex-row flex-col px-[2.5vw] py-[3vw] w-full md:h-[33vw]  md:justify-center md:items-center"
               style={{
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
               ref={list2Ref}
             >
-              <div className="tag h-full w-[20vw]  pt-[1vw]">
-                <span className=" bg-transparent py-[0.7vw] px-[1.4vw] rounded-[4vw] border-[#2F2F2F] border text-white">
+              <div className="tag  h-full md:w-[20vw] w-full md:py-[1vw] py-[1vh]">
+                <span className=" bg-transparent py-[0.7vw] px-[1.4vw] rounded-[4vw] border-[#2F2F2F] border text-white ">
                   User Interface
                 </span>
               </div>
-              <div className="number text-[2.5vw] h-full w-[15vw]">
+              <div className="number md:text-[2.5vw] text-[5vw] h-full w-[15vw] md:py-0 py-[1vh] px-[2.4vw]">
                 <span className=" text-[#8CFF2E]">/</span>
                 <span className=" text-white">02</span>
               </div>
-              <div className="body flex flex-col text-white h-full w-[84vw]">
-                <h2 className=" text-[1.8vw]">
+              <div className="body flex flex-col text-white h-full md:w-[84vw]  w-[90vw] px-[2.4vw]">
+                <h2 className="md:text-[1.8vw] text-[4vw]">
                   I'll design visually compelling and intuitive interfaces that
                   users enjoy.
                 </h2>
-                <ul className="list-none mt-[1.8vw] space-y-[1vw] text-[1.3vw]">
-                  <li className=" flex flex-row ">
-                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    <span> User Interface (UI) & Visual Design :</span>
+                <ul className="list-none mt-[1.8vw] space-y-[1vw]  md:text-[1.3vw] text-[3vw] md:gap-0 gap-[2vh]">
+                  <li className=" flex md:flex-row flex-col md:py-0 py-[1vh]">
+                    <div className=" flex flex-row">
+                      <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                      <span> User Interface (UI) & Visual Design :</span>
+                    </div>
                     <span className=" opacity-50 ml-[0.3vw]">
                       Crafting aesthetically pleasing and functional designs.
                     </span>
                   </li>
-                  <li className=" flex flex-row">
-                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    <span> Design Systems & Component Libraries :</span>
+                  <li className=" flex md:flex-row flex-col md:py-0 py-[1vh]">
+                    <div className=" flex flex-row">
+                      <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                      <span> Design Systems & Component Libraries :</span>
+                    </div>
+
                     <span className=" opacity-50 ml-[0.3vw]">
                       Building consistency and scalability across products.
                     </span>
                   </li>
-                  <li className=" flex flex-row w-full">
-                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    <span className="">
-                      Typography & Layout for Data-Heavy Interfaces :
-                    </span>
+                  <li className=" flex md:flex-row flex-col md:py-0 py-[1vh] w-full">
+                    <div className=" flex flex-row">
+                      <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                      <span className="">
+                        Typography & Layout for Data-Heavy Interfaces :
+                      </span>
+                    </div>
+
                     <span className=" opacity-50 ml-[0.3vw]">
                       Making complex information easy to scan and understand.
                     </span>
                   </li>
-                  <li className=" flex flex-row">
-                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    <span> Responsive Design :</span>
+                  <li className=" flex md:flex-row flex-col md:py-0 py-[1vh]">
+                    <div className=" flex flex-row">
+                      <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                      <span> Responsive Design :</span>
+                    </div>
                     <span className=" opacity-50 ml-[0.3vw]">
                       Ensuring a seamless experience across all screen sizes and
                       devices.
@@ -644,44 +654,53 @@ function page() {
               </div>
             </div>
             <div
-              className="content flex flex-row px-[2.5vw] py-[3vw] w-full h-[20vw] justify-center items-center"
+              className="content flex  md:flex-row flex-col px-[2.5vw] py-[3vw] w-full md:h-[33vw]  md:justify-center md:items-center"
               style={{
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
               ref={list3Ref}
             >
-              <div className="tag h-full w-[18vw]  pt-[1vw]">
+              <div className="tag h-full md:w-[20vw] w-full md:py-[1vw] py-[1vh]  pt-[1vw]">
                 <span className=" bg-transparent py-[0.7vw] px-[1.4vw] rounded-[4vw] border-[#2F2F2F] border text-white">
                   Creative Leadership
                 </span>
               </div>
-              <div className="number text-[2.5vw] h-full w-[15vw]">
+              <div className="number md:text-[2.5vw] text-[5vw] h-full w-[15vw] md:py-0 py-[1vh] px-[2.4vw]">
                 <span className=" text-[#8CFF2E]">/</span>
                 <span className=" text-white">03</span>
               </div>
-              <div className="body flex flex-col text-white h-full w-[80vw]">
-                <h2 className=" text-[1.8vw]">
+              <div className="body flex flex-col text-white h-full md:w-[80vw]  w-[90vw] px-[2.4vw]">
+                <h2 className="md:text-[1.8vw] text-[4vw]">
                   I'll shape design excellence through leadership and
                   collaboration.
                 </h2>
-                <ul className="list-none mt-[1.8vw] space-y-[1vw] text-[1.3vw]">
-                  <li className=" flex flex-row ">
-                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    <span> Design Leadership & Team Mentorship :</span>
+                <ul className="list-none mt-[1.8vw] space-y-[1vw] md:text-[1.3vw] text-[3vw] md:gap-0 gap-[2vh]">
+                  <li className=" flex md:flex-row flex-col md:py-0 py-[1vh] w-full ">
+                    <div className=" flex flex-row">
+                      <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                      <span> Design Leadership & Team Mentorship :</span>
+                    </div>
+
                     <span className=" opacity-50 ml-[0.3vw]">
                       Empowering teams to innovate and grow.
                     </span>
                   </li>
-                  <li className=" flex flex-row">
-                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    <span> Stakeholder & Client Communication :</span>
+                  <li className=" flex md:flex-row flex-col md:py-0 py-[1vh] w-full">
+                    <div className=" flex flex-row">
+                      <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                      <span> Stakeholder & Client Communication :</span>
+                    </div>
+
                     <span className=" opacity-50 ml-[0.3vw]">
                       Aligning vision, goals, and expectations.
                     </span>
                   </li>
-                  <li className=" flex flex-row">
-                    <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
-                    <span> Agile UX & Sprint Planning :</span>
+                  <li className=" flex md:flex-row flex-col md:py-0 py-[1vh] w-full">
+                    <div className=" flex flex-row">
+                      <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
+                      <span> Agile UX & Sprint Planning :</span>
+                    </div>
+
                     <span className=" opacity-50 ml-[0.3vw]">
                       Delivering seamless experiences in fast-paced workflows.
                     </span>
@@ -770,7 +789,7 @@ function page() {
                       <p className="">Linkedin</p>
                     </div>
                     <div className=" w-full flex items-center justify-end px-[2vw] md:py-0 py-[2vw]">
-                      <div className=" bg-[#8CFF2E]md:p-[1vw] p-[2vw] rounded-[100%]">
+                      <div className=" bg-[#8CFF2E] md:p-[1vw] p-[2vw] rounded-[100%]">
                         <FaLinkedin className="group-hover:rotate-360 cursor-pointer transition-transform duration-700" />
                       </div>
                     </div>
