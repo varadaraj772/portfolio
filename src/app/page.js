@@ -5,7 +5,6 @@ import { PiAsterisk } from "react-icons/pi";
 import GreenButton from "./components/GreenButton";
 import { FaBehance } from "react-icons/fa";
 import { BsArrowReturnRight } from "react-icons/bs";
-import { SiMinutemailer } from "react-icons/si";
 import Banner from "./components/Banner";
 import Toolbox from "./components/Toolbox";
 import { GoDotFill } from "react-icons/go";
@@ -336,7 +335,7 @@ function page() {
           </div>
           <div className="flex flex-col overflow-x-hidden">
             <div
-              className="flex flex-row h-[50vw]"
+              className="flex flex-row  h-[50vw]"
               style={{
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
                 borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
