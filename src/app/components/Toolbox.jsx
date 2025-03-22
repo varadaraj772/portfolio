@@ -125,7 +125,7 @@ function Toolbox() {
         ].map((box, index) => ( <div
             key={index}
             ref={box.ref}
-            className="bg-white md:h-[15vw] md:w-[35vw] h-[30vh] w-[90vw] md:rounded-[1vw] rounded-[4vw] flex flex-row md:gap-[2vw] gap-[4vw] md:px-[3.5vw] px-[5vw] items-center shadow-md fixed " 
+            className="bg-white md:h-[15vw] md:w-[35vw] h-[25vh] w-[90vw] md:rounded-[1vw] rounded-[4vw] flex flex-row md:gap-[2vw] gap-[4vw] md:px-[3.5vw] px-[5vw] items-center shadow-md fixed " 
             style={{ top: box.top }}
           >
             <img

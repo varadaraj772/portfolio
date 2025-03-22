@@ -512,7 +512,7 @@ function page() {
                       <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
                       <span> User Research & Stakeholder Interviews :</span>
                     </div>
-                    <span className=" opacity-50 ml-[0.3vw]">
+                    <span className=" opacity-50  md:ml-[0.3vw] ml-[5.5vw]">
                       Understanding needs and defining goals.
                     </span>
                   </li>
@@ -521,7 +521,7 @@ function page() {
                       <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
                       <span>Information Architecture & Data Hierarchy :</span>
                     </div>
-                    <span className=" opacity-50 ml-[0.3vw]">
+                    <span className=" opacity-50  md:ml-[0.3vw] ml-[5.5vw]">
                       Organizing content for clarity and efficiency.
                     </span>
                   </li>
@@ -530,7 +530,7 @@ function page() {
                       <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
                       <span>User Flows & Journey Mapping :</span>
                     </div>
-                    <span className=" opacity-50 ml-[0.3vw]">
+                    <span className=" opacity-50  md:ml-[0.3vw] ml-[5.5vw]">
                       Crafting smooth, intuitive user experiences.
                     </span>
                   </li>
@@ -541,7 +541,7 @@ function page() {
                         Wireframing & Prototyping (Low/High Fidelity) :
                       </span>
                     </div>
-                    <span className=" opacity-50 ml-[0.3vw]">
+                    <span className=" opacity-50  md:ml-[0.3vw] ml-[5.5vw]">
                       {" "}
                       Bringing ideas to life visually.
                     </span>
@@ -551,7 +551,7 @@ function page() {
                       <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
                       <span> Usability Testing :</span>
                     </div>
-                    <span className=" opacity-50 ml-[0.3vw]">
+                    <span className=" opacity-50  md:ml-[0.3vw] ml-[5.5vw]">
                       {" "}
                       Ensuring seamless interactions through real user feedback.
                     </span>
@@ -561,7 +561,7 @@ function page() {
                       <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
                       <span>Accessibility & Inclusive Design :</span>
                     </div>
-                    <span className=" opacity-50 ml-[0.3vw]">
+                    <span className=" opacity-50  md:ml-[0.3vw] ml-[5.5vw]">
                       Designing for every user, without limits.
                     </span>
                   </li>
@@ -570,7 +570,7 @@ function page() {
                       <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
                       <span>User Behavior Analytics:</span>
                     </div>
-                    <span className=" opacity-50 ml-[0.3vw]">
+                    <span className=" opacity-50  md:ml-[0.3vw] ml-[5.5vw]">
                       Leveraging data to enhance usability and engagement.
                     </span>
                   </li>
@@ -579,7 +579,7 @@ function page() {
                       <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
                       <span>A/B Testing :</span>
                     </div>
-                    <span className=" opacity-50 ml-[0.3vw]">
+                    <span className=" opacity-50  md:ml-[0.3vw] ml-[5.5vw]">
                       Refining and optimizing designs for maximum impact.
                     </span>
                   </li>
@@ -613,7 +613,7 @@ function page() {
                       <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
                       <span> User Interface (UI) & Visual Design :</span>
                     </div>
-                    <span className=" opacity-50 ml-[0.3vw]">
+                    <span className=" opacity-50  md:ml-[0.3vw] ml-[5.5vw]">
                       Crafting aesthetically pleasing and functional designs.
                     </span>
                   </li>
@@ -623,7 +623,7 @@ function page() {
                       <span> Design Systems & Component Libraries :</span>
                     </div>
 
-                    <span className=" opacity-50 ml-[0.3vw]">
+                    <span className=" opacity-50  md:ml-[0.3vw] ml-[5.5vw]">
                       Building consistency and scalability across products.
                     </span>
                   </li>
@@ -635,7 +635,7 @@ function page() {
                       </span>
                     </div>
 
-                    <span className=" opacity-50 ml-[0.3vw]">
+                    <span className=" opacity-50  md:ml-[0.3vw] ml-[5.5vw]">
                       Making complex information easy to scan and understand.
                     </span>
                   </li>
@@ -644,7 +644,7 @@ function page() {
                       <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
                       <span> Responsive Design :</span>
                     </div>
-                    <span className=" opacity-50 ml-[0.3vw]">
+                    <span className=" opacity-50 md:ml-[0.3vw] ml-[5.5vw]">
                       Ensuring a seamless experience across all screen sizes and
                       devices.
                     </span>
@@ -680,7 +680,7 @@ function page() {
                       <span> Design Leadership & Team Mentorship :</span>
                     </div>
 
-                    <span className=" opacity-50 ml-[0.3vw]">
+                    <span className=" opacity-50  md:ml-[0.3vw] ml-[5.5vw]">
                       Empowering teams to innovate and grow.
                     </span>
                   </li>
@@ -690,7 +690,7 @@ function page() {
                       <span> Stakeholder & Client Communication :</span>
                     </div>
 
-                    <span className=" opacity-50 ml-[0.3vw]">
+                    <span className=" opacity-50  md:ml-[0.3vw] ml-[5.5vw]">
                       Aligning vision, goals, and expectations.
                     </span>
                   </li>
@@ -700,7 +700,7 @@ function page() {
                       <span> Agile UX & Sprint Planning :</span>
                     </div>
 
-                    <span className=" opacity-50 ml-[0.3vw]">
+                    <span className=" opacity-50  md:ml-[0.3vw] ml-[5.5vw]">
                       Delivering seamless experiences in fast-paced workflows.
                     </span>
                   </li>
