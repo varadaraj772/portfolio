@@ -351,7 +351,7 @@ function page() {
                   <span className="md:text-[2vw] text-[5vw]">IRS Plus</span>
                   <span className="opacity-50 md:text-[1vw] text-[4vw]">Web and Mobile Design</span>{" "}
                 </div>
-                <div className="md:h-[50%] h-3/4 object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
+                <div className="md:h-[50%] h-[85%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
                   <Image
                     src="/Project1.png"
                     ref={image1Ref}
@@ -360,7 +360,7 @@ function page() {
                   />
                 </div>
               </div>
-              <div className="md:w-1/2 w-full h-1/2 md:h-full flex flex-col text-white translate-x-[3.5vw] md:py-0 py-[2vh]">
+              <div className="md:w-1/2 w-full  h-[85%] md:h-full flex flex-col text-white translate-x-[3.5vw] md:py-0 py-[2vh]">
                 <div className=" flex flex-col md:h-[30%] h-[35%] justify-center gap-[1vw]">
                   <span className="md:text-[2vw] text-[5vw]">Casa Malta</span>
                   <span className="opacity-50 md:text-[1vw] text-[4vw]">Web and Mobile Design</span>{" "}
@@ -392,7 +392,7 @@ function page() {
                   <span className="md:text-[2vw] text-[5vw]">Primesophic Technology</span>
                   <span className="opacity-50 md:text-[1vw] text-[4vw]">Web and Mobile Design</span>{" "}
                 </div>
-                <div className="md:h-[50%] h-3/4 object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
+                <div className="md:h-[50%]  h-[85%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
                   <Image
                     src="/Project3.png"
                     alt="Project Image: Primesophic Technology"
@@ -406,7 +406,7 @@ function page() {
                   <span className="md:text-[2vw] text-[5vw]">Malta Tourism </span>
                   <span className="opacity-50 md:text-[1vw] text-[4vw]">Web Design</span>{" "}
                 </div>
-                <div className="md:h-[50%] h-3/4 object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] md:translate-x-0 relative">
+                <div className="md:h-[50%]  h-[85%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] md:translate-x-0 relative">
                   <Image
                     src="/Project4.png"
                     ref={image4Ref}
@@ -432,7 +432,7 @@ function page() {
                   <span className="md:text-[2vw] text-[5vw]">Old Town Market</span>
                   <span className="opacity-50 md:text-[1vw] text-[4vw]">Web Design</span>{" "}
                 </div>
-                <div className="md:h-[50%] h-3/4 object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
+                <div className="md:h-[50%] h-[85%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
                   <Image
                     src="/Project5.png"
                     ref={image5Ref}
@@ -446,7 +446,7 @@ function page() {
                   <span className="md:text-[2vw] text-[5vw]">Testaahel</span>
                   <span className="opacity-50 md:text-[1vw] text-[4vw]">Mobile App</span>{" "}
                 </div>
-                <div className="md:h-[50%] h-3/4 object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] md:translate-x-0 relative">
+                <div className="md:h-[50%]  h-[85%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] md:translate-x-0 relative">
                   <Image
                     src="/Project6.png"
                     ref={image6Ref}
@@ -755,7 +755,7 @@ function page() {
                 </span>
               </span>
             </div>
-            <div className=" text-[6.5vw]">
+            <div className=" md:text-[6.5vw] text-[8vw]">
               <h1>Find me across the internet</h1>
             </div>
             <div className=" py-[2vw]">
@@ -824,11 +824,11 @@ function page() {
               borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
             }}
           >
-            <div className=" md:h-full h-1/2 md:w-1/2 w-full justify-center items-center flex flex-col px-[2vw] bg-[url(/footervector.svg)] bg-cover ">
-              <h1 className=" md:text-[5vw] text-[10vw] text-white font-semibold">
+            <div className=" md:h-full h-1/2 md:w-1/2 w-full justify-center items-center flex flex-col px-[2vw] bg-[url(/footervector.svg)] bg-cover  ">
+              <h1 className=" md:text-[5vw] text-[9.5vw] text-white font-semibold">
                 Let's design experiences that inspire the world.
               </h1>
-              <h2 className="md:text-[2vw] text-[4vw] text-white opacity-50 w-full mt-[3vw]">
+              <h2 className="md:text-[2vw] text-[4.5vw] text-white opacity-50 w-full mt-[3vw]">
                 Let's make an impact
               </h2>
             </div>
