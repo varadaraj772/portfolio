@@ -587,7 +587,7 @@ function page() {
               </div>
             </div>
             <div
-              className="content flex  md:flex-row flex-col px-[2.5vw] py-[3vw] w-full md:h-[33vw]  md:justify-center md:items-center"
+              className="content flex  md:flex-row flex-col px-[2.5vw] py-[3vw] w-full md:h-[33vw] md:justify-center md:items-center"
               style={{
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
@@ -653,7 +653,7 @@ function page() {
               </div>
             </div>
             <div
-              className="content flex  md:flex-row flex-col px-[2.5vw] py-[3vw] w-full md:h-[33vw]  md:justify-center md:items-center"
+              className="content flex  md:flex-row flex-col px-[2.5vw] py-[3vw] w-full md:h-[33vw]  md:justify-center md:items-center md:mt-[-10vw] mt-0"
               style={{
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
