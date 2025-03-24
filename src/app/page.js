@@ -321,7 +321,7 @@ function page() {
                 {"{01} — Projects"}
               </span>
             </span>
-            <h1 className=" text-white md:text-[6.5vw] text-[10vw] px-[2.5vw]">
+            <h1 className=" text-white md:text-[6.5vw] text-[11vw] px-[2.5vw]">
               Where creativity meets real-world solutions
             </h1>
             <div className="bg-transparent px-[2.5vw] pt-[2vw]">
@@ -335,27 +335,22 @@ function page() {
           </div>
           <div className="flex flex-col overflow-x-hidden md:pb-0 pb-[5vh]">
             <div
-              className="flex md:flex-row flex-col md:h-[50vw] h-[70vh] md:py-0 py-[2vh]"
+              className="flex md:flex-row flex-col md:h-[50vw] h-[85vh] md:py-0 py-[2vh]"
               style={{
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
                 borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
               }}
             >
-              <div
-                className="md:w-1/2 w-full h-1/2 md:h-full flex flex-col text-white  md:px-0 px-[2.5vw]"
-                style={{
-                  borderRight: "1px solid rgba(255, 255, 255, 0.1)",
-                }}
-              >
-                <div className=" flex flex-col md:h-[30%] h-[35%] justify-center gap-[1vw] md:translate-x-[3.5vw]">
+              <div className="md:w-1/2 w-full  h-[85%] md:h-full flex flex-col text-white translate-x-[3.5vw] md:py-0 py-[2vh]">
+                <div className=" flex flex-col md:h-[30%] h-[35%] justify-center gap-[1vw]">
                   <span className="md:text-[2vw] text-[5vw]">IRS Plus</span>
                   <span className="opacity-50 md:text-[1vw] text-[4vw]">Web and Mobile Design</span>{" "}
                 </div>
-                <div className="md:h-[50%] h-[85%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
+                <div className="md:h-[50%] h-3/4 object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] md:translate-x-0 relative">
                   <Image
                     src="/Project1.png"
+                    alt="Project Image: Casa Malta"
                     ref={image1Ref}
-                    alt="Project Image: IRS Plus"
                     fill
                   />
                 </div>
@@ -376,7 +371,7 @@ function page() {
               </div>
             </div>
             <div
-              className="flex md:flex-row flex-col md:h-[50vw] h-[70vh]"
+              className="flex md:flex-row flex-col md:h-[50vw] h-[85vh]"
               style={{
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
                 borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
@@ -417,7 +412,7 @@ function page() {
               </div>
             </div>
             <div
-              className="flex md:flex-row flex-col md:h-[50vw] h-[70vh]"
+              className="flex md:flex-row flex-col md:h-[50vw] h-[85vh]"
               style={{
                 borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               }}
@@ -480,7 +475,7 @@ function page() {
                   {"{03} — Technical skills"}
                 </span>
               </span>
-              <h1 className="md:text-[6.5vw] text-[8vw] text-white px-[2.5vw]">
+              <h1 className="md:text-[6.5vw] text-[11vw] text-white px-[2.5vw]">
                 {" "}
                 Powering ideas with skills
               </h1>
@@ -755,7 +750,7 @@ function page() {
                 </span>
               </span>
             </div>
-            <div className=" md:text-[6.5vw] text-[8vw]">
+            <div className=" md:text-[6.5vw] text-[11vw]">
               <h1>Find me across the internet</h1>
             </div>
             <div className=" py-[2vw]">

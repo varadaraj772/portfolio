@@ -71,8 +71,8 @@ function Toolbox() {
     >
       <div className="md:w-1/2 w-full flex justify-center items-center md:h-full flex-col md:py-0 py-8">
         <span className="md:pl-[3vw] pl-4 text-black flex flex-row gap-[0.7vw] items-center font-semibold w-full">
-          <GoDotFill className="text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] md:text-[1.8vw] text-[4vw]" /> 
-          <span className="opacity-50 md:text-[1.5vw] text-[5vw]">{"{02} — Tools"}</span> 
+          <GoDotFill className="text-[#8CFF2E] drop-shadow-[0_0_10px_#8CFF2E] md:text-[1.8vw] text-[5vw]" /> 
+          <span className="opacity-50 md:text-[1.5vw] text-[4vw]">{"{02} — Tools"}</span> 
         </span>
         <span className="md:text-[6vw] text-[11vw] text-left md:pl-[3vw] pl-4"> 
           My Go-To Creative Toolkit
