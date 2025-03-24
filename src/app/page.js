@@ -627,7 +627,7 @@ function page() {
                       Building consistency and scalability across products.
                     </span>
                   </li>
-                  <li className=" flex md:flex-row flex-col md:py-0 py-[1vh] w-full">
+                  <li className=" flex md:flex-row flex-col md:py-0 py-[1vh] md:w-[120%] w-full">
                     <div className=" flex flex-row">
                       <PiAsterisk className="text-lg text-[#8CFF2E] mr-[1vw]" />
                       <span className="">
