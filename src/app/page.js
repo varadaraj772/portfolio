@@ -338,7 +338,7 @@ function page() {
                     Web and Mobile Design
                   </span>{" "}
                 </div>
-                <div className="md:h-[50%]  h-[80%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
+                <div className="md:h-[50%]  h-[80%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative md:mb-0 mb-[4vh]">
                   <Image
                     src="/Project1.png"
                     alt="Project Image:  IRS Plus"
@@ -354,7 +354,7 @@ function page() {
                     Web and Mobile Design
                   </span>{" "}
                 </div>
-                <div className="md:h-[50%]  h-[80%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] md:translate-x-0 relative">
+                <div className="md:h-[50%]  h-[80%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] md:translate-x-0 relative  md:mb-0 mb-[4vh]">
                   <Image
                     src="/Project2.png"
                     ref={image2Ref}
@@ -383,7 +383,7 @@ function page() {
                     Web and Mobile Design
                   </span>{" "}
                 </div>
-                <div className="md:h-[50%]  h-[85%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
+                <div className="md:h-[50%]  h-[85%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative  md:mb-0 mb-[4vh]">
                   <Image
                     src="/Project3.png"
                     alt="Project Image: Primesophic Technology"
@@ -401,7 +401,7 @@ function page() {
                     Web Design
                   </span>{" "}
                 </div>
-                <div className="md:h-[50%]  h-[85%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] md:translate-x-0 relative">
+                <div className="md:h-[50%]  h-[85%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] md:translate-x-0 relative  md:mb-0 mb-[4vh]">
                   <Image
                     src="/Project4.png"
                     ref={image4Ref}
@@ -429,7 +429,7 @@ function page() {
                     Web Design
                   </span>{" "}
                 </div>
-                <div className="md:h-[50%] h-[85%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative">
+                <div className="md:h-[50%] h-[85%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] relative  md:mb-0 mb-[4vh]">
                   <Image
                     src="/Project5.png"
                     ref={image5Ref}
@@ -445,7 +445,7 @@ function page() {
                     Mobile App
                   </span>{" "}
                 </div>
-                <div className="md:h-[50%]  h-[85%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] md:translate-x-0 relative">
+                <div className="md:h-[50%]  h-[85%] object-cover rounded-[2vw] w-[85%] translate-x-[3.5vw] md:translate-x-0 relative  md:mb-0 mb-[4vh]">
                   <Image
                     src="/Project6.png"
                     ref={image6Ref}
