@@ -706,7 +706,7 @@ function page() {
                 </ul>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 mt-[5vw] gap-[2vw] px-[2.5vw] font-semibold">
+            <div className="grid grid-cols-1 md:grid-cols-3 md:mt-[5vw] gap-[2vw] px-[2.5vw] font-semibold  mt-[5vh]">
               {/* Figma Box */}
               <div className=" rounded-[0.9vw] bg-[#8CFF2E] text-black md:h-[15vw] shadow-md cursor-pointer ">
                 <div className=" w-full md:p-[1vw] p-[3vw]">
